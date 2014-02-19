@@ -73,6 +73,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     int rowCount;
     int messagesSectionRow;
     int sendByEnterRow;
+    int hideLastSeenRow;
     int terminateSessionsRow;
     int photoDownloadSection;
     int photoDownloadChatRow;
@@ -156,6 +157,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         messagesSectionRow = rowCount++;
         textSizeRow = rowCount++;
         sendByEnterRow = rowCount++;
+        hideLastSeenRow = rowCount++;
         supportSectionRow = rowCount++;
         if (ConnectionsManager.DEBUG_VERSION) {
             sendLogsRow = rowCount++;
@@ -238,6 +240,15 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         if (listView != null) {
                             listView.invalidateViews();
                         }
+                    } else if (i == hideLastSeenRow) {
+                        SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
+                        boolean hide = preferences.getBoolean("hideLastSeen", false);
+                        SharedPreferences.Editor editor = preferences.edit();
+                        editor.putBoolean("hideLastSeen", !hide);
+                        editor.commit();
+                        if (listView != null) {
+                            listView.invalidateViews();
+                        }
                     } else if (i == terminateSessionsRow) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(parentActivity);
                         builder.setMessage(getStringEntry(R.string.AreYouSure));
@@ -251,7 +262,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                                     public void run(TLObject response, TLRPC.TL_error error) {
                                         ActionBarActivity inflaterActivity = parentActivity;
                                         if (inflaterActivity == null) {
-                                            inflaterActivity = (ActionBarActivity)getActivity();
+                                            inflaterActivity = (ActionBarActivity) getActivity();
                                         }
                                         if (inflaterActivity == null) {
                                             return;
@@ -374,7 +385,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             }
             Intent i = new Intent(Intent.ACTION_SEND_MULTIPLE);
             i.setType("message/rfc822") ;
-            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"drklo.2kb@gmail.com"});
+            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"voyageravv@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "last logs");
             i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
             startActivityForResult(Intent.createChooser(i, "Select email application."), 232);
@@ -426,7 +437,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         @Override
         public boolean isEnabled(int i) {
             return i == textSizeRow || i == enableAnimationsRow || i == blockedRow || i == notificationRow || i == backgroundRow ||
-                    i == askQuestionRow || i == sendLogsRow || i == sendByEnterRow || i == terminateSessionsRow || i == photoDownloadPrivateRow ||
+                    i == askQuestionRow || i == sendLogsRow || i == sendByEnterRow ||i == hideLastSeenRow || i == terminateSessionsRow || i == photoDownloadPrivateRow ||
                     i == photoDownloadChatRow;
         }
 
@@ -652,8 +663,19 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         checkButton.setImageResource(R.drawable.btn_check_on);
                     } else {
                         checkButton.setImageResource(R.drawable.btn_check_off);
+                    } 
+                } else if (i == hideLastSeenRow) {
+                    textView.setText(getStringEntry(R.string.HideLastSeen));
+                    divider.setVisibility(View.INVISIBLE);
+                    boolean enabled = preferences.getBoolean("hideLastSeen", false);
+                    if (enabled) {
+                        checkButton.setImageResource(R.drawable.btn_check_on);
+                    } else {
+                        checkButton.setImageResource(R.drawable.btn_check_off);
                     }
-                } else if (i == photoDownloadChatRow) {
+
+                }
+                else if (i == photoDownloadChatRow) {
                     textView.setText(getStringEntry(R.string.AutomaticPhotoDownloadGroups));
                     divider.setVisibility(View.VISIBLE);
                     boolean enabled = preferences.getBoolean("photo_download_chat", true);
@@ -662,7 +684,8 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     } else {
                         checkButton.setImageResource(R.drawable.btn_check_off);
                     }
-                } else if (i == photoDownloadPrivateRow) {
+                }
+                else if (i == photoDownloadPrivateRow) {
                     textView.setText(getStringEntry(R.string.AutomaticPhotoDownloadPrivateChats));
                     divider.setVisibility(View.INVISIBLE);
                     boolean enabled = preferences.getBoolean("photo_download_user", true);
@@ -736,7 +759,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 return 1;
             } else if (i == textSizeRow) {
                 return 5;
-            } else if (i == enableAnimationsRow || i == sendByEnterRow || i == photoDownloadChatRow || i == photoDownloadPrivateRow) {
+            } else if (i == enableAnimationsRow || i == sendByEnterRow || i == hideLastSeenRow || i == photoDownloadChatRow || i == photoDownloadPrivateRow) {
                 return 3;
             } else if (i == numberRow || i == notificationRow || i == blockedRow || i == backgroundRow || i == askQuestionRow || i == sendLogsRow || i == terminateSessionsRow) {
                 return 2;

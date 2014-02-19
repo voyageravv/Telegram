@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--Translation by Borja Campina, Edited by Victor Espinoza-->
+<!--Translation by Borja Campina, Edited by Voyageravv-->
 
 <resources>
-    <string name="AppName">Telegram</string>
+    <string name="AppName">Shurgram</string>
 
     <!--signin view-->
     <string name="YourPhone">Tu teléfono</string>
@@ -32,12 +32,12 @@
     <string name="Search">Buscar</string>
     <string name="NewMessages">Nuevo mensaje</string>
     <string name="Settings">Ajustes</string>
-    <string name="Contacts">Contactos</string>
+    <string name="Contacts">Shurmanos</string>
     <string name="NewGroup">Nuevo grupo</string>
     <string name="Yesterday">ayer</string>
     <string name="NoResult">Sin resultados</string>
     <string name="NoChats">No tienes conversaciones todavía...</string>
-    <string name="NoChatsHelp">Empieza a chatear presionando el\nbotón de Nuevo mensaje en la esquina superior\nderecha o ve a la sección de Contactos.</string>
+    <string name="NoChatsHelp">Empieza a chatear presionando el\nbotón de Nuevo mensaje en la esquina superior\nderecha o ve a la sección de Shurmanos.</string>
     <string name="WaitingForNetwork">Esperando red...</string>
     <string name="Connecting">Conectando...</string>
     <string name="Updating">Actualizando...</string>
@@ -73,11 +73,12 @@
     <string name="IsTyping">está escribiendo...</string>
     <string name="AreTyping">están escribiendo...</string>
     <string name="AndMoreTyping">y %d personas más</string>
-    <string name="GotAQuestion">¿Tienes una pregunta\nsobre Telegram?</string>
+    <string name="GotAQuestion">¿Tienes una pregunta\nsobre Shurgram?</string>
     <string name="ChatTakePhoto">Hacer foto</string>
     <string name="ChatGallery">Galería</string>
     <string name="ChatLocation">Ubicación</string>
     <string name="ChatVideo">Vídeo</string>
+    <string name="ChatAudio">Audio</string>
     <string name="ChatDocument">Archivo</string>
     <string name="NoMessages">No hay mensajes aún...</string>
     <string name="ViewPhoto">Ver foto</string>
@@ -86,13 +87,13 @@
     <string name="ForwardedMessage">Mensaje reenviado</string>
     <string name="From">De</string>
     <string name="NoRecent">No hay recientes</string>
-    <string name="Members">miembros</string>
+    <string name="Members">surmanos</string>
     <string name="Message">Mensaje</string>
     <string name="TypeMessage">Escribe un mensaje</string>
     <string name="DOWNLOAD">Descargar</string>
     <string name="Selected">Elegidos:</string>
-    <string name="ShareMyContactInfo">COMPARTIR MI INFORMACIÓN DE CONTACTO</string>
-    <string name="AddToContacts">AÑADIR A CONTACTOS</string>
+    <string name="ShareMyContactInfo">COMPARTIR MI INFORMACIÓN DE SHURMANO</string>
+    <string name="AddToContacts">AÑADIR A SHURMANOS</string>
     <string name="EncryptedPlaceholderTitleIncoming">%s te ha invitado a un chat secreto.</string>
     <string name="EncryptedPlaceholderTitleOutgoing">Has invitado a %s a un chat secreto.</string>
     <string name="EncryptedDescriptionTitle">Los Chats Secretos:</string>
@@ -124,7 +125,7 @@
     <string name="NotificationMessageNoText">%1$s te envió un mensaje</string>
     <string name="NotificationMessagePhoto">%1$s te envió una foto</string>
     <string name="NotificationMessageVideo">%1$s te envió un vídeo</string>
-    <string name="NotificationMessageContact">%1$s compartió un contacto contigo</string>
+    <string name="NotificationMessageContact">%1$s compartió un surmano contigo</string>
     <string name="NotificationMessageMap">%1$s te envió un mapa</string>
     <string name="NotificationMessageDocument">%1$s te envió un archivo</string>
     <string name="NotificationMessageAudio">%1$s te envió un audio</string>
@@ -132,7 +133,7 @@
     <string name="NotificationMessageGroupNoText">%1$s envió un mensaje al grupo %2$s</string>
     <string name="NotificationMessageGroupPhoto">%1$s envió una foto al grupo %2$s</string>
     <string name="NotificationMessageGroupVideo">%1$s envió un vídeo al grupo %2$s</string>
-    <string name="NotificationMessageGroupContact">%1$s compartió un contacto en el grupo %2$s</string>
+    <string name="NotificationMessageGroupContact">%1$s compartió un surmano en el grupo %2$s</string>
     <string name="NotificationMessageGroupMap">%1$s envió un mapa al grupo %2$s</string>
     <string name="NotificationMessageGroupDocument">%1$s envió un archivo al grupo %2$s</string>
     <string name="NotificationMessageGroupAudio">%1$s envió un audio al grupo %2$s</string>
@@ -143,14 +144,14 @@
     <string name="NotificationGroupKickMember">%1$s expulsó a %3$s del grupo %2$s</string>
     <string name="NotificationGroupKickYou">%1$s te ha expulsado del grupo %2$s</string>
     <string name="NotificationGroupLeftMember">%1$s abandonó el grupo %2$s</string>
-    <string name="NotificationContactJoined">¡%1$s se unió a Telegram!</string>
-    <string name="NotificationUnrecognizedDevice">%1$s,\nHemos detectado una conexión a tu cuenta desde un nuevo dispositivo el %2$s\n\nDispositivo: %3$s\nUbicación: %4$s\n\nSi no eras tú, puedes ir a Ajustes - Cerrar todas las otras sesiones.\n\nGracias,\nEl equipo de Telegram</string>
+    <string name="NotificationContactJoined">¡%1$s se unió a Shurgram!</string>
+    <string name="NotificationUnrecognizedDevice">%1$s,\nHemos detectado una conexión a tu cuenta desde un nuevo dispositivo el %2$s\n\nDispositivo: %3$s\nUbicación: %4$s\n\nSi no eras tú, puedes ir a Ajustes - Cerrar todas las otras sesiones.\n\nGracias,\nEl equipo de Shurgram</string>
     <string name="NotificationContactNewPhoto">%1$s actualizó su foto de perfil</string>
 
     <!--contacts view-->
-    <string name="SelectContact">Seleccionar contacto</string>
-    <string name="NoContacts">No hay contactos aún</string>
-    <string name="InviteText">Hey, cambiémonos a Telegram: http://telegram.org/dl2</string>
+    <string name="SelectContact">Seleccionar surmano</string>
+    <string name="NoContacts">No hay surmanos aún</string>
+    <string name="InviteText">Hey, cambiémonos a Shurgram: http://telegram.org/dl2</string>
     <string name="TodayAt">hoy a las</string>
     <string name="YesterdayAt">ayer a las</string>
     <string name="OtherAt">a las</string>
@@ -165,8 +166,8 @@
     <string name="EnterGroupNamePlaceholder">El nombre del grupo</string>
     <string name="MEMBER">MIEMBRO</string>
     <string name="GroupName">Nombre del grupo</string>
-    <string name="MEMBERS">MIEMBROS</string>
-    <string name="AllContacts">TODOS LOS CONTACTOS</string>
+    <string name="MEMBERS">SHURMANOS</string>
+    <string name="AllContacts">TODOS LOS SHURMANOS</string>
 
     <!--group info view-->
     <string name="EnterGroupNameTitle">INGRESA EL NOMBRE DEL GRUPO</string>
@@ -190,11 +191,11 @@
     <string name="PhoneWork">TRABAJO</string>
     <string name="PhoneOther">OTRO</string>
     <string name="PhoneMain">PRINCIPAL</string>
-    <string name="ContactInfo">Información del contacto</string>
+    <string name="ContactInfo">Información del surmano</string>
     <string name="PHONE">TELÉFONO</string>
     <string name="StartEncryptedChat">Iniciar chat secreto</string>
     <string name="CreateEncryptedChatError">Ocurrió un error.</string>
-    <string name="CreateEncryptedChatOutdatedError">No podemos crear un chat secreto con %1$s.\n\n%2$s está usando una versión antigua de Telegram y debe actualizarla primero.</string>
+    <string name="CreateEncryptedChatOutdatedError">No podemos crear un chat secreto con %1$s.\n\n%2$s está usando una versión antigua de Shurgram y debe actualizarla primero.</string>
     <string name="SecretTitle">Chat secreto</string>
     <string name="EncryptionKey">Clave de cifrado</string>
     <string name="MessageLifetime">Autodestrucción</string>
@@ -213,8 +214,8 @@
     <string name="AskAQuestion">Hacer una pregunta</string>
     <string name="EnableAnimations">Activar animaciones</string>
     <string name="Unblock">Desbloquear</string>
-    <string name="UnblockText">Mantén pulsado un usuario para desbloquearlo</string>
-    <string name="NoBlocked">No hay usuarios bloqueados</string>
+    <string name="UnblockText">Mantén pulsado un shurmano para desbloquearlo</string>
+    <string name="NoBlocked">No hay shurmanos bloqueados</string>
     <string name="YourPhoneNumber">TU NÚMERO DE TELÉFONO</string>
     <string name="MessageNotifications">NOTIFICACIONES DE MENSAJES</string>
     <string name="Alert">Alerta</string>
@@ -228,7 +229,7 @@
     <string name="InAppPreview">Vista previa en la app</string>
     <string name="Reset">RESTABLECER</string>
     <string name="ResetAllNotifications">Restablecer todas las notificaciones</string>
-    <string name="UndoAllCustom">Deshacer todas las notificaciones personalizadas para todos tus usuarios y grupos</string>
+    <string name="UndoAllCustom">Deshacer todas las notificaciones personalizadas para todos tus shurmanos y grupos</string>
     <string name="NotificationsAndSounds">Notificaciones y sonidos</string>
     <string name="BlockedUsers">Usuarios bloqueados</string>
     <string name="SaveIncomingPhotos">Guardar fotos entrantes</string>
@@ -240,12 +241,13 @@
     <string name="ChatBackground">Fondo de chat</string>
     <string name="MessagesSettings">MENSAJES</string>
     <string name="SendByEnter">Enviar con ‘Enter’</string>
+    <string name="HideLastSeen">Ocultar última conexión</string>
     <string name="TerminateAllSessions">Cerrar todas las otras sesiones</string>
     <string name="AutomaticPhotoDownload">DESCARGA AUTOMÁTICA DE FOTOS</string>
     <string name="AutomaticPhotoDownloadGroups">Grupos</string>
     <string name="AutomaticPhotoDownloadPrivateChats">Chats</string>
     <string name="Events">EVENTOS</string>
-    <string name="ContactJoined">Un contacto se unió a Telegram</string>
+    <string name="ContactJoined">Un surmano se unió a Shurgram</string>
 
     <!--media view-->
     <string name="NoMedia">No hay fotos ni vídeos compartidos aún</string>
@@ -305,11 +307,11 @@
     <string name="ActionYouCreateGroup">Creaste el grupo</string>
     <string name="ActionKickUserYou">un1 te expulsó</string>
     <string name="ActionAddUserYou">un1 te añadió</string>
-    <string name="UnsuppotedMedia">Este mensaje no está soportado en tu versión de Telegram.</string>
+    <string name="UnsuppotedMedia">Este mensaje no está soportado en tu versión de Shurgram.</string>
     <string name="AttachPhoto">Foto</string>
     <string name="AttachVideo">Vídeo</string>
     <string name="AttachLocation">Ubicación</string>
-    <string name="AttachContact">Contacto</string>
+    <string name="AttachContact">Shurmano</string>
     <string name="AttachDocument">Archivo</string>
     <string name="AttachAudio">Audio</string>
     <string name="FromYou">Tú</string>
@@ -324,15 +326,15 @@
     <string name="Loading">Cargando...</string>
     <string name="NoPlayerInstalled">No tienes reproductor de vídeo. Por favor, instala uno para continuar.</string>
     <string name="NoHandleAppInstalled">No tienes una aplicación que pueda manejar el tipo mime \'%1$s\'. Por favor, instala una para continuar</string>
-    <string name="InviteUser">Este usuario no tiene Telegram aún. ¿Enviarle una invitación?</string>
+    <string name="InviteUser">Este shurmano no tiene Shurgram aún. ¿Enviarle una invitación?</string>
     <string name="AreYouSure">¿Estás seguro?</string>
-    <string name="AddContactQ">¿Añadir contacto?</string>
+    <string name="AddContactQ">¿Añadir shurmano?</string>
     <string name="AddToTheGroup">¿Añadir a %1$s al grupo?</string>
     <string name="ForwardMessagesTo">¿Reenviar mensajes a %1$s?</string>
     <string name="DeleteChatQuestion">¿Eliminar este chat?</string>
 
     <!--Intro view-->
-    <string name="Page1Title">Telegram</string>
+    <string name="Page1Title">Shurgram</string>
     <string name="Page2Title">Rápida</string>
     <string name="Page3Title">Gratis</string>
     <string name="Page4Title">Segura</string>
@@ -340,12 +342,12 @@
     <string name="Page6Title">Basada en la nube</string>
     <string name="Page7Title">Privada</string>
     <string name="Page1Message">Bienvenidos a la era de la mensajería rápida y segura.</string>
-    <string name="Page2Message"><![CDATA[<b>Telegram</b>]]> entrega mensajes más rápido que<![CDATA[<br/>]]>cualquier otra aplicación.</string>
-    <string name="Page3Message"><![CDATA[<b>Telegram</b>]]> es gratis para siempre. Sin publicidad.<![CDATA[<br/>]]>Sin cuotas de suscripción.</string>
-    <string name="Page4Message"><![CDATA[<b>Telegram</b>]]> mantiene tus mensajes<![CDATA[<br/>]]>a salvo del ataque de hackers.</string>
-    <string name="Page5Message"><![CDATA[<b>Telegram</b>]]> no tiene límites en el tamaño de tus<![CDATA[<br/>]]>chats y archivos.</string>
-    <string name="Page6Message"><![CDATA[<b>Telegram</b>]]> te permite acceder a tus mensajes<![CDATA[<br/>]]>desde múltiples dispositivos.</string>
-    <string name="Page7Message">Los mensajes de <![CDATA[<b>Telegram</b>]]> están fuertemente<![CDATA[<br/>]]>cifrados y se pueden autodestruir.</string>
+    <string name="Page2Message"><![CDATA[<b>Shurgram</b>]]> entrega mensajes más rápido que<![CDATA[<br/>]]>cualquier otra aplicación.</string>
+    <string name="Page3Message"><![CDATA[<b>Shurgram</b>]]> es gratis para siempre. Sin publicidad.<![CDATA[<br/>]]>Sin cuotas de suscripción.</string>
+    <string name="Page4Message"><![CDATA[<b>Shurgram</b>]]> mantiene tus mensajes<![CDATA[<br/>]]>a salvo del ataque de juanquers.</string>
+    <string name="Page5Message"><![CDATA[<b>Shurgram</b>]]> no tiene límites en el tamaño de tus<![CDATA[<br/>]]>chats y archivos.</string>
+    <string name="Page6Message"><![CDATA[<b>Shurgram</b>]]> te permite acceder a tus mensajes<![CDATA[<br/>]]>desde múltiples dispositivos.</string>
+    <string name="Page7Message">Los mensajes de <![CDATA[<b>Shurgram</b>]]> están fuertemente<![CDATA[<br/>]]>cifrados y se pueden autodestruir.</string>
     <string name="StartMessaging">Empieza a conversar</string>
 
     <!--Don't change this! Not for localization!-->

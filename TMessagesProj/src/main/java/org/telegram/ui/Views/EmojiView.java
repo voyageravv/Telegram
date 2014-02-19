@@ -36,7 +36,9 @@ public class EmojiView extends LinearLayout {
             R.drawable.ic_emoji_flower,
             R.drawable.ic_emoji_bell,
             R.drawable.ic_emoji_car,
-            R.drawable.ic_emoji_symbol };
+            R.drawable.ic_emoji_symbol,
+            R.drawable.ic_emoji_fc,
+            };
     private Listener listener;
     private ViewPager pager;
     private FrameLayout recentsWrap;

@@ -221,7 +221,7 @@ public class MessageObject {
             messageText = message.message;
         }
         messageText = Emoji.replaceEmoji(messageText);
-
+        messageText = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageText);
 
         if (message instanceof TLRPC.TL_message || (message instanceof TLRPC.TL_messageForwarded && (message.media == null || !(message.media instanceof TLRPC.TL_messageMediaEmpty)))) {
             if (message.media == null || message.media instanceof TLRPC.TL_messageMediaEmpty) {

@@ -30,6 +30,7 @@ public class UserConfig {
     public static String importHash = "";
     private final static Integer sync = 1;
     public static boolean saveIncomingPhotos = false;
+    public static boolean hideLastSeen = false;
 
     public static int getNewMessageId() {
         int id;
@@ -107,6 +108,7 @@ public class UserConfig {
                         contactsHash = data.readString();
                         importHash = data.readString();
                         saveIncomingPhotos = data.readBool();
+                        hideLastSeen = data.readBool();
                         if (currentUser.status != null) {
                             if (currentUser.status.expires != 0) {
                                 currentUser.status.was_online = currentUser.status.expires;
@@ -134,6 +136,7 @@ public class UserConfig {
                         clientActivated = true;
 
                         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("userconfing", Context.MODE_PRIVATE);
+                        SharedPreferences preferences2 = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Context.MODE_PRIVATE);
                         registeredForPush = preferences.getBoolean("registeredForPush", false);
                         pushString = preferences.getString("pushString", "");
                         lastSendMessageId = preferences.getInt("lastSendMessageId", -210000);
@@ -141,6 +144,7 @@ public class UserConfig {
                         contactsHash = preferences.getString("contactsHash", "");
                         importHash = preferences.getString("importHash", "");
                         saveIncomingPhotos = preferences.getBoolean("saveIncomingPhotos", false);
+                        hideLastSeen = preferences2.getBoolean("hideLastSeen", false);
                     }
                     if (lastLocalId > -210000) {
                         lastLocalId = -210000;
@@ -159,6 +163,7 @@ public class UserConfig {
                 }
             } else {
                 SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("userconfing", Context.MODE_PRIVATE);
+                SharedPreferences preferences2 = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Context.MODE_PRIVATE);
                 registeredForPush = preferences.getBoolean("registeredForPush", false);
                 pushString = preferences.getString("pushString", "");
                 lastSendMessageId = preferences.getInt("lastSendMessageId", -210000);
@@ -166,6 +171,7 @@ public class UserConfig {
                 contactsHash = preferences.getString("contactsHash", "");
                 importHash = preferences.getString("importHash", "");
                 saveIncomingPhotos = preferences.getBoolean("saveIncomingPhotos", false);
+                hideLastSeen = preferences2.getBoolean("hideLastSeen", false);
                 String user = preferences.getString("user", null);
                 if (user != null) {
                     byte[] userBytes = Base64.decode(user, Base64.DEFAULT);
@@ -194,6 +200,7 @@ public class UserConfig {
         lastLocalId = -210000;
         lastSendMessageId = -210000;
         saveIncomingPhotos = false;
+        hideLastSeen = false;
         saveConfig(true);
         MessagesController.Instance.deleteAllAppAccounts();
     }

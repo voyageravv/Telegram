@@ -35,6 +35,7 @@ dependencies {
     compile 'net.hockeyapp.android:HockeySDK:3.0.1'
     compile 'com.android.support:support-v4:19.0.+'
     compile 'com.android.support:appcompat-v7:19.0.+'
+
     compile fileTree(dir: "$buildDir/native-libs", include: 'native-libs.jar')
 }
 
@@ -49,17 +50,20 @@ android {
 
         release {
             storeFile file("release.keystore")
+
         }
     }
 
     buildTypes {
         debug {
+            packageNameSuffix ".debug"
             debuggable true
             jniDebugBuild true
             signingConfig signingConfigs.debug
         }
 
         release {
+            packageNameSuffix ".release"
             debuggable false
             jniDebugBuild false
             signingConfig signingConfigs.release

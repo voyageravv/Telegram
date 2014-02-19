@@ -742,17 +742,24 @@ public class MessagesController implements NotificationCenter.NotificationCenter
             }
 
             if (ApplicationLoader.lastPauseTime == 0) {
+                UserConfig.loadConfig();
                 if (lastStatusUpdateTime != -1 && (lastStatusUpdateTime == 0 || lastStatusUpdateTime <= System.currentTimeMillis() - 55000 || offlineSended)) {
                     lastStatusUpdateTime = -1;
                     TLRPC.TL_account_updateStatus req = new TLRPC.TL_account_updateStatus();
-                    req.offline = false;
+                    if (UserConfig.hideLastSeen)
+                    {req.offline = true;}
+                    else
+                    {req.offline = false;}
                     ConnectionsManager.Instance.performRpc(req, new RPCRequest.RPCRequestDelegate() {
                         @Override
                         public void run(TLObject response, TLRPC.TL_error error) {
                             lastStatusUpdateTime = System.currentTimeMillis();
                         }
                     }, null, true, RPCRequest.RPCRequestClassGeneric);
-                    offlineSended = false;
+                    if (UserConfig.hideLastSeen)
+                    {offlineSended = true;}
+                    else
+                    {offlineSended = false;}
                 }
             } else if (!offlineSended && ApplicationLoader.lastPauseTime <= System.currentTimeMillis() - 2000) {
                 TLRPC.TL_account_updateStatus req = new TLRPC.TL_account_updateStatus();
@@ -1766,8 +1773,10 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                     delayedMessage.documentLocation = document;
                     performSendDelayedMessage(delayedMessage);
                 } else if (type == 8) {
-                    reqSend.media = new TLRPC.TL_inputMediaUploadedAudio();
+                    reqSend.media = new TLRPC.TL_inputMediaUploadedDocument();
                     reqSend.media.duration = audio.duration;
+                    reqSend.media.mime_type = "application/octet-stream";
+                    reqSend.media.file_name = audio.path;
                     DelayedMessage delayedMessage = new DelayedMessage();
                     delayedMessage.sendRequest = reqSend;
                     delayedMessage.type = 3;
@@ -1866,7 +1875,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                     random.nextBytes(reqSend.media.key);
                     reqSend.media.duration = audio.duration;
                     reqSend.media.size = audio.size;
-
+                    reqSend.media.mime_type = "application/octet-stream";
+                    reqSend.media.file_name = audio.path;
                     DelayedMessage delayedMessage = new DelayedMessage();
                     delayedMessage.sendEncryptedRequest = reqSend;
                     delayedMessage.type = 3;
@@ -3883,7 +3893,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                                 obj.messageOwner.unread = false;
                             }
                         }
-                        NotificationCenter.Instance.postNotificationName(messagesReaded, markAsReadMessages);
+                        if (!UserConfig.hideLastSeen)
+                        {NotificationCenter.Instance.postNotificationName(messagesReaded, markAsReadMessages);}
                     }
                     if (!markAsReadEncrypted.isEmpty()) {
                         for (HashMap.Entry<Integer, Integer> entry : markAsReadEncrypted.entrySet()) {

@@ -10,6 +10,10 @@ package org.telegram.messenger;
 
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.Map.Entry;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -21,11 +25,16 @@ import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.text.Spannable.Factory;
+import android.content.Context;
 
 import org.telegram.ui.ApplicationLoader;
+import org.telegram.gif.GifView;
+
 
 public class Emoji {
 	private static final int[] ROW_SIZES = {27, 29, 33, 34, 34};
@@ -35,6 +44,7 @@ public class Emoji {
 	private static Paint placeholderPaint;
 	private static Bitmap[] bmps = new Bitmap[5];
 	private static boolean[] loading = new boolean[5];
+    private static GifView gifView;
 
     private static final char[] emojiChars={
             0x00A9,
@@ -309,6 +319,86 @@ public class Emoji {
         return (int)(ApplicationLoader.applicationContext.getResources().getDisplayMetrics().density * value);
     }
 
+    private static final Factory spannableFactory = Spannable.Factory
+            .getInstance();
+
+    private static final Map<Pattern, Integer> emoticons = new HashMap<Pattern, Integer>();
+
+    static {
+        addPattern(emoticons, ":)", R.drawable.emo_im_smile);
+        addPattern(emoticons, ":-)", R.drawable.emo_im_smile);
+        addPattern(emoticons,":nusenuse:", R.drawable.emo_im_nusenuse);
+        addPattern(emoticons,";)", R.drawable.emo_im_wink);
+        addPattern(emoticons,";-)", R.drawable.emo_im_wink);
+        addPattern(emoticons,":D", R.drawable.emo_im_happy);
+        addPattern(emoticons,":-D", R.drawable.emo_im_happy);
+        addPattern(emoticons,":o", R.drawable.emo_im_redface);
+        addPattern(emoticons,":-o", R.drawable.emo_im_redface);
+        addPattern(emoticons,":mola:", R.drawable.emo_im_thumbsup);
+        addPattern(emoticons,":zpalomita", R.drawable.emo_im_icon_popcorn);
+        addPattern(emoticons,":elrisas:", R.drawable.emo_im_qmeparto);
+        addPattern(emoticons,":zplatano2", R.drawable.emo_im_b2);
+        addPattern(emoticons,":gaydude:", R.drawable.emo_im_gaydude);
+        addPattern(emoticons,":rolleyes:", R.drawable.emo_im_rolleyes);
+        addPattern(emoticons,":sisi1:", R.drawable.emo_im_sisi1);
+        addPattern(emoticons,":roto2:", R.drawable.emo_im_goofy1);
+        addPattern(emoticons,":dale2:", R.drawable.emo_im_smash2);
+        addPattern(emoticons,":number1:", R.drawable.emo_im_number_one);
+        addPattern(emoticons,":gnomito:", R.drawable.emo_im_osvaisacagar);
+        addPattern(emoticons,":baila:", R.drawable.emo_im_dancing);
+        addPattern(emoticons,":burla1:", R.drawable.emo_im_razz);
+        addPattern(emoticons,":zparaguas", R.drawable.emo_im_61_61);
+        addPattern(emoticons,":banana:", R.drawable.emo_im_banana);
+        addPattern(emoticons,":gaysex:", R.drawable.emo_im_gaysex);
+        addPattern(emoticons,":aplauso:", R.drawable.emo_im_clap);
+        addPattern(emoticons,":mad:", R.drawable.emo_im_mad);
+        addPattern(emoticons,":roto2rie:", R.drawable.emo_im_roto2rie);
+        addPattern(emoticons,":sisi:", R.drawable.emo_im_sisi);
+        // ...
+    }
+
+    private static void addPattern(Map<Pattern, Integer> map, String smile,
+                                   int resource) {
+        map.put(Pattern.compile(Pattern.quote(smile)), resource);
+    }
+
+    public static boolean addSmiles(Context context, Spannable spannable) {
+        boolean hasChanges = false;
+        for (Entry<Pattern, Integer> entry : emoticons.entrySet()) {
+            Matcher matcher = entry.getKey().matcher(spannable);
+            while (matcher.find()) {
+                boolean set = true;
+                for (ImageSpan span : spannable.getSpans(matcher.start(),
+                        matcher.end(), ImageSpan.class))
+                    if (spannable.getSpanStart(span) >= matcher.start()
+                            && spannable.getSpanEnd(span) <= matcher.end())
+                        spannable.removeSpan(span);
+                    else {
+                        set = false;
+                        break;
+                    }
+                if (set) {
+                    hasChanges = true;
+
+                    spannable.setSpan(new ImageSpan(context, entry.getValue()),
+                            matcher.start(), matcher.end(),
+                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                }
+            }
+        }
+        return hasChanges;
+    }
+
+    public static Spannable getSmiledText(Context context, CharSequence text) {
+
+
+        Spannable spannable = spannableFactory.newSpannable(text);
+
+        addSmiles(context, spannable);
+
+        return spannable;
+    }
+
 	private static Bitmap loadPage(final int page){
 		try {
 			int rsize = ROW_SIZES[page];
@@ -507,10 +597,12 @@ public class Emoji {
                 Drawable d = Emoji.getEmojiDrawable(buf);
                 if (d != null){
                     EmojiSpan span = new EmojiSpan(d, DynamicDrawableSpan.ALIGN_BOTTOM);
+                   
                     emojiCount++;
                     if (c>= 0xDDE6 && c <= 0xDDFA) {
                         s.setSpan(span, i - 3, i + 1, 0);
                     } else {
+
                         s.setSpan(span, i - 1, i + 1, 0);
                     }
                 }

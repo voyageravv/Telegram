@@ -649,6 +649,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                     while (true) {
                         if (i >= j) {
                             Emoji.replaceEmoji(editable);
+                            Emoji.getSmiledText(ApplicationLoader.applicationContext, editable);
                             return;
                         }
                         editable.removeSpan(arrayOfImageSpan[i]);
@@ -748,15 +749,15 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
     }
 
     private void checkSendButton() {
-        sendButton.setVisibility(View.VISIBLE);
-        audioSendButton.setVisibility(View.INVISIBLE);
-//        if (messsageEditText.length() > 0) {
-//            sendButton.setVisibility(View.VISIBLE);
-//            audioSendButton.setVisibility(View.INVISIBLE);
-//        } else {
-//            sendButton.setVisibility(View.INVISIBLE);
-//            audioSendButton.setVisibility(View.VISIBLE);
-//        }
+        sendButton.setVisibility(View.INVISIBLE);
+        audioSendButton.setVisibility(View.VISIBLE);
+        if (messsageEditText.length() > 0) {
+            sendButton.setVisibility(View.VISIBLE);
+            audioSendButton.setVisibility(View.INVISIBLE);
+        } else {
+            sendButton.setVisibility(View.INVISIBLE);
+            audioSendButton.setVisibility(View.VISIBLE);
+        }
     }
 
     private void sendMessage() {
@@ -2031,6 +2032,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
             public void onEmojiSelected(String paramAnonymousString) {
                 int i = messsageEditText.getSelectionEnd();
                 CharSequence localCharSequence = Emoji.replaceEmoji(paramAnonymousString);
+                localCharSequence = Emoji.getSmiledText(ApplicationLoader.applicationContext, localCharSequence);
                 messsageEditText.setText(messsageEditText.getText().insert(i, localCharSequence));
                 int j = i + localCharSequence.length();
                 messsageEditText.setSelection(j, j);
@@ -2506,7 +2508,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                 } else if (selectedObject.type == 16 || selectedObject.type == 17) {
                     TLRPC.TL_document document = (TLRPC.TL_document)selectedObject.messageOwner.media.document;
                     document.path = selectedObject.messageOwner.attachPath;
-                    MessagesController.Instance.sendMessage(document, dialog_id);
+                    MessagesController.Instance.sendMessage(document.path, dialog_id);
                 } else if (selectedObject.type == 18 || selectedObject.type == 19) {
                     TLRPC.TL_audio audio = (TLRPC.TL_audio)selectedObject.messageOwner.media.audio;
                     audio.path = selectedObject.messageOwner.attachPath;
@@ -2734,6 +2736,10 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                 DocumentSelectActivity fragment = new DocumentSelectActivity();
                 fragment.delegate = this;
                 ((ApplicationActivity)parentActivity).presentFragment(fragment, "document", false);
+                break;
+            }
+            case R.id.attach_audio: {
+
                 break;
             }
         }

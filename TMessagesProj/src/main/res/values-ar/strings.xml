@@ -78,6 +78,7 @@
     <string name="ChatGallery">صورة</string>
     <string name="ChatLocation"> موقع</string>
     <string name="ChatVideo">مقطع مرئي</string>
+    <string name="ChatAudio">Audio</string>
     <string name="ChatDocument">مستند</string>
     <string name="NoMessages">...لا توجد رسائل بعد</string>
     <string name="ViewPhoto">عرض الصورة</string>

@@ -33,6 +33,10 @@
                 android:icon="@drawable/ic_attach_location"
                 android:title="@string/ChatLocation"
                 android:id="@+id/attach_location"/>
+            <item
+                android:icon="@drawable/mic"
+                android:title="@string/ChatAudio"
+                android:id="@+id/attach_audio"/>
         </menu>
 
     </item>
