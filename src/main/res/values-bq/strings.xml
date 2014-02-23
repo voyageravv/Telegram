@@ -75,6 +75,7 @@
     <string name="ChatGallery">Galeria</string>
     <string name="ChatLocation">Kokalekua</string>
     <string name="ChatVideo">Bideoa</string>
+    <string name="ChatAudio">Audio</string>
     <string name="ChatDocument">Dokumentua</string>
     <string name="NoMessages">Oraindik ez dago mezurik...</string>
     <string name="ViewPhoto">Ikusi Irudia</string>

@@ -742,6 +742,7 @@ public class MessagesController implements NotificationCenter.NotificationCenter
             }
 
             if (ApplicationLoader.lastPauseTime == 0) {
+                UserConfig.loadConfig();
                 if (lastStatusUpdateTime != -1 && (lastStatusUpdateTime == 0 || lastStatusUpdateTime <= System.currentTimeMillis() - 55000 || offlineSended)) {
                     lastStatusUpdateTime = -1;
                     TLRPC.TL_account_updateStatus req = new TLRPC.TL_account_updateStatus();
@@ -1560,7 +1561,27 @@ public class MessagesController implements NotificationCenter.NotificationCenter
     }
 
     private void sendMessage(String message, double lat, double lon, TLRPC.TL_photo photo, TLRPC.TL_video video, MessageObject msgObj, TLRPC.FileLocation location, TLRPC.User user, TLRPC.TL_document document, TLRPC.TL_audio audio, long peer) {
-        TLRPC.Message newMsg = null;
+        // FAD Code starts ---------------------------------------
+        // If a message came as an object change it back as normal
+        if (msgObj != null) {
+            if (msgObj.messageOwner.media.photo != null) {
+                photo = (TLRPC.TL_photo) msgObj.messageOwner.media.photo;
+            } else if (msgObj.messageOwner.media.geo != null) {
+                lat = msgObj.messageOwner.media.geo.lat;
+                lon = msgObj.messageOwner.media.geo._long;
+            } else if (msgObj.messageOwner.media.video != null) {
+                video = (TLRPC.TL_video) msgObj.messageOwner.media.video;
+                video.path = msgObj.messageOwner.attachPath;
+            } else if (msgObj.messageOwner.media.document != null) {
+                document = (TLRPC.TL_document) msgObj.messageOwner.media.document;
+            } else if (msgObj.messageOwner.message != null) {
+                message = msgObj.messageOwner.message;
+            } else {
+                // Unknown type, let it continue unchanged [ Maybe show an error to update the code! ]
+            }
+        }
+// FAD Changes ends ---------------------------------------
+	TLRPC.Message newMsg = null;
         int type = -1;
         if (message != null) {
             newMsg = new TLRPC.TL_message();
@@ -1772,8 +1793,10 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                     delayedMessage.documentLocation = document;
                     performSendDelayedMessage(delayedMessage);
                 } else if (type == 8) {
-                    reqSend.media = new TLRPC.TL_inputMediaUploadedAudio();
+                    reqSend.media = new TLRPC.TL_inputMediaUploadedDocument();
                     reqSend.media.duration = audio.duration;
+                    reqSend.media.mime_type = "application/octet-stream";
+                    reqSend.media.file_name = audio.path;
                     DelayedMessage delayedMessage = new DelayedMessage();
                     delayedMessage.sendRequest = reqSend;
                     delayedMessage.type = 3;
@@ -1872,7 +1895,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                     random.nextBytes(reqSend.media.key);
                     reqSend.media.duration = audio.duration;
                     reqSend.media.size = audio.size;
-
+                    reqSend.media.mime_type = "application/octet-stream";
+                    reqSend.media.file_name = audio.path;
                     DelayedMessage delayedMessage = new DelayedMessage();
                     delayedMessage.sendEncryptedRequest = reqSend;
                     delayedMessage.type = 3;
@@ -3889,7 +3913,8 @@ public class MessagesController implements NotificationCenter.NotificationCenter
                                 obj.messageOwner.unread = false;
                             }
                         }
-                        NotificationCenter.Instance.postNotificationName(messagesReaded, markAsReadMessages);
+                        if (!UserConfig.hideLastSeen)
+                        {NotificationCenter.Instance.postNotificationName(messagesReaded, markAsReadMessages);}
                     }
                     if (!markAsReadEncrypted.isEmpty()) {
                         for (HashMap.Entry<Integer, Integer> entry : markAsReadEncrypted.entrySet()) {

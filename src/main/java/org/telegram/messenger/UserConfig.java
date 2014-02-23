@@ -108,6 +108,7 @@ public class UserConfig {
                         contactsHash = data.readString();
                         importHash = data.readString();
                         saveIncomingPhotos = data.readBool();
+                        hideLastSeen = data.readBool();
                         if (currentUser.status != null) {
                             if (currentUser.status.expires != 0) {
                                 currentUser.status.was_online = currentUser.status.expires;

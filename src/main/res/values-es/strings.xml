@@ -78,6 +78,7 @@
     <string name="ChatGallery">Galería</string>
     <string name="ChatLocation">Ubicación</string>
     <string name="ChatVideo">Vídeo</string>
+    <string name="ChatAudio">Audio</string>
     <string name="ChatDocument">Archivo</string>
     <string name="NoMessages">No hay mensajes aún...</string>
     <string name="ViewPhoto">Ver foto</string>

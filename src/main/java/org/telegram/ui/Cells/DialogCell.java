@@ -459,6 +459,7 @@ public class DialogCell extends BaseCell {
                                 checkMessage = false;
                                 if (message.messageOwner.message != null) {
                                     messageString = Emoji.replaceEmoji(Html.fromHtml(String.format("<font color=#316f9f>%s:</font> <font color=#808080>%s</font>", name, message.messageOwner.message.replace("\n", " "))));
+                                    messageString = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageString,getRootView() );
                                 }
                             }
                         } else {
@@ -589,6 +590,7 @@ public class DialogCell extends BaseCell {
             }
 
             CharSequence nameStringFinal = TextUtils.ellipsize(nameString.replace("\n", " "), currentNamePaint, nameWidth - Utilities.dp(12), TextUtils.TruncateAt.END);
+
             nameLayout = new StaticLayout(nameStringFinal, currentNamePaint, nameWidth, Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false);
 
             messageWidth = width - Utilities.dp(88);
@@ -637,6 +639,7 @@ public class DialogCell extends BaseCell {
                     mess = mess.substring(0, 150);
                 }
                 messageString = Emoji.replaceEmoji(mess);
+                messageString = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageString,getRootView());
             }
 
             CharSequence messageStringFinal = TextUtils.ellipsize(messageString, currentMessagePaint, messageWidth - Utilities.dp(12), TextUtils.TruncateAt.END);

@@ -92,13 +92,14 @@ import org.telegram.ui.Views.MessageActionLayout;
 import org.telegram.ui.Views.MessageLayout;
 import org.telegram.ui.Views.OnSwipeTouchListener;
 import org.telegram.ui.Views.SizeNotifierRelativeLayout;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Locale;
+
+import static org.telegram.messenger.Emoji.getSmiledText;
 
 public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLayout.SizeNotifierRelativeLayoutDelegate, NotificationCenter.NotificationCenterDelegate, MessagesActivity.MessagesActivityDelegate, DocumentSelectActivity.DocumentSelectActivityDelegate {
     private LayoutListView chatListView;
@@ -649,6 +650,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                     while (true) {
                         if (i >= j) {
                             Emoji.replaceEmoji(editable);
+                            getSmiledText(ApplicationLoader.applicationContext, editable, messsageEditText);
                             return;
                         }
                         editable.removeSpan(arrayOfImageSpan[i]);
@@ -748,15 +750,15 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
     }
 
     private void checkSendButton() {
-        sendButton.setVisibility(View.VISIBLE);
-        audioSendButton.setVisibility(View.INVISIBLE);
-//        if (messsageEditText.length() > 0) {
-//            sendButton.setVisibility(View.VISIBLE);
-//            audioSendButton.setVisibility(View.INVISIBLE);
-//        } else {
-//            sendButton.setVisibility(View.INVISIBLE);
-//            audioSendButton.setVisibility(View.VISIBLE);
-//        }
+        sendButton.setVisibility(View.INVISIBLE);
+        audioSendButton.setVisibility(View.VISIBLE);
+        if (messsageEditText.length() > 0) {
+            sendButton.setVisibility(View.VISIBLE);
+            audioSendButton.setVisibility(View.INVISIBLE);
+        } else {
+            sendButton.setVisibility(View.INVISIBLE);
+            audioSendButton.setVisibility(View.VISIBLE);
+        }
     }
 
     private void sendMessage() {
@@ -2031,6 +2033,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
             public void onEmojiSelected(String paramAnonymousString) {
                 int i = messsageEditText.getSelectionEnd();
                 CharSequence localCharSequence = Emoji.replaceEmoji(paramAnonymousString);
+                localCharSequence = getSmiledText(ApplicationLoader.applicationContext, localCharSequence, messsageEditText);
                 messsageEditText.setText(messsageEditText.getText().insert(i, localCharSequence));
                 int j = i + localCharSequence.length();
                 messsageEditText.setSelection(j, j);
@@ -2547,6 +2550,8 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
             if (selectedObject != null) {
                 if(android.os.Build.VERSION.SDK_INT < 11) {
                     android.text.ClipboardManager clipboard = (android.text.ClipboardManager)parentActivity.getSystemService(Context.CLIPBOARD_SERVICE);
+                    selectedObject.messageText = getSmiledText(ApplicationLoader.applicationContext, selectedObject.messageText, chatListView);
+
                     clipboard.setText(selectedObject.messageText);
                 } else {
                     android.content.ClipboardManager clipboard = (android.content.ClipboardManager)parentActivity.getSystemService(Context.CLIPBOARD_SERVICE);
@@ -2734,6 +2739,10 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                 DocumentSelectActivity fragment = new DocumentSelectActivity();
                 fragment.delegate = this;
                 ((ApplicationActivity)parentActivity).presentFragment(fragment, "document", false);
+                break;
+            }
+            case R.id.attach_audio: {
+
                 break;
             }
         }
@@ -3189,6 +3198,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                     width = displaySize.x - Utilities.dp(80);
                 }
                 messageLayout.maxWidth = width;
+                message.messageText = getSmiledText(ApplicationLoader.applicationContext, message.messageText, messageTextView);
                 messageLayout.messageTextView.setText(message.messageText);
                 messageLayout.messageTextView.setMaxWidth(width);
             }
@@ -3317,6 +3327,7 @@ public class ChatActivity extends BaseFragment implements SizeNotifierRelativeLa
                 photoImage.setImage(url, null, message.messageOwner.out ? R.drawable.photo_placeholder_out : R.drawable.photo_placeholder_in);
             } else if (type == 11 || type == 10) {
                 int width = displaySize.x - Utilities.dp(30);
+                message.messageText = getSmiledText(ApplicationLoader.applicationContext, message.messageText, messageTextView);
                 messageTextView.setText(message.messageText);
                 messageTextView.setMaxWidth(width);
 

@@ -1194,224 +1194,279 @@ containing a value of this type.
         public static final int dialogs_warning=0x7f020093;
         public static final int doc_blue=0x7f020094;
         public static final int doc_green=0x7f020095;
-        public static final int fast_thumb=0x7f020096;
-        public static final int fastscroll_thumb_default_holo=0x7f020097;
-        public static final int fastscroll_thumb_pressed_holo=0x7f020098;
-        public static final int gallery_action_bar=0x7f020099;
-        public static final int gift_aqua=0x7f02009a;
-        public static final int gift_blue=0x7f02009b;
-        public static final int gift_green=0x7f02009c;
-        public static final int gift_orange=0x7f02009d;
-        public static final int gift_pink=0x7f02009e;
-        public static final int gift_red=0x7f02009f;
-        public static final int gift_violet=0x7f0200a0;
-        public static final int gift_yellow=0x7f0200a1;
-        public static final int gray_button=0x7f0200a2;
-        public static final int group_aqua=0x7f0200a3;
-        public static final int group_blue=0x7f0200a4;
-        public static final int group_green=0x7f0200a5;
-        public static final int group_orange=0x7f0200a6;
-        public static final int group_pink=0x7f0200a7;
-        public static final int group_red=0x7f0200a8;
-        public static final int group_violet=0x7f0200a9;
-        public static final int group_yellow=0x7f0200aa;
-        public static final int header=0x7f0200ab;
-        public static final int holo_edit_text_light=0x7f0200ac;
-        public static final int holo_textfield_activated_holo_light=0x7f0200ad;
-        public static final int holo_textfield_default_holo_light=0x7f0200ae;
-        public static final int holo_textfield_disabled_focused_holo_light=0x7f0200af;
-        public static final int holo_textfield_disabled_holo_light=0x7f0200b0;
-        public static final int holo_textfield_focused_holo_light=0x7f0200b1;
-        public static final int ic_ab_add_member=0x7f0200b2;
-        public static final int ic_ab_attach=0x7f0200b3;
-        public static final int ic_ab_back=0x7f0200b4;
-        public static final int ic_ab_back_white=0x7f0200b5;
-        public static final int ic_ab_compose=0x7f0200b6;
-        public static final int ic_ab_delete_white=0x7f0200b7;
-        public static final int ic_ab_doc=0x7f0200b8;
-        public static final int ic_ab_done=0x7f0200b9;
-        public static final int ic_ab_done_gray=0x7f0200ba;
-        public static final int ic_ab_fwd_copy=0x7f0200bb;
-        public static final int ic_ab_fwd_delete=0x7f0200bc;
-        public static final int ic_ab_fwd_forward=0x7f0200bd;
-        public static final int ic_ab_location=0x7f0200be;
-        public static final int ic_ab_logo=0x7f0200bf;
-        public static final int ic_ab_new=0x7f0200c0;
-        public static final int ic_ab_other=0x7f0200c1;
-        public static final int ic_ab_other_white=0x7f0200c2;
-        public static final int ic_ab_search=0x7f0200c3;
-        public static final int ic_ab_share=0x7f0200c4;
-        public static final int ic_ab_share_white=0x7f0200c5;
-        public static final int ic_attach_gallery=0x7f0200c6;
-        public static final int ic_attach_location=0x7f0200c7;
-        public static final int ic_attach_photo=0x7f0200c8;
-        public static final int ic_attach_video=0x7f0200c9;
-        public static final int ic_auth_next=0x7f0200ca;
-        public static final int ic_directory=0x7f0200cb;
-        public static final int ic_done=0x7f0200cc;
-        public static final int ic_edit=0x7f0200cd;
-        public static final int ic_emoji_backspace=0x7f0200ce;
-        public static final int ic_emoji_bell=0x7f0200cf;
-        public static final int ic_emoji_car=0x7f0200d0;
-        public static final int ic_emoji_flower=0x7f0200d1;
-        public static final int ic_emoji_recent=0x7f0200d2;
-        public static final int ic_emoji_smile=0x7f0200d3;
-        public static final int ic_emoji_symbol=0x7f0200d4;
-        public static final int ic_external_storage=0x7f0200d5;
-        public static final int ic_gallery_background=0x7f0200d6;
-        public static final int ic_launcher=0x7f0200d7;
-        public static final int ic_lock_blue=0x7f0200d8;
-        public static final int ic_lock_green=0x7f0200d9;
-        public static final int ic_lock_white=0x7f0200da;
-        public static final int ic_msg_btn_cross=0x7f0200db;
-        public static final int ic_msg_btn_cross_custom=0x7f0200dc;
-        public static final int ic_msg_in_cross=0x7f0200dd;
-        public static final int ic_msg_panel_hide=0x7f0200de;
-        public static final int ic_msg_panel_kb=0x7f0200df;
-        public static final int ic_msg_panel_smiles=0x7f0200e0;
-        public static final int ic_plusone_medium_off_client=0x7f0200e1;
-        public static final int ic_plusone_small_off_client=0x7f0200e2;
-        public static final int ic_plusone_standard_off_client=0x7f0200e3;
-        public static final int ic_plusone_tall_off_client=0x7f0200e4;
-        public static final int ic_profile_cross=0x7f0200e5;
-        public static final int ic_profile_send_message=0x7f0200e6;
-        public static final int ic_send=0x7f0200e7;
-        public static final int ic_send_disabled=0x7f0200e8;
-        public static final int ic_smiles_backspace=0x7f0200e9;
-        public static final int ic_smiles_backspace_active=0x7f0200ea;
-        public static final int ic_smiles_bell=0x7f0200eb;
-        public static final int ic_smiles_bell_active=0x7f0200ec;
-        public static final int ic_smiles_car=0x7f0200ed;
-        public static final int ic_smiles_car_active=0x7f0200ee;
-        public static final int ic_smiles_flower=0x7f0200ef;
-        public static final int ic_smiles_flower_active=0x7f0200f0;
-        public static final int ic_smiles_grid=0x7f0200f1;
-        public static final int ic_smiles_grid_active=0x7f0200f2;
-        public static final int ic_smiles_recent=0x7f0200f3;
-        public static final int ic_smiles_recent_active=0x7f0200f4;
-        public static final int ic_smiles_smile=0x7f0200f5;
-        public static final int ic_smiles_smile_active=0x7f0200f6;
-        public static final int ic_storage=0x7f0200f7;
-        public static final int ic_video=0x7f0200f8;
-        public static final int intro1=0x7f0200f9;
-        public static final int intro2=0x7f0200fa;
-        public static final int intro3=0x7f0200fb;
-        public static final int intro4=0x7f0200fc;
-        public static final int intro5=0x7f0200fd;
-        public static final int intro6=0x7f0200fe;
-        public static final int intro7=0x7f0200ff;
-        public static final int list_selector=0x7f020100;
-        public static final int loading_animation=0x7f020101;
-        public static final int loading_header_animation=0x7f020102;
-        public static final int location_panel=0x7f020103;
-        public static final int location_send_button_states=0x7f020104;
-        public static final int logout_button_states=0x7f020105;
-        public static final int map_pin=0x7f020106;
-        public static final int messages_list_divider=0x7f020107;
-        public static final int mic=0x7f020108;
-        public static final int mic_button_states=0x7f020109;
-        public static final int mic_pressed=0x7f02010a;
-        public static final int msg_check=0x7f02010b;
-        public static final int msg_check_w=0x7f02010c;
-        public static final int msg_clock=0x7f02010d;
-        public static final int msg_clock_photo=0x7f02010e;
-        public static final int msg_halfcheck=0x7f02010f;
-        public static final int msg_halfcheck_w=0x7f020110;
-        public static final int msg_in=0x7f020111;
-        public static final int msg_in_photo=0x7f020112;
-        public static final int msg_in_photo_selected=0x7f020113;
-        public static final int msg_in_selected=0x7f020114;
-        public static final int msg_out=0x7f020115;
-        public static final int msg_out_photo=0x7f020116;
-        public static final int msg_out_photo_selected=0x7f020117;
-        public static final int msg_out_selected=0x7f020118;
-        public static final int msg_warning=0x7f020119;
-        public static final int newmsg_divider=0x7f02011a;
-        public static final int notification=0x7f02011b;
-        public static final int p2r_progress=0x7f02011c;
-        public static final int p2r_progress_custom=0x7f02011d;
-        public static final int pagedown=0x7f02011e;
-        public static final int pause1=0x7f02011f;
-        public static final int pause1_pressed=0x7f020120;
-        public static final int pause1_states=0x7f020121;
-        public static final int pause2=0x7f020122;
-        public static final int pause2_pressed=0x7f020123;
-        public static final int pause2_states=0x7f020124;
-        public static final int photo_download_cancel_states=0x7f020125;
-        public static final int photo_download_states=0x7f020126;
-        public static final int photo_edit_spinner=0x7f020127;
-        public static final int photo_placeholder_in=0x7f020128;
-        public static final int photo_placeholder_out=0x7f020129;
-        public static final int photo_progress=0x7f02012a;
-        public static final int photo_progress_chat=0x7f02012b;
-        public static final int photo_spinner=0x7f02012c;
-        public static final int photo_spinner_normal=0x7f02012d;
-        public static final int photo_spinner_pressed=0x7f02012e;
-        public static final int photocancel=0x7f02012f;
-        public static final int photocancel_pressed=0x7f020130;
-        public static final int photoload=0x7f020131;
-        public static final int photoload_pressed=0x7f020132;
-        public static final int phototime=0x7f020133;
-        public static final int play1=0x7f020134;
-        public static final int play1_pressed=0x7f020135;
-        public static final int play1_states=0x7f020136;
-        public static final int play2=0x7f020137;
-        public static final int play2_pressed=0x7f020138;
-        public static final int play2_states=0x7f020139;
-        public static final int player1=0x7f02013a;
-        public static final int player1_pressed=0x7f02013b;
-        public static final int player2=0x7f02013c;
-        public static final int player2_pressed=0x7f02013d;
-        public static final int plus=0x7f02013e;
-        public static final int popup_fixed=0x7f02013f;
-        public static final int progress_chat=0x7f020140;
-        public static final int rec=0x7f020141;
-        public static final int regbtn2=0x7f020142;
-        public static final int regbtn2_pressed=0x7f020143;
-        public static final int regbtn_states=0x7f020144;
-        public static final int search_carret=0x7f020145;
-        public static final int send_button_states=0x7f020146;
-        public static final int shadow=0x7f020147;
-        public static final int slidearrow=0x7f020148;
-        public static final int spenner_pressed=0x7f020149;
-        public static final int spinner=0x7f02014a;
-        public static final int spinner_pressed=0x7f02014b;
-        public static final int spinner_states=0x7f02014c;
-        public static final int switch_off1=0x7f02014d;
-        public static final int switch_off1_pressed=0x7f02014e;
-        public static final int switch_on1=0x7f02014f;
-        public static final int switch_on1_pressed=0x7f020150;
-        public static final int system_black=0x7f020151;
-        public static final int system_blue=0x7f020152;
-        public static final int system_loader1=0x7f020153;
-        public static final int system_loader2=0x7f020154;
-        public static final int telegram_avatar=0x7f020155;
-        public static final int tooltip=0x7f020156;
-        public static final int top_pane=0x7f020157;
-        public static final int top_pane_custom=0x7f020158;
-        public static final int transparent=0x7f020159;
-        public static final int typing_dot_chat_frame0=0x7f02015a;
-        public static final int typing_dot_chat_frame1=0x7f02015b;
-        public static final int typing_dot_chat_frame2=0x7f02015c;
-        public static final int typing_dot_chat_frame3=0x7f02015d;
-        public static final int typing_dot_frame0=0x7f02015e;
-        public static final int typing_dot_frame1=0x7f02015f;
-        public static final int typing_dot_frame2=0x7f020160;
-        public static final int typing_dot_frame3=0x7f020161;
-        public static final int typing_dots=0x7f020162;
-        public static final int typing_dots_chat=0x7f020163;
-        public static final int user_aqua=0x7f020164;
-        public static final int user_blue=0x7f020165;
-        public static final int user_green=0x7f020166;
-        public static final int user_orange=0x7f020167;
-        public static final int user_pink=0x7f020168;
-        public static final int user_placeholder=0x7f020169;
-        public static final int user_red=0x7f02016a;
-        public static final int user_violet=0x7f02016b;
-        public static final int user_yellow=0x7f02016c;
-        public static final int viewbtn=0x7f02016d;
-        public static final int viewbtn_pressed=0x7f02016e;
-        public static final int wall_selection=0x7f02016f;
+        public static final int emo_im_61_61=0x7f020096;
+        public static final int emo_im_b2=0x7f020097;
+        public static final int emo_im_banana=0x7f020098;
+        public static final int emo_im_clap=0x7f020099;
+        public static final int emo_im_dancing=0x7f02009a;
+        public static final int emo_im_facepalm=0x7f02009b;
+        public static final int emo_im_gaydude=0x7f02009c;
+        public static final int emo_im_gaysex=0x7f02009d;
+        public static final int emo_im_goofy1=0x7f02009e;
+        public static final int emo_im_happy=0x7f02009f;
+        public static final int emo_im_icon_popcorn=0x7f0200a0;
+        public static final int emo_im_mad=0x7f0200a1;
+        public static final int emo_im_number_one=0x7f0200a2;
+        public static final int emo_im_nusenuse=0x7f0200a3;
+        public static final int emo_im_osvaisacagar=0x7f0200a4;
+        public static final int emo_im_qmeparto=0x7f0200a5;
+        public static final int emo_im_razz=0x7f0200a6;
+        public static final int emo_im_redface=0x7f0200a7;
+        public static final int emo_im_rolleyes=0x7f0200a8;
+        public static final int emo_im_roto2rie=0x7f0200a9;
+        public static final int emo_im_sisi=0x7f0200aa;
+        public static final int emo_im_sisi1=0x7f0200ab;
+        public static final int emo_im_smash2=0x7f0200ac;
+        public static final int emo_im_smile=0x7f0200ad;
+        public static final int emo_im_thumbsup=0x7f0200ae;
+        public static final int emo_im_wink=0x7f0200af;
+        public static final int fast_thumb=0x7f0200b0;
+        public static final int fastscroll_thumb_default_holo=0x7f0200b1;
+        public static final int fastscroll_thumb_pressed_holo=0x7f0200b2;
+        public static final int gallery_action_bar=0x7f0200b3;
+        public static final int gift_aqua=0x7f0200b4;
+        public static final int gift_blue=0x7f0200b5;
+        public static final int gift_green=0x7f0200b6;
+        public static final int gift_orange=0x7f0200b7;
+        public static final int gift_pink=0x7f0200b8;
+        public static final int gift_red=0x7f0200b9;
+        public static final int gift_violet=0x7f0200ba;
+        public static final int gift_yellow=0x7f0200bb;
+        public static final int gray_button=0x7f0200bc;
+        public static final int group_aqua=0x7f0200bd;
+        public static final int group_blue=0x7f0200be;
+        public static final int group_green=0x7f0200bf;
+        public static final int group_orange=0x7f0200c0;
+        public static final int group_pink=0x7f0200c1;
+        public static final int group_red=0x7f0200c2;
+        public static final int group_violet=0x7f0200c3;
+        public static final int group_yellow=0x7f0200c4;
+        public static final int header=0x7f0200c5;
+        public static final int holo_edit_text_light=0x7f0200c6;
+        public static final int holo_textfield_activated_holo_light=0x7f0200c7;
+        public static final int holo_textfield_default_holo_light=0x7f0200c8;
+        public static final int holo_textfield_disabled_focused_holo_light=0x7f0200c9;
+        public static final int holo_textfield_disabled_holo_light=0x7f0200ca;
+        public static final int holo_textfield_focused_holo_light=0x7f0200cb;
+        public static final int ic_ab_add_member=0x7f0200cc;
+        public static final int ic_ab_attach=0x7f0200cd;
+        public static final int ic_ab_back=0x7f0200ce;
+        public static final int ic_ab_back_white=0x7f0200cf;
+        public static final int ic_ab_compose=0x7f0200d0;
+        public static final int ic_ab_delete_white=0x7f0200d1;
+        public static final int ic_ab_doc=0x7f0200d2;
+        public static final int ic_ab_done=0x7f0200d3;
+        public static final int ic_ab_done_gray=0x7f0200d4;
+        public static final int ic_ab_fwd_copy=0x7f0200d5;
+        public static final int ic_ab_fwd_delete=0x7f0200d6;
+        public static final int ic_ab_fwd_forward=0x7f0200d7;
+        public static final int ic_ab_location=0x7f0200d8;
+        public static final int ic_ab_logo=0x7f0200d9;
+        public static final int ic_ab_new=0x7f0200da;
+        public static final int ic_ab_other=0x7f0200db;
+        public static final int ic_ab_other_white=0x7f0200dc;
+        public static final int ic_ab_search=0x7f0200dd;
+        public static final int ic_ab_share=0x7f0200de;
+        public static final int ic_ab_share_white=0x7f0200df;
+        public static final int ic_attach_gallery=0x7f0200e0;
+        public static final int ic_attach_location=0x7f0200e1;
+        public static final int ic_attach_photo=0x7f0200e2;
+        public static final int ic_attach_video=0x7f0200e3;
+        public static final int ic_auth_next=0x7f0200e4;
+        public static final int ic_directory=0x7f0200e5;
+        public static final int ic_done=0x7f0200e6;
+        public static final int ic_edit=0x7f0200e7;
+        public static final int ic_emoji_backspace=0x7f0200e8;
+        public static final int ic_emoji_bell=0x7f0200e9;
+        public static final int ic_emoji_car=0x7f0200ea;
+        public static final int ic_emoji_fc=0x7f0200eb;
+        public static final int ic_emoji_flower=0x7f0200ec;
+        public static final int ic_emoji_recent=0x7f0200ed;
+        public static final int ic_emoji_smile=0x7f0200ee;
+        public static final int ic_emoji_symbol=0x7f0200ef;
+        public static final int ic_external_storage=0x7f0200f0;
+        public static final int ic_gallery_background=0x7f0200f1;
+        public static final int ic_happy=0x7f0200f2;
+        public static final int ic_launcher=0x7f0200f3;
+        public static final int ic_lock_blue=0x7f0200f4;
+        public static final int ic_lock_green=0x7f0200f5;
+        public static final int ic_lock_white=0x7f0200f6;
+        public static final int ic_msg_btn_cross=0x7f0200f7;
+        public static final int ic_msg_btn_cross_custom=0x7f0200f8;
+        public static final int ic_msg_in_cross=0x7f0200f9;
+        public static final int ic_msg_panel_hide=0x7f0200fa;
+        public static final int ic_msg_panel_kb=0x7f0200fb;
+        public static final int ic_msg_panel_smiles=0x7f0200fc;
+        public static final int ic_plusone_medium_off_client=0x7f0200fd;
+        public static final int ic_plusone_small_off_client=0x7f0200fe;
+        public static final int ic_plusone_standard_off_client=0x7f0200ff;
+        public static final int ic_plusone_tall_off_client=0x7f020100;
+        public static final int ic_profile_cross=0x7f020101;
+        public static final int ic_profile_send_message=0x7f020102;
+        public static final int ic_send=0x7f020103;
+        public static final int ic_send_disabled=0x7f020104;
+        public static final int ic_smiles_61_61=0x7f020105;
+        public static final int ic_smiles_b2=0x7f020106;
+        public static final int ic_smiles_backspace=0x7f020107;
+        public static final int ic_smiles_backspace_active=0x7f020108;
+        public static final int ic_smiles_banana=0x7f020109;
+        public static final int ic_smiles_bell=0x7f02010a;
+        public static final int ic_smiles_bell_active=0x7f02010b;
+        public static final int ic_smiles_car=0x7f02010c;
+        public static final int ic_smiles_car_active=0x7f02010d;
+        public static final int ic_smiles_clap=0x7f02010e;
+        public static final int ic_smiles_dancing=0x7f02010f;
+        public static final int ic_smiles_facepalm=0x7f020110;
+        public static final int ic_smiles_fc=0x7f020111;
+        public static final int ic_smiles_fc_active=0x7f020112;
+        public static final int ic_smiles_flower=0x7f020113;
+        public static final int ic_smiles_flower_active=0x7f020114;
+        public static final int ic_smiles_gaydude=0x7f020115;
+        public static final int ic_smiles_gaysex=0x7f020116;
+        public static final int ic_smiles_goofy=0x7f020117;
+        public static final int ic_smiles_grid=0x7f020118;
+        public static final int ic_smiles_grid_active=0x7f020119;
+        public static final int ic_smiles_icon_popcorn=0x7f02011a;
+        public static final int ic_smiles_mad=0x7f02011b;
+        public static final int ic_smiles_number_one=0x7f02011c;
+        public static final int ic_smiles_nusenuse=0x7f02011d;
+        public static final int ic_smiles_osvaisacagar=0x7f02011e;
+        public static final int ic_smiles_qmp=0x7f02011f;
+        public static final int ic_smiles_razz=0x7f020120;
+        public static final int ic_smiles_recent=0x7f020121;
+        public static final int ic_smiles_recent_active=0x7f020122;
+        public static final int ic_smiles_redface=0x7f020123;
+        public static final int ic_smiles_rolleyes=0x7f020124;
+        public static final int ic_smiles_roto2rie=0x7f020125;
+        public static final int ic_smiles_sisi=0x7f020126;
+        public static final int ic_smiles_sisi1=0x7f020127;
+        public static final int ic_smiles_smash2=0x7f020128;
+        public static final int ic_smiles_smile=0x7f020129;
+        public static final int ic_smiles_smile_active=0x7f02012a;
+        public static final int ic_smiles_smiley=0x7f02012b;
+        public static final int ic_smiles_thumbsup=0x7f02012c;
+        public static final int ic_smiles_wink=0x7f02012d;
+        public static final int ic_storage=0x7f02012e;
+        public static final int ic_video=0x7f02012f;
+        public static final int intro1=0x7f020130;
+        public static final int intro2=0x7f020131;
+        public static final int intro3=0x7f020132;
+        public static final int intro4=0x7f020133;
+        public static final int intro5=0x7f020134;
+        public static final int intro6=0x7f020135;
+        public static final int intro7=0x7f020136;
+        public static final int list_selector=0x7f020137;
+        public static final int loading_animation=0x7f020138;
+        public static final int loading_header_animation=0x7f020139;
+        public static final int location_panel=0x7f02013a;
+        public static final int location_send_button_states=0x7f02013b;
+        public static final int logout_button_states=0x7f02013c;
+        public static final int map_pin=0x7f02013d;
+        public static final int messages_list_divider=0x7f02013e;
+        public static final int mic=0x7f02013f;
+        public static final int mic_button_states=0x7f020140;
+        public static final int mic_pressed=0x7f020141;
+        public static final int msg_check=0x7f020142;
+        public static final int msg_check_w=0x7f020143;
+        public static final int msg_clock=0x7f020144;
+        public static final int msg_clock_photo=0x7f020145;
+        public static final int msg_halfcheck=0x7f020146;
+        public static final int msg_halfcheck_w=0x7f020147;
+        public static final int msg_in=0x7f020148;
+        public static final int msg_in_photo=0x7f020149;
+        public static final int msg_in_photo_selected=0x7f02014a;
+        public static final int msg_in_selected=0x7f02014b;
+        public static final int msg_out=0x7f02014c;
+        public static final int msg_out_photo=0x7f02014d;
+        public static final int msg_out_photo_selected=0x7f02014e;
+        public static final int msg_out_selected=0x7f02014f;
+        public static final int msg_warning=0x7f020150;
+        public static final int newmsg_divider=0x7f020151;
+        public static final int notification=0x7f020152;
+        public static final int p2r_progress=0x7f020153;
+        public static final int p2r_progress_custom=0x7f020154;
+        public static final int pagedown=0x7f020155;
+        public static final int pause1=0x7f020156;
+        public static final int pause1_pressed=0x7f020157;
+        public static final int pause1_states=0x7f020158;
+        public static final int pause2=0x7f020159;
+        public static final int pause2_pressed=0x7f02015a;
+        public static final int pause2_states=0x7f02015b;
+        public static final int photo_download_cancel_states=0x7f02015c;
+        public static final int photo_download_states=0x7f02015d;
+        public static final int photo_edit_spinner=0x7f02015e;
+        public static final int photo_placeholder_in=0x7f02015f;
+        public static final int photo_placeholder_out=0x7f020160;
+        public static final int photo_progress=0x7f020161;
+        public static final int photo_progress_chat=0x7f020162;
+        public static final int photo_spinner=0x7f020163;
+        public static final int photo_spinner_normal=0x7f020164;
+        public static final int photo_spinner_pressed=0x7f020165;
+        public static final int photocancel=0x7f020166;
+        public static final int photocancel_pressed=0x7f020167;
+        public static final int photoload=0x7f020168;
+        public static final int photoload_pressed=0x7f020169;
+        public static final int phototime=0x7f02016a;
+        public static final int play1=0x7f02016b;
+        public static final int play1_pressed=0x7f02016c;
+        public static final int play1_states=0x7f02016d;
+        public static final int play2=0x7f02016e;
+        public static final int play2_pressed=0x7f02016f;
+        public static final int play2_states=0x7f020170;
+        public static final int player1=0x7f020171;
+        public static final int player1_pressed=0x7f020172;
+        public static final int player2=0x7f020173;
+        public static final int player2_pressed=0x7f020174;
+        public static final int plus=0x7f020175;
+        public static final int popup_fixed=0x7f020176;
+        public static final int progress_chat=0x7f020177;
+        public static final int rec=0x7f020178;
+        public static final int regbtn2=0x7f020179;
+        public static final int regbtn2_pressed=0x7f02017a;
+        public static final int regbtn_states=0x7f02017b;
+        public static final int search_carret=0x7f02017c;
+        public static final int send_button_states=0x7f02017d;
+        public static final int shadow=0x7f02017e;
+        public static final int slidearrow=0x7f02017f;
+        public static final int spenner_pressed=0x7f020180;
+        public static final int spinner=0x7f020181;
+        public static final int spinner_pressed=0x7f020182;
+        public static final int spinner_states=0x7f020183;
+        public static final int switch_off1=0x7f020184;
+        public static final int switch_off1_pressed=0x7f020185;
+        public static final int switch_on1=0x7f020186;
+        public static final int switch_on1_pressed=0x7f020187;
+        public static final int system_black=0x7f020188;
+        public static final int system_blue=0x7f020189;
+        public static final int system_loader1=0x7f02018a;
+        public static final int system_loader2=0x7f02018b;
+        public static final int telegram_avatar=0x7f02018c;
+        public static final int tooltip=0x7f02018d;
+        public static final int top_pane=0x7f02018e;
+        public static final int top_pane_custom=0x7f02018f;
+        public static final int transparent=0x7f020190;
+        public static final int typing_dot_chat_frame0=0x7f020191;
+        public static final int typing_dot_chat_frame1=0x7f020192;
+        public static final int typing_dot_chat_frame2=0x7f020193;
+        public static final int typing_dot_chat_frame3=0x7f020194;
+        public static final int typing_dot_frame0=0x7f020195;
+        public static final int typing_dot_frame1=0x7f020196;
+        public static final int typing_dot_frame2=0x7f020197;
+        public static final int typing_dot_frame3=0x7f020198;
+        public static final int typing_dots=0x7f020199;
+        public static final int typing_dots_chat=0x7f02019a;
+        public static final int user_aqua=0x7f02019b;
+        public static final int user_blue=0x7f02019c;
+        public static final int user_green=0x7f02019d;
+        public static final int user_orange=0x7f02019e;
+        public static final int user_pink=0x7f02019f;
+        public static final int user_placeholder=0x7f0201a0;
+        public static final int user_red=0x7f0201a1;
+        public static final int user_violet=0x7f0201a2;
+        public static final int user_yellow=0x7f0201a3;
+        public static final int viewbtn=0x7f0201a4;
+        public static final int viewbtn_pressed=0x7f0201a5;
+        public static final int wall_selection=0x7f0201a6;
     }
     public static final class id {
         public static final int HLRelativeLayout1=0x7f09007b;
@@ -1429,10 +1484,11 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f090027;
         public static final int action_progress=0x7f090087;
         public static final int activity_chooser_view_content=0x7f090028;
-        public static final int add_contact=0x7f0900ea;
+        public static final int add_contact=0x7f0900eb;
         public static final int add_contact_button=0x7f09004b;
         public static final int add_contact_view=0x7f09004a;
         public static final int always=0x7f090012;
+        public static final int attach_audio=0x7f0900d4;
         public static final int attach_document=0x7f0900d2;
         public static final int attach_gallery=0x7f0900d0;
         public static final int attach_location=0x7f0900d3;
@@ -1443,8 +1499,8 @@ containing a value of this type.
         public static final int back_button_background=0x7f0900ca;
         public static final int background_image=0x7f090058;
         public static final int beginning=0x7f09000a;
-        public static final int block_contact=0x7f0900e6;
-        public static final int block_user=0x7f0900d9;
+        public static final int block_contact=0x7f0900e7;
+        public static final int block_user=0x7f0900da;
         public static final int bottom_overlay=0x7f090066;
         public static final int bottom_overlay_chat=0x7f090068;
         public static final int bottom_overlay_chat_text=0x7f090069;
@@ -1464,7 +1520,7 @@ containing a value of this type.
         public static final int chat_layout=0x7f090057;
         public static final int chat_list_view=0x7f09005a;
         public static final int chat_menu_attach=0x7f0900ce;
-        public static final int chat_menu_avatar=0x7f0900d4;
+        public static final int chat_menu_avatar=0x7f0900d5;
         public static final int chat_message_text=0x7f090041;
         public static final int chat_photo_image=0x7f090042;
         public static final int chat_row_check=0x7f09006c;
@@ -1488,10 +1544,10 @@ containing a value of this type.
         public static final int contact_avatar=0x7f090046;
         public static final int container=0x7f09003f;
         public static final int container_view=0x7f0900bd;
-        public static final int copy=0x7f0900df;
+        public static final int copy=0x7f0900e0;
         public static final int default_activity_button=0x7f09002b;
-        public static final int delete=0x7f0900de;
-        public static final int delete_contact=0x7f0900e9;
+        public static final int delete=0x7f0900df;
+        public static final int delete_contact=0x7f0900ea;
         public static final int dialog=0x7f090015;
         public static final int disableHome=0x7f090008;
         public static final int docs_item_info=0x7f09007e;
@@ -1500,18 +1556,18 @@ containing a value of this type.
         public static final int docs_item_type=0x7f09007c;
         public static final int done_button=0x7f090091;
         public static final int done_button_text=0x7f0900c4;
-        public static final int done_menu_item=0x7f0900d8;
+        public static final int done_menu_item=0x7f0900d9;
         public static final int dropdown=0x7f090016;
-        public static final int edit_contact=0x7f0900e8;
+        public static final int edit_contact=0x7f0900e9;
         public static final int edit_query=0x7f090033;
         public static final int end=0x7f09000c;
         public static final int expand_activities_button=0x7f090029;
         public static final int expanded_menu=0x7f09002f;
         public static final int fake_title_view=0x7f09008d;
         public static final int first_name_field=0x7f090076;
-        public static final int forward=0x7f0900e0;
-        public static final int gallery_menu_save=0x7f0900d6;
-        public static final int gallery_menu_showall=0x7f0900d7;
+        public static final int forward=0x7f0900e1;
+        public static final int gallery_menu_save=0x7f0900d7;
+        public static final int gallery_menu_showall=0x7f0900d8;
         public static final int gallery_view_bottom_view=0x7f090088;
         public static final int gallery_view_delete_button=0x7f09008a;
         public static final int gallery_view_name_text=0x7f09008b;
@@ -1557,10 +1613,10 @@ containing a value of this type.
         public static final int login_sms_code_field=0x7f0900ae;
         public static final int login_sms_confirm_text=0x7f0900ad;
         public static final int login_time_text=0x7f0900af;
-        public static final int map_list_menu_hybrid=0x7f0900dd;
-        public static final int map_list_menu_map=0x7f0900db;
-        public static final int map_list_menu_satellite=0x7f0900dc;
-        public static final int map_to_my_location=0x7f0900da;
+        public static final int map_list_menu_hybrid=0x7f0900de;
+        public static final int map_list_menu_map=0x7f0900dc;
+        public static final int map_list_menu_satellite=0x7f0900dd;
+        public static final int map_to_my_location=0x7f0900db;
         public static final int map_view=0x7f0900a1;
         public static final int media_grid=0x7f0900b7;
         public static final int media_photo_image=0x7f0900b8;
@@ -1568,12 +1624,12 @@ containing a value of this type.
         public static final int message_layout=0x7f090050;
         public static final int message_text=0x7f09009f;
         public static final int message_text_view=0x7f0900c1;
-        public static final int messages_list_menu_contacts=0x7f0900e4;
-        public static final int messages_list_menu_new_chat=0x7f0900e2;
-        public static final int messages_list_menu_new_messages=0x7f0900e1;
-        public static final int messages_list_menu_new_secret_chat=0x7f0900e3;
-        public static final int messages_list_menu_search=0x7f0900d5;
-        public static final int messages_list_menu_settings=0x7f0900e5;
+        public static final int messages_list_menu_contacts=0x7f0900e5;
+        public static final int messages_list_menu_new_chat=0x7f0900e3;
+        public static final int messages_list_menu_new_messages=0x7f0900e2;
+        public static final int messages_list_menu_new_secret_chat=0x7f0900e4;
+        public static final int messages_list_menu_search=0x7f0900d6;
+        public static final int messages_list_menu_settings=0x7f0900e6;
         public static final int messages_list_row_avatar=0x7f09006e;
         public static final int messages_list_row_message=0x7f090095;
         public static final int messages_list_row_name=0x7f09006f;
@@ -1624,7 +1680,7 @@ containing a value of this type.
         public static final int settings_row_text_detail=0x7f09007a;
         public static final int settings_section_text=0x7f0900c6;
         public static final int settings_section_view=0x7f0900c5;
-        public static final int share_contact=0x7f0900e7;
+        public static final int share_contact=0x7f0900e8;
         public static final int shared_layout=0x7f090045;
         public static final int shortcut=0x7f090031;
         public static final int showCustom=0x7f090007;
@@ -1838,301 +1894,302 @@ containing a value of this type.
         public static final int Cancel=0x7f0c0030;
         public static final int CancelDownload=0x7f0c0031;
         public static final int CancelRegistration=0x7f0c0032;
-        public static final int ChatBackground=0x7f0c0033;
-        public static final int ChatDocument=0x7f0c0034;
-        public static final int ChatGallery=0x7f0c0035;
-        public static final int ChatLocation=0x7f0c0036;
-        public static final int ChatTakePhoto=0x7f0c0037;
-        public static final int ChatVideo=0x7f0c0038;
-        public static final int Chats=0x7f0c0039;
-        public static final int ChooseCountry=0x7f0c003a;
-        public static final int ClearHistory=0x7f0c003b;
-        public static final int Code=0x7f0c003c;
-        public static final int CodeExpired=0x7f0c003d;
-        public static final int Connecting=0x7f0c003e;
-        public static final int ContactInfo=0x7f0c003f;
-        public static final int ContactJoined=0x7f0c0040;
-        public static final int Contacts=0x7f0c0041;
-        public static final int Copy=0x7f0c0042;
-        public static final int CreateEncryptedChatError=0x7f0c0043;
-        public static final int CreateEncryptedChatOutdatedError=0x7f0c0044;
-        public static final int DOWNLOAD=0x7f0c0045;
-        public static final int Default=0x7f0c0046;
-        public static final int Delete=0x7f0c0047;
-        public static final int DeleteAndExit=0x7f0c0048;
-        public static final int DeleteChat=0x7f0c0049;
-        public static final int DeleteChatQuestion=0x7f0c004a;
-        public static final int DeleteContact=0x7f0c004b;
-        public static final int DeletePhoto=0x7f0c004c;
-        public static final int DeleteThisGroup=0x7f0c004d;
-        public static final int Done=0x7f0c004e;
-        public static final int Edit=0x7f0c004f;
-        public static final int EditContact=0x7f0c0050;
-        public static final int EnableAnimations=0x7f0c0051;
-        public static final int EncryptedChatAccepted=0x7f0c0052;
-        public static final int EncryptedChatRequested=0x7f0c0053;
-        public static final int EncryptedChatStartedIncoming=0x7f0c0054;
-        public static final int EncryptedChatStartedOutgoing=0x7f0c0055;
-        public static final int EncryptedDescription1=0x7f0c0056;
-        public static final int EncryptedDescription2=0x7f0c0057;
-        public static final int EncryptedDescription3=0x7f0c0058;
-        public static final int EncryptedDescription4=0x7f0c0059;
-        public static final int EncryptedDescriptionTitle=0x7f0c005a;
-        public static final int EncryptedPlaceholderTitleIncoming=0x7f0c005b;
-        public static final int EncryptedPlaceholderTitleOutgoing=0x7f0c005c;
-        public static final int EncryptionKey=0x7f0c005d;
-        public static final int EncryptionKeyDescription=0x7f0c005e;
-        public static final int EncryptionProcessing=0x7f0c005f;
-        public static final int EncryptionRejected=0x7f0c0060;
-        public static final int EnterGroupNamePlaceholder=0x7f0c0061;
-        public static final int EnterGroupNameTitle=0x7f0c0062;
-        public static final int Events=0x7f0c0063;
-        public static final int ExternalStorage=0x7f0c0064;
-        public static final int FewNewMessages=0x7f0c0065;
-        public static final int FileUploadLimit=0x7f0c0066;
-        public static final int FirstName=0x7f0c0067;
-        public static final int FloodWait=0x7f0c0068;
-        public static final int Forward=0x7f0c0069;
-        public static final int ForwardMessagesTo=0x7f0c006a;
-        public static final int ForwardedMessage=0x7f0c006b;
-        public static final int FreeOfTotal=0x7f0c006c;
-        public static final int From=0x7f0c006d;
-        public static final int FromCamera=0x7f0c006e;
-        public static final int FromGalley=0x7f0c006f;
-        public static final int FromYou=0x7f0c0070;
-        public static final int Gallery=0x7f0c0071;
-        public static final int GotAQuestion=0x7f0c0072;
-        public static final int GroupInfo=0x7f0c0073;
-        public static final int GroupName=0x7f0c0074;
-        public static final int GroupNotifications=0x7f0c0075;
-        public static final int HiddenName=0x7f0c0076;
-        public static final int HideLastSeen=0x7f0c0159;
-        public static final int Hybrid=0x7f0c0077;
-        public static final int InAppNotifications=0x7f0c0078;
-        public static final int InAppPreview=0x7f0c0079;
-        public static final int InAppSounds=0x7f0c007a;
-        public static final int InAppVibrate=0x7f0c007b;
-        public static final int InternalStorage=0x7f0c007c;
-        public static final int InvalidCode=0x7f0c007d;
-        public static final int InvalidFirstName=0x7f0c007e;
-        public static final int InvalidLastName=0x7f0c007f;
-        public static final int InvalidPhoneNumber=0x7f0c0080;
-        public static final int Invisible=0x7f0c0081;
-        public static final int InviteFriends=0x7f0c0082;
-        public static final int InviteText=0x7f0c0083;
-        public static final int InviteUser=0x7f0c0084;
-        public static final int IsTyping=0x7f0c0085;
-        public static final int KMetersAway=0x7f0c0086;
-        public static final int KickFromGroup=0x7f0c0087;
-        public static final int LastName=0x7f0c0088;
-        public static final int LastSeen=0x7f0c0089;
-        public static final int LastSeenDate=0x7f0c008a;
-        public static final int Loading=0x7f0c008b;
-        public static final int LogOut=0x7f0c008c;
-        public static final int MEMBER=0x7f0c008d;
-        public static final int MEMBERS=0x7f0c008e;
-        public static final int Map=0x7f0c008f;
-        public static final int Members=0x7f0c0090;
-        public static final int Message=0x7f0c0091;
-        public static final int MessageLifetime=0x7f0c0092;
-        public static final int MessageLifetime1d=0x7f0c0093;
-        public static final int MessageLifetime1h=0x7f0c0094;
-        public static final int MessageLifetime1m=0x7f0c0095;
-        public static final int MessageLifetime1w=0x7f0c0096;
-        public static final int MessageLifetime2s=0x7f0c0097;
-        public static final int MessageLifetime5s=0x7f0c0098;
-        public static final int MessageLifetimeChanged=0x7f0c0099;
-        public static final int MessageLifetimeChangedOutgoing=0x7f0c009a;
-        public static final int MessageLifetimeRemoved=0x7f0c009b;
-        public static final int MessageLifetimeYouRemoved=0x7f0c009c;
-        public static final int MessageNotifications=0x7f0c009d;
-        public static final int MessagePreview=0x7f0c009e;
-        public static final int MessagesSettings=0x7f0c009f;
-        public static final int MetersAway=0x7f0c00a0;
-        public static final int MyLocation=0x7f0c00a1;
-        public static final int NewGroup=0x7f0c00a2;
-        public static final int NewMessages=0x7f0c00a3;
-        public static final int NewSecretChat=0x7f0c00a4;
-        public static final int Next=0x7f0c00a5;
-        public static final int NoBlocked=0x7f0c00a6;
-        public static final int NoChats=0x7f0c00a7;
-        public static final int NoChatsHelp=0x7f0c00a8;
-        public static final int NoContacts=0x7f0c00a9;
-        public static final int NoFiles=0x7f0c00aa;
-        public static final int NoHandleAppInstalled=0x7f0c00ab;
-        public static final int NoMedia=0x7f0c00ac;
-        public static final int NoMessages=0x7f0c00ad;
-        public static final int NoPlayerInstalled=0x7f0c00ae;
-        public static final int NoRecent=0x7f0c00af;
-        public static final int NoResult=0x7f0c00b0;
-        public static final int NoSound=0x7f0c00b1;
-        public static final int NotMounted=0x7f0c00b2;
-        public static final int NotificationContactJoined=0x7f0c00b3;
-        public static final int NotificationContactNewPhoto=0x7f0c00b4;
-        public static final int NotificationEditedGroupName=0x7f0c00b5;
-        public static final int NotificationEditedGroupPhoto=0x7f0c00b6;
-        public static final int NotificationGroupAddMember=0x7f0c00b7;
-        public static final int NotificationGroupKickMember=0x7f0c00b8;
-        public static final int NotificationGroupKickYou=0x7f0c00b9;
-        public static final int NotificationGroupLeftMember=0x7f0c00ba;
-        public static final int NotificationInvitedToGroup=0x7f0c00bb;
-        public static final int NotificationMessageAudio=0x7f0c00bc;
-        public static final int NotificationMessageContact=0x7f0c00bd;
-        public static final int NotificationMessageDocument=0x7f0c00be;
-        public static final int NotificationMessageGroupAudio=0x7f0c00bf;
-        public static final int NotificationMessageGroupContact=0x7f0c00c0;
-        public static final int NotificationMessageGroupDocument=0x7f0c00c1;
-        public static final int NotificationMessageGroupMap=0x7f0c00c2;
-        public static final int NotificationMessageGroupNoText=0x7f0c00c3;
-        public static final int NotificationMessageGroupPhoto=0x7f0c00c4;
-        public static final int NotificationMessageGroupText=0x7f0c00c5;
-        public static final int NotificationMessageGroupVideo=0x7f0c00c6;
-        public static final int NotificationMessageMap=0x7f0c00c7;
-        public static final int NotificationMessageNoText=0x7f0c00c8;
-        public static final int NotificationMessagePhoto=0x7f0c00c9;
-        public static final int NotificationMessageText=0x7f0c00ca;
-        public static final int NotificationMessageVideo=0x7f0c00cb;
-        public static final int NotificationUnrecognizedDevice=0x7f0c00cc;
-        public static final int Notifications=0x7f0c00cd;
-        public static final int NotificationsAndSounds=0x7f0c00ce;
-        public static final int OK=0x7f0c00cf;
-        public static final int Of=0x7f0c00d0;
-        public static final int Offline=0x7f0c00d1;
-        public static final int OneNewMessage=0x7f0c00d2;
-        public static final int Online=0x7f0c00d3;
-        public static final int Open=0x7f0c00d4;
-        public static final int OpenPhoto=0x7f0c00d5;
-        public static final int OtherAt=0x7f0c00d6;
-        public static final int PHONE=0x7f0c00d7;
-        public static final int Page1Message=0x7f0c00d8;
-        public static final int Page1Title=0x7f0c00d9;
-        public static final int Page2Message=0x7f0c00da;
-        public static final int Page2Title=0x7f0c00db;
-        public static final int Page3Message=0x7f0c00dc;
-        public static final int Page3Title=0x7f0c00dd;
-        public static final int Page4Message=0x7f0c00de;
-        public static final int Page4Title=0x7f0c00df;
-        public static final int Page5Message=0x7f0c00e0;
-        public static final int Page5Title=0x7f0c00e1;
-        public static final int Page6Message=0x7f0c00e2;
-        public static final int Page6Title=0x7f0c00e3;
-        public static final int Page7Message=0x7f0c00e4;
-        public static final int Page7Title=0x7f0c00e5;
-        public static final int PhoneHome=0x7f0c00e6;
-        public static final int PhoneMain=0x7f0c00e7;
-        public static final int PhoneMobile=0x7f0c00e8;
-        public static final int PhoneOther=0x7f0c00e9;
-        public static final int PhoneWork=0x7f0c00ea;
-        public static final int RegisterText=0x7f0c00eb;
-        public static final int Reset=0x7f0c00ec;
-        public static final int ResetAllNotifications=0x7f0c00ed;
-        public static final int ResetNotificationsText=0x7f0c00ee;
-        public static final int Retry=0x7f0c00ef;
-        public static final int SETTINGS=0x7f0c00f0;
-        public static final int SHAREDMEDIA=0x7f0c00f1;
-        public static final int Satellite=0x7f0c00f2;
-        public static final int SaveIncomingPhotos=0x7f0c00f3;
-        public static final int SaveToGallery=0x7f0c00f4;
-        public static final int SdCard=0x7f0c00f5;
-        public static final int Search=0x7f0c00f6;
-        public static final int SecretTitle=0x7f0c00f7;
-        public static final int SelectChat=0x7f0c00f8;
-        public static final int SelectContact=0x7f0c00f9;
-        public static final int SelectFile=0x7f0c00fa;
-        public static final int Selected=0x7f0c00fb;
-        public static final int Send=0x7f0c00fc;
-        public static final int SendByEnter=0x7f0c00fd;
-        public static final int SendLocation=0x7f0c00fe;
-        public static final int SendMessageTo=0x7f0c00ff;
-        public static final int SentSmsCode=0x7f0c0100;
-        public static final int Set=0x7f0c0101;
-        public static final int Settings=0x7f0c0102;
-        public static final int ShareContact=0x7f0c0103;
-        public static final int ShareLocation=0x7f0c0104;
-        public static final int ShareMyContactInfo=0x7f0c0105;
-        public static final int SharedMedia=0x7f0c0106;
-        public static final int ShortMessageLifetime1d=0x7f0c0107;
-        public static final int ShortMessageLifetime1h=0x7f0c0108;
-        public static final int ShortMessageLifetime1m=0x7f0c0109;
-        public static final int ShortMessageLifetime1w=0x7f0c010a;
-        public static final int ShortMessageLifetime2s=0x7f0c010b;
-        public static final int ShortMessageLifetime5s=0x7f0c010c;
-        public static final int ShortMessageLifetimeForever=0x7f0c010d;
-        public static final int ShowAllMedia=0x7f0c010e;
-        public static final int Sound=0x7f0c010f;
-        public static final int StartEncryptedChat=0x7f0c0110;
-        public static final int StartMessaging=0x7f0c0111;
-        public static final int StartText=0x7f0c0112;
-        public static final int Support=0x7f0c0113;
-        public static final int SystemRoot=0x7f0c0114;
-        public static final int TerminateAllSessions=0x7f0c0115;
-        public static final int TextSize=0x7f0c0116;
-        public static final int TodayAt=0x7f0c0117;
-        public static final int TypeMessage=0x7f0c0118;
-        public static final int Typing=0x7f0c0119;
-        public static final int Unblock=0x7f0c011a;
-        public static final int UnblockText=0x7f0c011b;
-        public static final int UndoAllCustom=0x7f0c011c;
-        public static final int UnknownError=0x7f0c011d;
-        public static final int UnsuppotedMedia=0x7f0c011e;
-        public static final int Updating=0x7f0c011f;
-        public static final int UsbActive=0x7f0c0120;
-        public static final int Vibrate=0x7f0c0121;
-        public static final int ViewLocation=0x7f0c0122;
-        public static final int ViewPhoto=0x7f0c0123;
-        public static final int ViewVideo=0x7f0c0124;
-        public static final int WaitingForNetwork=0x7f0c0125;
-        public static final int WrongCountry=0x7f0c0126;
-        public static final int WrongNumber=0x7f0c0127;
-        public static final int Yesterday=0x7f0c0128;
-        public static final int YesterdayAt=0x7f0c0129;
-        public static final int YouHaveNewMessage=0x7f0c012a;
-        public static final int YouLeft=0x7f0c012b;
-        public static final int YouWereKicked=0x7f0c012c;
-        public static final int YourCode=0x7f0c012d;
-        public static final int YourFirstNameAndLastName=0x7f0c012e;
-        public static final int YourName=0x7f0c012f;
-        public static final int YourPhone=0x7f0c0130;
-        public static final int YourPhoneNumber=0x7f0c0131;
-        public static final int abc_action_bar_home_description=0x7f0c0132;
-        public static final int abc_action_bar_up_description=0x7f0c0133;
-        public static final int abc_action_menu_overflow_description=0x7f0c0134;
-        public static final int abc_action_mode_done=0x7f0c0135;
-        public static final int abc_activity_chooser_view_see_all=0x7f0c0136;
-        public static final int abc_activitychooserview_choose_application=0x7f0c0137;
-        public static final int abc_searchview_description_clear=0x7f0c0138;
-        public static final int abc_searchview_description_query=0x7f0c0139;
-        public static final int abc_searchview_description_search=0x7f0c013a;
-        public static final int abc_searchview_description_submit=0x7f0c013b;
-        public static final int abc_searchview_description_voice=0x7f0c013c;
-        public static final int abc_shareactionprovider_share_with=0x7f0c013d;
-        public static final int abc_shareactionprovider_share_with_application=0x7f0c013e;
-        public static final int auth_client_needs_enabling_title=0x7f0c013f;
-        public static final int auth_client_needs_installation_title=0x7f0c0140;
-        public static final int auth_client_needs_update_title=0x7f0c0141;
-        public static final int auth_client_play_services_err_notification_msg=0x7f0c0142;
-        public static final int auth_client_requested_by_msg=0x7f0c0143;
-        public static final int auth_client_using_bad_version_title=0x7f0c0144;
-        public static final int common_google_play_services_enable_button=0x7f0c0145;
-        public static final int common_google_play_services_enable_text=0x7f0c0146;
-        public static final int common_google_play_services_enable_title=0x7f0c0147;
-        public static final int common_google_play_services_install_button=0x7f0c0148;
-        public static final int common_google_play_services_install_text_phone=0x7f0c0149;
-        public static final int common_google_play_services_install_text_tablet=0x7f0c014a;
-        public static final int common_google_play_services_install_title=0x7f0c014b;
-        public static final int common_google_play_services_invalid_account_text=0x7f0c014c;
-        public static final int common_google_play_services_invalid_account_title=0x7f0c014d;
-        public static final int common_google_play_services_network_error_text=0x7f0c014e;
-        public static final int common_google_play_services_network_error_title=0x7f0c014f;
-        public static final int common_google_play_services_unknown_issue=0x7f0c0150;
-        public static final int common_google_play_services_unsupported_date_text=0x7f0c0151;
-        public static final int common_google_play_services_unsupported_text=0x7f0c0152;
-        public static final int common_google_play_services_unsupported_title=0x7f0c0153;
-        public static final int common_google_play_services_update_button=0x7f0c0154;
-        public static final int common_google_play_services_update_text=0x7f0c0155;
-        public static final int common_google_play_services_update_title=0x7f0c0156;
-        public static final int common_signin_button_text=0x7f0c0157;
-        public static final int common_signin_button_text_long=0x7f0c0158;
+        public static final int ChatAudio=0x7f0c0033;
+        public static final int ChatBackground=0x7f0c0034;
+        public static final int ChatDocument=0x7f0c0035;
+        public static final int ChatGallery=0x7f0c0036;
+        public static final int ChatLocation=0x7f0c0037;
+        public static final int ChatTakePhoto=0x7f0c0038;
+        public static final int ChatVideo=0x7f0c0039;
+        public static final int Chats=0x7f0c003a;
+        public static final int ChooseCountry=0x7f0c003b;
+        public static final int ClearHistory=0x7f0c003c;
+        public static final int Code=0x7f0c003d;
+        public static final int CodeExpired=0x7f0c003e;
+        public static final int Connecting=0x7f0c003f;
+        public static final int ContactInfo=0x7f0c0040;
+        public static final int ContactJoined=0x7f0c0041;
+        public static final int Contacts=0x7f0c0042;
+        public static final int Copy=0x7f0c0043;
+        public static final int CreateEncryptedChatError=0x7f0c0044;
+        public static final int CreateEncryptedChatOutdatedError=0x7f0c0045;
+        public static final int DOWNLOAD=0x7f0c0046;
+        public static final int Default=0x7f0c0047;
+        public static final int Delete=0x7f0c0048;
+        public static final int DeleteAndExit=0x7f0c0049;
+        public static final int DeleteChat=0x7f0c004a;
+        public static final int DeleteChatQuestion=0x7f0c004b;
+        public static final int DeleteContact=0x7f0c004c;
+        public static final int DeletePhoto=0x7f0c004d;
+        public static final int DeleteThisGroup=0x7f0c004e;
+        public static final int Done=0x7f0c004f;
+        public static final int Edit=0x7f0c0050;
+        public static final int EditContact=0x7f0c0051;
+        public static final int EnableAnimations=0x7f0c0052;
+        public static final int EncryptedChatAccepted=0x7f0c0053;
+        public static final int EncryptedChatRequested=0x7f0c0054;
+        public static final int EncryptedChatStartedIncoming=0x7f0c0055;
+        public static final int EncryptedChatStartedOutgoing=0x7f0c0056;
+        public static final int EncryptedDescription1=0x7f0c0057;
+        public static final int EncryptedDescription2=0x7f0c0058;
+        public static final int EncryptedDescription3=0x7f0c0059;
+        public static final int EncryptedDescription4=0x7f0c005a;
+        public static final int EncryptedDescriptionTitle=0x7f0c005b;
+        public static final int EncryptedPlaceholderTitleIncoming=0x7f0c005c;
+        public static final int EncryptedPlaceholderTitleOutgoing=0x7f0c005d;
+        public static final int EncryptionKey=0x7f0c005e;
+        public static final int EncryptionKeyDescription=0x7f0c005f;
+        public static final int EncryptionProcessing=0x7f0c0060;
+        public static final int EncryptionRejected=0x7f0c0061;
+        public static final int EnterGroupNamePlaceholder=0x7f0c0062;
+        public static final int EnterGroupNameTitle=0x7f0c0063;
+        public static final int Events=0x7f0c0064;
+        public static final int ExternalStorage=0x7f0c0065;
+        public static final int FewNewMessages=0x7f0c0066;
+        public static final int FileUploadLimit=0x7f0c0067;
+        public static final int FirstName=0x7f0c0068;
+        public static final int FloodWait=0x7f0c0069;
+        public static final int Forward=0x7f0c006a;
+        public static final int ForwardMessagesTo=0x7f0c006b;
+        public static final int ForwardedMessage=0x7f0c006c;
+        public static final int FreeOfTotal=0x7f0c006d;
+        public static final int From=0x7f0c006e;
+        public static final int FromCamera=0x7f0c006f;
+        public static final int FromGalley=0x7f0c0070;
+        public static final int FromYou=0x7f0c0071;
+        public static final int Gallery=0x7f0c0072;
+        public static final int GotAQuestion=0x7f0c0073;
+        public static final int GroupInfo=0x7f0c0074;
+        public static final int GroupName=0x7f0c0075;
+        public static final int GroupNotifications=0x7f0c0076;
+        public static final int HiddenName=0x7f0c0077;
+        public static final int HideLastSeen=0x7f0c015a;
+        public static final int Hybrid=0x7f0c0078;
+        public static final int InAppNotifications=0x7f0c0079;
+        public static final int InAppPreview=0x7f0c007a;
+        public static final int InAppSounds=0x7f0c007b;
+        public static final int InAppVibrate=0x7f0c007c;
+        public static final int InternalStorage=0x7f0c007d;
+        public static final int InvalidCode=0x7f0c007e;
+        public static final int InvalidFirstName=0x7f0c007f;
+        public static final int InvalidLastName=0x7f0c0080;
+        public static final int InvalidPhoneNumber=0x7f0c0081;
+        public static final int Invisible=0x7f0c0082;
+        public static final int InviteFriends=0x7f0c0083;
+        public static final int InviteText=0x7f0c0084;
+        public static final int InviteUser=0x7f0c0085;
+        public static final int IsTyping=0x7f0c0086;
+        public static final int KMetersAway=0x7f0c0087;
+        public static final int KickFromGroup=0x7f0c0088;
+        public static final int LastName=0x7f0c0089;
+        public static final int LastSeen=0x7f0c008a;
+        public static final int LastSeenDate=0x7f0c008b;
+        public static final int Loading=0x7f0c008c;
+        public static final int LogOut=0x7f0c008d;
+        public static final int MEMBER=0x7f0c008e;
+        public static final int MEMBERS=0x7f0c008f;
+        public static final int Map=0x7f0c0090;
+        public static final int Members=0x7f0c0091;
+        public static final int Message=0x7f0c0092;
+        public static final int MessageLifetime=0x7f0c0093;
+        public static final int MessageLifetime1d=0x7f0c0094;
+        public static final int MessageLifetime1h=0x7f0c0095;
+        public static final int MessageLifetime1m=0x7f0c0096;
+        public static final int MessageLifetime1w=0x7f0c0097;
+        public static final int MessageLifetime2s=0x7f0c0098;
+        public static final int MessageLifetime5s=0x7f0c0099;
+        public static final int MessageLifetimeChanged=0x7f0c009a;
+        public static final int MessageLifetimeChangedOutgoing=0x7f0c009b;
+        public static final int MessageLifetimeRemoved=0x7f0c009c;
+        public static final int MessageLifetimeYouRemoved=0x7f0c009d;
+        public static final int MessageNotifications=0x7f0c009e;
+        public static final int MessagePreview=0x7f0c009f;
+        public static final int MessagesSettings=0x7f0c00a0;
+        public static final int MetersAway=0x7f0c00a1;
+        public static final int MyLocation=0x7f0c00a2;
+        public static final int NewGroup=0x7f0c00a3;
+        public static final int NewMessages=0x7f0c00a4;
+        public static final int NewSecretChat=0x7f0c00a5;
+        public static final int Next=0x7f0c00a6;
+        public static final int NoBlocked=0x7f0c00a7;
+        public static final int NoChats=0x7f0c00a8;
+        public static final int NoChatsHelp=0x7f0c00a9;
+        public static final int NoContacts=0x7f0c00aa;
+        public static final int NoFiles=0x7f0c00ab;
+        public static final int NoHandleAppInstalled=0x7f0c00ac;
+        public static final int NoMedia=0x7f0c00ad;
+        public static final int NoMessages=0x7f0c00ae;
+        public static final int NoPlayerInstalled=0x7f0c00af;
+        public static final int NoRecent=0x7f0c00b0;
+        public static final int NoResult=0x7f0c00b1;
+        public static final int NoSound=0x7f0c00b2;
+        public static final int NotMounted=0x7f0c00b3;
+        public static final int NotificationContactJoined=0x7f0c00b4;
+        public static final int NotificationContactNewPhoto=0x7f0c00b5;
+        public static final int NotificationEditedGroupName=0x7f0c00b6;
+        public static final int NotificationEditedGroupPhoto=0x7f0c00b7;
+        public static final int NotificationGroupAddMember=0x7f0c00b8;
+        public static final int NotificationGroupKickMember=0x7f0c00b9;
+        public static final int NotificationGroupKickYou=0x7f0c00ba;
+        public static final int NotificationGroupLeftMember=0x7f0c00bb;
+        public static final int NotificationInvitedToGroup=0x7f0c00bc;
+        public static final int NotificationMessageAudio=0x7f0c00bd;
+        public static final int NotificationMessageContact=0x7f0c00be;
+        public static final int NotificationMessageDocument=0x7f0c00bf;
+        public static final int NotificationMessageGroupAudio=0x7f0c00c0;
+        public static final int NotificationMessageGroupContact=0x7f0c00c1;
+        public static final int NotificationMessageGroupDocument=0x7f0c00c2;
+        public static final int NotificationMessageGroupMap=0x7f0c00c3;
+        public static final int NotificationMessageGroupNoText=0x7f0c00c4;
+        public static final int NotificationMessageGroupPhoto=0x7f0c00c5;
+        public static final int NotificationMessageGroupText=0x7f0c00c6;
+        public static final int NotificationMessageGroupVideo=0x7f0c00c7;
+        public static final int NotificationMessageMap=0x7f0c00c8;
+        public static final int NotificationMessageNoText=0x7f0c00c9;
+        public static final int NotificationMessagePhoto=0x7f0c00ca;
+        public static final int NotificationMessageText=0x7f0c00cb;
+        public static final int NotificationMessageVideo=0x7f0c00cc;
+        public static final int NotificationUnrecognizedDevice=0x7f0c00cd;
+        public static final int Notifications=0x7f0c00ce;
+        public static final int NotificationsAndSounds=0x7f0c00cf;
+        public static final int OK=0x7f0c00d0;
+        public static final int Of=0x7f0c00d1;
+        public static final int Offline=0x7f0c00d2;
+        public static final int OneNewMessage=0x7f0c00d3;
+        public static final int Online=0x7f0c00d4;
+        public static final int Open=0x7f0c00d5;
+        public static final int OpenPhoto=0x7f0c00d6;
+        public static final int OtherAt=0x7f0c00d7;
+        public static final int PHONE=0x7f0c00d8;
+        public static final int Page1Message=0x7f0c00d9;
+        public static final int Page1Title=0x7f0c00da;
+        public static final int Page2Message=0x7f0c00db;
+        public static final int Page2Title=0x7f0c00dc;
+        public static final int Page3Message=0x7f0c00dd;
+        public static final int Page3Title=0x7f0c00de;
+        public static final int Page4Message=0x7f0c00df;
+        public static final int Page4Title=0x7f0c00e0;
+        public static final int Page5Message=0x7f0c00e1;
+        public static final int Page5Title=0x7f0c00e2;
+        public static final int Page6Message=0x7f0c00e3;
+        public static final int Page6Title=0x7f0c00e4;
+        public static final int Page7Message=0x7f0c00e5;
+        public static final int Page7Title=0x7f0c00e6;
+        public static final int PhoneHome=0x7f0c00e7;
+        public static final int PhoneMain=0x7f0c00e8;
+        public static final int PhoneMobile=0x7f0c00e9;
+        public static final int PhoneOther=0x7f0c00ea;
+        public static final int PhoneWork=0x7f0c00eb;
+        public static final int RegisterText=0x7f0c00ec;
+        public static final int Reset=0x7f0c00ed;
+        public static final int ResetAllNotifications=0x7f0c00ee;
+        public static final int ResetNotificationsText=0x7f0c00ef;
+        public static final int Retry=0x7f0c00f0;
+        public static final int SETTINGS=0x7f0c00f1;
+        public static final int SHAREDMEDIA=0x7f0c00f2;
+        public static final int Satellite=0x7f0c00f3;
+        public static final int SaveIncomingPhotos=0x7f0c00f4;
+        public static final int SaveToGallery=0x7f0c00f5;
+        public static final int SdCard=0x7f0c00f6;
+        public static final int Search=0x7f0c00f7;
+        public static final int SecretTitle=0x7f0c00f8;
+        public static final int SelectChat=0x7f0c00f9;
+        public static final int SelectContact=0x7f0c00fa;
+        public static final int SelectFile=0x7f0c00fb;
+        public static final int Selected=0x7f0c00fc;
+        public static final int Send=0x7f0c00fd;
+        public static final int SendByEnter=0x7f0c00fe;
+        public static final int SendLocation=0x7f0c00ff;
+        public static final int SendMessageTo=0x7f0c0100;
+        public static final int SentSmsCode=0x7f0c0101;
+        public static final int Set=0x7f0c0102;
+        public static final int Settings=0x7f0c0103;
+        public static final int ShareContact=0x7f0c0104;
+        public static final int ShareLocation=0x7f0c0105;
+        public static final int ShareMyContactInfo=0x7f0c0106;
+        public static final int SharedMedia=0x7f0c0107;
+        public static final int ShortMessageLifetime1d=0x7f0c0108;
+        public static final int ShortMessageLifetime1h=0x7f0c0109;
+        public static final int ShortMessageLifetime1m=0x7f0c010a;
+        public static final int ShortMessageLifetime1w=0x7f0c010b;
+        public static final int ShortMessageLifetime2s=0x7f0c010c;
+        public static final int ShortMessageLifetime5s=0x7f0c010d;
+        public static final int ShortMessageLifetimeForever=0x7f0c010e;
+        public static final int ShowAllMedia=0x7f0c010f;
+        public static final int Sound=0x7f0c0110;
+        public static final int StartEncryptedChat=0x7f0c0111;
+        public static final int StartMessaging=0x7f0c0112;
+        public static final int StartText=0x7f0c0113;
+        public static final int Support=0x7f0c0114;
+        public static final int SystemRoot=0x7f0c0115;
+        public static final int TerminateAllSessions=0x7f0c0116;
+        public static final int TextSize=0x7f0c0117;
+        public static final int TodayAt=0x7f0c0118;
+        public static final int TypeMessage=0x7f0c0119;
+        public static final int Typing=0x7f0c011a;
+        public static final int Unblock=0x7f0c011b;
+        public static final int UnblockText=0x7f0c011c;
+        public static final int UndoAllCustom=0x7f0c011d;
+        public static final int UnknownError=0x7f0c011e;
+        public static final int UnsuppotedMedia=0x7f0c011f;
+        public static final int Updating=0x7f0c0120;
+        public static final int UsbActive=0x7f0c0121;
+        public static final int Vibrate=0x7f0c0122;
+        public static final int ViewLocation=0x7f0c0123;
+        public static final int ViewPhoto=0x7f0c0124;
+        public static final int ViewVideo=0x7f0c0125;
+        public static final int WaitingForNetwork=0x7f0c0126;
+        public static final int WrongCountry=0x7f0c0127;
+        public static final int WrongNumber=0x7f0c0128;
+        public static final int Yesterday=0x7f0c0129;
+        public static final int YesterdayAt=0x7f0c012a;
+        public static final int YouHaveNewMessage=0x7f0c012b;
+        public static final int YouLeft=0x7f0c012c;
+        public static final int YouWereKicked=0x7f0c012d;
+        public static final int YourCode=0x7f0c012e;
+        public static final int YourFirstNameAndLastName=0x7f0c012f;
+        public static final int YourName=0x7f0c0130;
+        public static final int YourPhone=0x7f0c0131;
+        public static final int YourPhoneNumber=0x7f0c0132;
+        public static final int abc_action_bar_home_description=0x7f0c0133;
+        public static final int abc_action_bar_up_description=0x7f0c0134;
+        public static final int abc_action_menu_overflow_description=0x7f0c0135;
+        public static final int abc_action_mode_done=0x7f0c0136;
+        public static final int abc_activity_chooser_view_see_all=0x7f0c0137;
+        public static final int abc_activitychooserview_choose_application=0x7f0c0138;
+        public static final int abc_searchview_description_clear=0x7f0c0139;
+        public static final int abc_searchview_description_query=0x7f0c013a;
+        public static final int abc_searchview_description_search=0x7f0c013b;
+        public static final int abc_searchview_description_submit=0x7f0c013c;
+        public static final int abc_searchview_description_voice=0x7f0c013d;
+        public static final int abc_shareactionprovider_share_with=0x7f0c013e;
+        public static final int abc_shareactionprovider_share_with_application=0x7f0c013f;
+        public static final int auth_client_needs_enabling_title=0x7f0c0140;
+        public static final int auth_client_needs_installation_title=0x7f0c0141;
+        public static final int auth_client_needs_update_title=0x7f0c0142;
+        public static final int auth_client_play_services_err_notification_msg=0x7f0c0143;
+        public static final int auth_client_requested_by_msg=0x7f0c0144;
+        public static final int auth_client_using_bad_version_title=0x7f0c0145;
+        public static final int common_google_play_services_enable_button=0x7f0c0146;
+        public static final int common_google_play_services_enable_text=0x7f0c0147;
+        public static final int common_google_play_services_enable_title=0x7f0c0148;
+        public static final int common_google_play_services_install_button=0x7f0c0149;
+        public static final int common_google_play_services_install_text_phone=0x7f0c014a;
+        public static final int common_google_play_services_install_text_tablet=0x7f0c014b;
+        public static final int common_google_play_services_install_title=0x7f0c014c;
+        public static final int common_google_play_services_invalid_account_text=0x7f0c014d;
+        public static final int common_google_play_services_invalid_account_title=0x7f0c014e;
+        public static final int common_google_play_services_network_error_text=0x7f0c014f;
+        public static final int common_google_play_services_network_error_title=0x7f0c0150;
+        public static final int common_google_play_services_unknown_issue=0x7f0c0151;
+        public static final int common_google_play_services_unsupported_date_text=0x7f0c0152;
+        public static final int common_google_play_services_unsupported_text=0x7f0c0153;
+        public static final int common_google_play_services_unsupported_title=0x7f0c0154;
+        public static final int common_google_play_services_update_button=0x7f0c0155;
+        public static final int common_google_play_services_update_text=0x7f0c0156;
+        public static final int common_google_play_services_update_title=0x7f0c0157;
+        public static final int common_signin_button_text=0x7f0c0158;
+        public static final int common_signin_button_text_long=0x7f0c0159;
     }
     public static final class style {
         public static final int ActionBar_Transparent_TMessages=0x7f0d0000;
@@ -2297,27 +2354,27 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background org.telegram.messenger:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit org.telegram.messenger:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked org.telegram.messenger:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout org.telegram.messenger:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions org.telegram.messenger:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #ActionBar_divider org.telegram.messenger:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #ActionBar_height org.telegram.messenger:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout org.telegram.messenger:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_icon org.telegram.messenger:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle org.telegram.messenger:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding org.telegram.messenger:itemPadding}</code></td><td>
+           <tr><td><code>{@link #ActionBar_background org.telegram.messenger.debug:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit org.telegram.messenger.debug:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked org.telegram.messenger.debug:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout org.telegram.messenger.debug:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions org.telegram.messenger.debug:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #ActionBar_divider org.telegram.messenger.debug:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #ActionBar_height org.telegram.messenger.debug:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout org.telegram.messenger.debug:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_icon org.telegram.messenger.debug:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle org.telegram.messenger.debug:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding org.telegram.messenger.debug:itemPadding}</code></td><td>
              Specifies padding that should be applied to the left and right sides of
              system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_logo org.telegram.messenger:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode org.telegram.messenger:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding org.telegram.messenger:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle org.telegram.messenger:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle org.telegram.messenger:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle org.telegram.messenger:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionBar_title org.telegram.messenger:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle org.telegram.messenger:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionBar_logo org.telegram.messenger.debug:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode org.telegram.messenger.debug:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding org.telegram.messenger.debug:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle org.telegram.messenger.debug:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle org.telegram.messenger.debug:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle org.telegram.messenger.debug:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionBar_title org.telegram.messenger.debug:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle org.telegram.messenger.debug:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2355,7 +2412,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:background
+          @attr name org.telegram.messenger.debug:background
         */
         public static final int ActionBar_background = 10;
         /**
@@ -2369,7 +2426,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:backgroundSplit
+          @attr name org.telegram.messenger.debug:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
@@ -2383,7 +2440,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:backgroundStacked
+          @attr name org.telegram.messenger.debug:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
@@ -2395,7 +2452,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:customNavigationLayout
+          @attr name org.telegram.messenger.debug:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
@@ -2418,7 +2475,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:displayOptions
+          @attr name org.telegram.messenger.debug:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
@@ -2430,7 +2487,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:divider
+          @attr name org.telegram.messenger.debug:divider
         */
         public static final int ActionBar_divider = 9;
         /**
@@ -2448,7 +2505,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:height
+          @attr name org.telegram.messenger.debug:height
         */
         public static final int ActionBar_height = 0;
         /**
@@ -2460,7 +2517,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:homeLayout
+          @attr name org.telegram.messenger.debug:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
@@ -2472,7 +2529,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:icon
+          @attr name org.telegram.messenger.debug:icon
         */
         public static final int ActionBar_icon = 7;
         /**
@@ -2484,7 +2541,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:indeterminateProgressStyle
+          @attr name org.telegram.messenger.debug:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
@@ -2505,7 +2562,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:itemPadding
+          @attr name org.telegram.messenger.debug:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
@@ -2517,7 +2574,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:logo
+          @attr name org.telegram.messenger.debug:logo
         */
         public static final int ActionBar_logo = 8;
         /**
@@ -2537,7 +2594,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:navigationMode
+          @attr name org.telegram.messenger.debug:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
@@ -2555,7 +2612,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:progressBarPadding
+          @attr name org.telegram.messenger.debug:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
@@ -2567,7 +2624,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:progressBarStyle
+          @attr name org.telegram.messenger.debug:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
@@ -2583,7 +2640,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:subtitle
+          @attr name org.telegram.messenger.debug:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
@@ -2595,7 +2652,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:subtitleTextStyle
+          @attr name org.telegram.messenger.debug:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
@@ -2611,7 +2668,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:title
+          @attr name org.telegram.messenger.debug:title
         */
         public static final int ActionBar_title = 1;
         /**
@@ -2623,7 +2680,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:titleTextStyle
+          @attr name org.telegram.messenger.debug:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2651,9 +2708,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBar org.telegram.messenger:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay org.telegram.messenger:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar org.telegram.messenger:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBar org.telegram.messenger.debug:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay org.telegram.messenger.debug:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar org.telegram.messenger.debug:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #ActionBarWindow_windowActionBar
            @see #ActionBarWindow_windowActionBarOverlay
@@ -2663,7 +2720,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010050, 0x7f010051, 0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#windowActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -2673,11 +2730,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:windowActionBar
+          @attr name org.telegram.messenger.debug:windowActionBar
         */
         public static final int ActionBarWindow_windowActionBar = 0;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -2687,11 +2744,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:windowActionBarOverlay
+          @attr name org.telegram.messenger.debug:windowActionBarOverlay
         */
         public static final int ActionBarWindow_windowActionBarOverlay = 1;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -2701,7 +2758,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:windowSplitActionBar
+          @attr name org.telegram.messenger.debug:windowSplitActionBar
         */
         public static final int ActionBarWindow_windowSplitActionBar = 2;
         /** Attributes that can be used with a ActionMenuItemView.
@@ -2734,11 +2791,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background org.telegram.messenger:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit org.telegram.messenger:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_height org.telegram.messenger:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle org.telegram.messenger:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle org.telegram.messenger:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionMode_background org.telegram.messenger.debug:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit org.telegram.messenger.debug:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_height org.telegram.messenger.debug:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle org.telegram.messenger.debug:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle org.telegram.messenger.debug:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2759,7 +2816,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:background
+          @attr name org.telegram.messenger.debug:background
         */
         public static final int ActionMode_background = 3;
         /**
@@ -2773,7 +2830,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:backgroundSplit
+          @attr name org.telegram.messenger.debug:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
@@ -2791,7 +2848,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:height
+          @attr name org.telegram.messenger.debug:height
         */
         public static final int ActionMode_height = 0;
         /**
@@ -2803,7 +2860,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:subtitleTextStyle
+          @attr name org.telegram.messenger.debug:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
@@ -2815,7 +2872,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:titleTextStyle
+          @attr name org.telegram.messenger.debug:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2824,9 +2881,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable org.telegram.messenger:expandActivityOverflowButtonDrawable}</code></td><td>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable org.telegram.messenger.debug:expandActivityOverflowButtonDrawable}</code></td><td>
              The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount org.telegram.messenger:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount org.telegram.messenger.debug:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2849,7 +2906,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:expandActivityOverflowButtonDrawable
+          @attr name org.telegram.messenger.debug:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
@@ -2865,7 +2922,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:initialActivityCount
+          @attr name org.telegram.messenger.debug:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AdsAttrs.
@@ -2874,11 +2931,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize org.telegram.messenger:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize org.telegram.messenger.debug:adSize}</code></td><td>
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes org.telegram.messenger:adSizes}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSizes org.telegram.messenger.debug:adSizes}</code></td><td>
     A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId org.telegram.messenger:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId org.telegram.messenger.debug:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -2904,7 +2961,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:adSize
+          @attr name org.telegram.messenger.debug:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
@@ -2924,7 +2981,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:adSizes
+          @attr name org.telegram.messenger.debug:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
@@ -2940,7 +2997,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:adUnitId
+          @attr name org.telegram.messenger.debug:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a CompatTextView.
@@ -2949,7 +3006,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps org.telegram.messenger:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps org.telegram.messenger.debug:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2966,7 +3023,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:textAllCaps
+          @attr name org.telegram.messenger.debug:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a LinearLayoutICS.
@@ -2975,9 +3032,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutICS_divider org.telegram.messenger:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_dividerPadding org.telegram.messenger:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_showDividers org.telegram.messenger:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_divider org.telegram.messenger.debug:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_dividerPadding org.telegram.messenger.debug:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_showDividers org.telegram.messenger.debug:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
            </table>
            @see #LinearLayoutICS_divider
            @see #LinearLayoutICS_dividerPadding
@@ -2995,7 +3052,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:divider
+          @attr name org.telegram.messenger.debug:divider
         */
         public static final int LinearLayoutICS_divider = 0;
         /**
@@ -3013,7 +3070,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:dividerPadding
+          @attr name org.telegram.messenger.debug:dividerPadding
         */
         public static final int LinearLayoutICS_dividerPadding = 2;
         /**
@@ -3034,7 +3091,7 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:showDividers
+          @attr name org.telegram.messenger.debug:showDividers
         */
         public static final int LinearLayoutICS_showDividers = 1;
         /** Attributes that can be used with a MapAttrs.
@@ -3043,20 +3100,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing org.telegram.messenger:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat org.telegram.messenger:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng org.telegram.messenger:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt org.telegram.messenger:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom org.telegram.messenger:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType org.telegram.messenger:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass org.telegram.messenger:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures org.telegram.messenger:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures org.telegram.messenger:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures org.telegram.messenger:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls org.telegram.messenger:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures org.telegram.messenger:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle org.telegram.messenger:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop org.telegram.messenger:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing org.telegram.messenger.debug:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat org.telegram.messenger.debug:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng org.telegram.messenger.debug:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt org.telegram.messenger.debug:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom org.telegram.messenger.debug:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType org.telegram.messenger.debug:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass org.telegram.messenger.debug:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures org.telegram.messenger.debug:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures org.telegram.messenger.debug:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures org.telegram.messenger.debug:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls org.telegram.messenger.debug:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures org.telegram.messenger.debug:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle org.telegram.messenger.debug:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop org.telegram.messenger.debug:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -3080,7 +3137,7 @@ containing a value of this type.
             0x7f010067, 0x7f010068
         };
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3090,11 +3147,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:cameraBearing
+          @attr name org.telegram.messenger.debug:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3104,11 +3161,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:cameraTargetLat
+          @attr name org.telegram.messenger.debug:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3118,11 +3175,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:cameraTargetLng
+          @attr name org.telegram.messenger.debug:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3132,11 +3189,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:cameraTilt
+          @attr name org.telegram.messenger.debug:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3146,11 +3203,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:cameraZoom
+          @attr name org.telegram.messenger.debug:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#mapType}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3166,11 +3223,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name org.telegram.messenger:mapType
+          @attr name org.telegram.messenger.debug:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3180,11 +3237,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiCompass
+          @attr name org.telegram.messenger.debug:uiCompass
         */
         public static final int MapAttrs_uiCompass = 6;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3194,11 +3251,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiRotateGestures
+          @attr name org.telegram.messenger.debug:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 7;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3208,11 +3265,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiScrollGestures
+          @attr name org.telegram.messenger.debug:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3222,11 +3279,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiTiltGestures
+          @attr name org.telegram.messenger.debug:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3236,11 +3293,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiZoomControls
+          @attr name org.telegram.messenger.debug:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 10;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3250,11 +3307,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:uiZoomGestures
+          @attr name org.telegram.messenger.debug:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 11;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3264,11 +3321,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:useViewLifecycle
+          @attr name org.telegram.messenger.debug:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 12;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -3278,7 +3335,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:zOrderOnTop
+          @attr name org.telegram.messenger.debug:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
         /** Attributes that can be used with a MenuGroup.
@@ -3373,12 +3430,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout org.telegram.messenger:actionLayout}</code></td><td>
+           <tr><td><code>{@link #MenuItem_actionLayout org.telegram.messenger.debug:actionLayout}</code></td><td>
              An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass org.telegram.messenger:actionProviderClass}</code></td><td>
+           <tr><td><code>{@link #MenuItem_actionProviderClass org.telegram.messenger.debug:actionProviderClass}</code></td><td>
              The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass org.telegram.messenger:actionViewClass}</code></td><td>
+           <tr><td><code>{@link #MenuItem_actionViewClass org.telegram.messenger.debug:actionViewClass}</code></td><td>
              The name of an optional View class to instantiate and use as an
              action view.</td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td>
@@ -3403,7 +3460,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td>
              The condensed title associated with the item.</td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction org.telegram.messenger:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction org.telegram.messenger.debug:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -3443,7 +3500,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:actionLayout
+          @attr name org.telegram.messenger.debug:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
@@ -3464,7 +3521,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:actionProviderClass
+          @attr name org.telegram.messenger.debug:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
@@ -3484,7 +3541,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:actionViewClass
+          @attr name org.telegram.messenger.debug:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -3666,7 +3723,7 @@ containing a value of this type.
             </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:showAsAction
+          @attr name org.telegram.messenger.debug:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -3774,17 +3831,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_dividerColor org.telegram.messenger:dividerColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_dividerPadding1 org.telegram.messenger:dividerPadding1}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorColor org.telegram.messenger:indicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorHeight org.telegram.messenger:indicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_scrollOffset org.telegram.messenger:scrollOffset}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_shouldExpand org.telegram.messenger:shouldExpand}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabBackground org.telegram.messenger:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabPaddingLeftRight org.telegram.messenger:tabPaddingLeftRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_textAllCaps1 org.telegram.messenger:textAllCaps1}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_underlineColor org.telegram.messenger:underlineColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_underlineHeight org.telegram.messenger:underlineHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_dividerColor org.telegram.messenger.debug:dividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_dividerPadding1 org.telegram.messenger.debug:dividerPadding1}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorColor org.telegram.messenger.debug:indicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorHeight org.telegram.messenger.debug:indicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_scrollOffset org.telegram.messenger.debug:scrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_shouldExpand org.telegram.messenger.debug:shouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_tabBackground org.telegram.messenger.debug:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_tabPaddingLeftRight org.telegram.messenger.debug:tabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_textAllCaps1 org.telegram.messenger.debug:textAllCaps1}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_underlineColor org.telegram.messenger.debug:underlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_underlineHeight org.telegram.messenger.debug:underlineHeight}</code></td><td></td></tr>
            </table>
            @see #PagerSlidingTabStrip_dividerColor
            @see #PagerSlidingTabStrip_dividerPadding1
@@ -3804,7 +3861,7 @@ containing a value of this type.
             0x7f010075, 0x7f010076, 0x7f010077
         };
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#dividerColor}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#dividerColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3815,11 +3872,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:dividerColor
+          @attr name org.telegram.messenger.debug:dividerColor
         */
         public static final int PagerSlidingTabStrip_dividerColor = 2;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#dividerPadding1}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#dividerPadding1}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3831,11 +3888,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:dividerPadding1
+          @attr name org.telegram.messenger.debug:dividerPadding1
         */
         public static final int PagerSlidingTabStrip_dividerPadding1 = 5;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#indicatorColor}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#indicatorColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3846,11 +3903,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:indicatorColor
+          @attr name org.telegram.messenger.debug:indicatorColor
         */
         public static final int PagerSlidingTabStrip_indicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#indicatorHeight}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#indicatorHeight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3862,11 +3919,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:indicatorHeight
+          @attr name org.telegram.messenger.debug:indicatorHeight
         */
         public static final int PagerSlidingTabStrip_indicatorHeight = 3;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#scrollOffset}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#scrollOffset}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3878,11 +3935,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:scrollOffset
+          @attr name org.telegram.messenger.debug:scrollOffset
         */
         public static final int PagerSlidingTabStrip_scrollOffset = 7;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#shouldExpand}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#shouldExpand}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3892,21 +3949,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:shouldExpand
+          @attr name org.telegram.messenger.debug:shouldExpand
         */
         public static final int PagerSlidingTabStrip_shouldExpand = 9;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#tabBackground}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name org.telegram.messenger:tabBackground
+          @attr name org.telegram.messenger.debug:tabBackground
         */
         public static final int PagerSlidingTabStrip_tabBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#tabPaddingLeftRight}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#tabPaddingLeftRight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3918,11 +3975,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:tabPaddingLeftRight
+          @attr name org.telegram.messenger.debug:tabPaddingLeftRight
         */
         public static final int PagerSlidingTabStrip_tabPaddingLeftRight = 6;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#textAllCaps1}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#textAllCaps1}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3932,11 +3989,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:textAllCaps1
+          @attr name org.telegram.messenger.debug:textAllCaps1
         */
         public static final int PagerSlidingTabStrip_textAllCaps1 = 10;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#underlineColor}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#underlineColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3947,11 +4004,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:underlineColor
+          @attr name org.telegram.messenger.debug:underlineColor
         */
         public static final int PagerSlidingTabStrip_underlineColor = 1;
         /**
-          <p>This symbol is the offset where the {@link org.telegram.messenger.R.attr#underlineHeight}
+          <p>This symbol is the offset where the {@link org.telegram.messenger.debug.R.attr#underlineHeight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -3963,7 +4020,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name org.telegram.messenger:underlineHeight
+          @attr name org.telegram.messenger.debug:underlineHeight
         */
         public static final int PagerSlidingTabStrip_underlineHeight = 4;
         /** Attributes that can be used with a SearchView.
@@ -3975,9 +4032,9 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault org.telegram.messenger:iconifiedByDefault}</code></td><td>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault org.telegram.messenger.debug:iconifiedByDefault}</code></td><td>
              The default state of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_queryHint org.telegram.messenger:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           <tr><td><code>{@link #SearchView_queryHint org.telegram.messenger.debug:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
            </table>
            @see #SearchView_android_imeOptions
            @see #SearchView_android_inputType
@@ -4032,7 +4089,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:iconifiedByDefault
+          @attr name org.telegram.messenger.debug:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 3;
         /**
@@ -4048,7 +4105,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:queryHint
+          @attr name org.telegram.messenger.debug:queryHint
         */
         public static final int SearchView_queryHint = 4;
         /** Attributes that can be used with a Spinner.
@@ -4067,14 +4124,14 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled org.telegram.messenger:disableChildrenWhenDisabled}</code></td><td>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled org.telegram.messenger.debug:disableChildrenWhenDisabled}</code></td><td>
              Whether this spinner should mark child views as enabled/disabled when
              the spinner itself is enabled/disabled.</td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView org.telegram.messenger:popupPromptView}</code></td><td>
+           <tr><td><code>{@link #Spinner_popupPromptView org.telegram.messenger.debug:popupPromptView}</code></td><td>
              Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_prompt org.telegram.messenger:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode org.telegram.messenger:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           <tr><td><code>{@link #Spinner_prompt org.telegram.messenger.debug:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode org.telegram.messenger.debug:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
            </table>
            @see #Spinner_android_dropDownHorizontalOffset
            @see #Spinner_android_dropDownSelector
@@ -4168,7 +4225,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:disableChildrenWhenDisabled
+          @attr name org.telegram.messenger.debug:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 9;
         /**
@@ -4184,7 +4241,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:popupPromptView
+          @attr name org.telegram.messenger.debug:popupPromptView
         */
         public static final int Spinner_popupPromptView = 8;
         /**
@@ -4196,7 +4253,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:prompt
+          @attr name org.telegram.messenger.debug:prompt
         */
         public static final int Spinner_prompt = 6;
         /**
@@ -4218,7 +4275,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:spinnerMode
+          @attr name org.telegram.messenger.debug:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
         /** Attributes that can be used with a Theme.
@@ -4227,12 +4284,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle org.telegram.messenger:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight org.telegram.messenger:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator org.telegram.messenger:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme org.telegram.messenger:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth org.telegram.messenger:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle org.telegram.messenger:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle org.telegram.messenger.debug:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight org.telegram.messenger.debug:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator org.telegram.messenger.debug:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme org.telegram.messenger.debug:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth org.telegram.messenger.debug:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle org.telegram.messenger.debug:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
            </table>
            @see #Theme_actionDropDownStyle
            @see #Theme_dropdownListPreferredItemHeight
@@ -4254,7 +4311,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:actionDropDownStyle
+          @attr name org.telegram.messenger.debug:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 0;
         /**
@@ -4272,7 +4329,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:dropdownListPreferredItemHeight
+          @attr name org.telegram.messenger.debug:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 1;
         /**
@@ -4284,7 +4341,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:listChoiceBackgroundIndicator
+          @attr name org.telegram.messenger.debug:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 5;
         /**
@@ -4296,7 +4353,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:panelMenuListTheme
+          @attr name org.telegram.messenger.debug:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 4;
         /**
@@ -4314,7 +4371,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:panelMenuListWidth
+          @attr name org.telegram.messenger.debug:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 3;
         /**
@@ -4326,7 +4383,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:popupMenuStyle
+          @attr name org.telegram.messenger.debug:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 2;
         /** Attributes that can be used with a View.
@@ -4337,8 +4394,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td>
              Boolean that controls whether a view can take focus.</td></tr>
-           <tr><td><code>{@link #View_paddingEnd org.telegram.messenger:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-           <tr><td><code>{@link #View_paddingStart org.telegram.messenger:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingEnd org.telegram.messenger.debug:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingStart org.telegram.messenger.debug:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -4378,7 +4435,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:paddingEnd
+          @attr name org.telegram.messenger.debug:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
@@ -4396,7 +4453,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name org.telegram.messenger:paddingStart
+          @attr name org.telegram.messenger.debug:paddingStart
         */
         public static final int View_paddingStart = 1;
     };
