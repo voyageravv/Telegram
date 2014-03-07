@@ -22,6 +22,11 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import jawnae.pyronet.PyroException;
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 public class ByteStream {
     private final List<ByteBuffer> queue;
 
@@ -49,11 +54,17 @@ public class ByteStream {
 
     public boolean hasData() {
         int size = this.queue.size();
+<<<<<<< HEAD
         for (ByteBuffer aQueue : this.queue) {
             if (aQueue.hasRemaining()) {
                 return true;
             }
         }
+=======
+        for (int i = 0; i < size; i++)
+            if (this.queue.get(i).hasRemaining())
+                return true;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         return false;
     }
 
@@ -61,9 +72,14 @@ public class ByteStream {
         int size = this.queue.size();
 
         int sum = 0;
+<<<<<<< HEAD
         for (ByteBuffer aQueue : this.queue) {
             sum += aQueue.remaining();
         }
+=======
+        for (int i = 0; i < size; i++)
+            sum += this.queue.get(i).remaining();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         return sum;
     }
 

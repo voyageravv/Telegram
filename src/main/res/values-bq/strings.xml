@@ -75,6 +75,10 @@
     <string name="ChatGallery">Galeria</string>
     <string name="ChatLocation">Kokalekua</string>
     <string name="ChatVideo">Bideoa</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatDocument">Dokumentua</string>
     <string name="NoMessages">Oraindik ez dago mezurik...</string>
     <string name="ViewPhoto">Ikusi Irudia</string>
@@ -102,7 +106,11 @@
     <string name="YouWereKicked">Talde honetatik kanporatu zaituzte</string>
     <string name="YouLeft">Talde hau utzi duzu</string>
     <string name="DeleteThisGroup">Ezabatu Talde hau</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">SLIDE TO CANCEL</string>
+=======
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <!--notification-->
     <string name="EncryptedChatRequested">Ezkutuko Txata eskatuta</string>
     <string name="EncryptedChatAccepted">Ezkutuko Txata hasi da</string>

@@ -7,6 +7,7 @@
     <dataSet config="main" >
         <source path="/home/tino/Telegram/TMessagesProj/src/main/assets" >
             <file
+<<<<<<< HEAD
                 name="ic_smiles_razz.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_razz.gif" />
             <file
@@ -48,22 +49,61 @@
             <file
                 name="ic_smiles_sisi1.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_sisi1.gif" />
+=======
+                name="PhoneFormats.dat"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/PhoneFormats.dat" />
             <file
-                name="emojisprite_5.png"
-                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_5.png" />
+                name="emojisprite_4.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_4.png" />
+            <file
+                name="emojisprite_3.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_3.png" />
+            <file
+                name="emojisprite_0.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_0.png" />
             <file
                 name="countries.txt"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/countries.txt" />
             <file
-                name="ic_smiles_b2.gif"
-                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_b2.gif" />
+                name="emojisprite_1.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_1.png" />
+            <file
+                name="emojisprite_2.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_2.png" />
+            <file
+                name="fonts/rmedium.ttf"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/fonts/rmedium.ttf" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
+            <file
+                name="emojisprite_5.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/emojisprite_5.png" />
+            <file
+<<<<<<< HEAD
+                name="countries.txt"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/countries.txt" />
+=======
+                name="ic_smiles_wink.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_wink.gif" />
             <file
                 name="ic_smiles_goofy.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_goofy.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
+            <file
+                name="ic_smiles_b2.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_b2.gif" />
+            <file
+<<<<<<< HEAD
+                name="ic_smiles_goofy.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_goofy.gif" />
+=======
+                name="ic_smiles_razz.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_razz.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             <file
                 name="ic_smiles_61_61.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_61_61.gif" />
             <file
+<<<<<<< HEAD
                 name="ic_smiles_roto2gaydude.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_roto2gaydude.gif" />
             <file
@@ -75,10 +115,24 @@
             <file
                 name="ic_smiles_wink.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_wink.gif" />
+=======
+                name="ic_smiles_banana.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_banana.gif" />
+            <file
+                name="ic_smiles_smash2.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_smash2.gif" />
+            <file
+                name="ic_smiles_icon_popcorn.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_icon_popcorn.gif" />
+            <file
+                name="ic_smiles_mad.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_mad.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             <file
                 name="ic_smiles_osvaisacagar.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_osvaisacagar.gif" />
             <file
+<<<<<<< HEAD
                 name="ic_smiles_rolleyes.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_rolleyes.gif" />
             <file
@@ -105,10 +159,45 @@
             <file
                 name="ic_smiles_sing.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_sing.gif" />
+=======
+                name="ic_smiles_nusenuse.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_nusenuse.gif" />
+            <file
+                name="ic_smiles_sisi1.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_sisi1.gif" />
+            <file
+                name="ic_smiles_clap.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_clap.gif" />
+            <file
+                name="ic_smiles_car.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_car.png" />
+            <file
+                name="ic_smiles_gaydude.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_gaydude.gif" />
+            <file
+                name="ic_smiles_redface.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_redface.gif" />
+            <file
+                name="ic_smiles_gaysex.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_gaysex.gif" />
+            <file
+                name="ic_smiles_number_one.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_number_one.gif" />
+            <file
+                name="ic_smiles_smiley.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_smiley.gif" />
+            <file
+                name="ic_smiles_rolleyes.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_rolleyes.gif" />
+            <file
+                name="ic_smiles_facepalm.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_facepalm.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             <file
                 name="ic_smiles_dancing.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_dancing.gif" />
             <file
+<<<<<<< HEAD
                 name="ic_smiles_gaysex.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_gaysex.gif" />
             <file
@@ -117,15 +206,33 @@
             <file
                 name="ic_smiles_redface.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_redface.gif" />
+=======
+                name="ic_smiles_car_active.png"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_car_active.png" />
+            <file
+                name="ic_smiles_thumbsup.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_thumbsup.gif" />
+            <file
+                name="ic_smiles_roto2rie.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_roto2rie.gif" />
+            <file
+                name="ic_smiles_qmp.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_qmp.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             <file
                 name="ic_smiles_sisi.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_sisi.gif" />
             <file
+<<<<<<< HEAD
                 name="ic_smiles_smash2.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_smash2.gif" />
             <file
                 name="ic_smiles_facepalm.gif"
                 path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_smiles_facepalm.gif" />
+=======
+                name="ic_happy.gif"
+                path="/home/tino/Telegram/TMessagesProj/src/main/assets/ic_happy.gif" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         </source>
     </dataSet>
     <dataSet config="release" >

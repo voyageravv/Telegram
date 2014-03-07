@@ -8,7 +8,12 @@
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         android:id="@+id/background_image"
+<<<<<<< HEAD
         android:scaleType="centerCrop"/>
+=======
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <org.telegram.ui.Views.FrameLayoutFixed
         android:layout_height="fill_parent"
@@ -143,12 +148,31 @@
             android:src="@drawable/send_button_states"
             android:background="@android:color/transparent"/>
 
+<<<<<<< HEAD
+=======
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:id="@+id/chat_audio_send_button"
+            android:enabled="false"
+            android:src="@drawable/mic_button_states"
+            android:paddingRight="4dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/chat_send_button"
+            android:layout_alignStart="@+id/chat_send_button" />
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/chat_text_edit"
             android:layout_toRightOf="@id/chat_smile_button"
+<<<<<<< HEAD
             android:layout_toLeftOf="@id/chat_send_button"
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             android:layout_marginTop="2dp"
             android:maxLines="4"
             android:minHeight="48dp"
@@ -162,6 +186,7 @@
             android:paddingBottom="12dp"
             android:maxLength="16384"
             android:textCursorDrawable="@null"
+<<<<<<< HEAD
             android:textColor="#000000"/>
 
         <org.telegram.ui.Views.FrameLayoutFixed
@@ -238,6 +263,10 @@
             android:src="@drawable/mic_button_states"
             android:paddingRight="4dp"
             android:background="@android:color/white"/>
+=======
+            android:textColor="#000000"
+            android:layout_toLeftOf="@+id/chat_audio_send_button" />
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     </RelativeLayout>
 

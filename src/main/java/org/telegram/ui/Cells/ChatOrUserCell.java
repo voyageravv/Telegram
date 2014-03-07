@@ -17,10 +17,18 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.TextUtils;
+<<<<<<< HEAD
 import android.view.View;
 
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.TLRPC;
+=======
+import android.util.AttributeSet;
+import android.view.View;
+
+import org.telegram.PhoneFormat.PhoneFormat;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.MessagesController;
@@ -64,6 +72,19 @@ public class ChatOrUserCell extends BaseCell {
         init();
     }
 
+<<<<<<< HEAD
+=======
+    public ChatOrUserCell(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public ChatOrUserCell(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private void init() {
         if (namePaint == null) {
             namePaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
@@ -163,6 +184,12 @@ public class ChatOrUserCell extends BaseCell {
                 int newStatus = 0;
                 if (user.status != null) {
                     newStatus = user.status.expires;
+<<<<<<< HEAD
+=======
+                    if (lastStatus == 0) {
+                        lastStatus = user.status.was_online;
+                    }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
                 if (newStatus != lastStatus) {
                     continueUpdate = true;
@@ -188,6 +215,12 @@ public class ChatOrUserCell extends BaseCell {
         if (user != null) {
             if (user.status != null) {
                 lastStatus = user.status.expires;
+<<<<<<< HEAD
+=======
+                if (lastStatus == 0) {
+                    lastStatus = user.status.was_online;
+                }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             } else {
                 lastStatus = 0;
             }
@@ -309,7 +342,11 @@ public class ChatOrUserCell extends BaseCell {
                     if (chat != null) {
                         nameString2 = chat.title;
                     } else if (user != null) {
+<<<<<<< HEAD
                         if (user.id / 1000 != 333 && ContactsController.Instance.contactsDict.get(user.id) == null) {
+=======
+                        if (user.id != 333000 && ContactsController.Instance.contactsDict.get(user.id) == null) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             if (ContactsController.Instance.contactsDict.size() == 0 && ContactsController.Instance.loadingContacts) {
                                 nameString2 = Utilities.formatName(user.first_name, user.last_name);
                             } else {
@@ -365,6 +402,7 @@ public class ChatOrUserCell extends BaseCell {
                             onlineString = getResources().getString(R.string.Offline);
                         } else {
                             int currentTime = ConnectionsManager.Instance.getCurrentTime();
+<<<<<<< HEAD
                             if (user.id == UserConfig.clientUserId || user.status.expires > currentTime) {
                                 currentOnlinePaint = onlinePaint;
                                 onlineString = getResources().getString(R.string.Online);
@@ -373,6 +411,20 @@ public class ChatOrUserCell extends BaseCell {
                                     onlineString = getResources().getString(R.string.Invisible);
                                 } else {
                                     onlineString = Utilities.formatDateOnline(user.status.expires);
+=======
+                            if (user.id == UserConfig.clientUserId || user.status.expires > currentTime || user.status.was_online > currentTime) {
+                                currentOnlinePaint = onlinePaint;
+                                onlineString = getResources().getString(R.string.Online);
+                            } else {
+                                if (user.status.was_online <= 10000 && user.status.expires <= 10000) {
+                                    onlineString = getResources().getString(R.string.Invisible);
+                                } else {
+                                    int value = user.status.was_online;
+                                    if (value == 0) {
+                                        value = user.status.expires;
+                                    }
+                                    onlineString = Utilities.formatDateOnline(value);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 }
                             }
                         }

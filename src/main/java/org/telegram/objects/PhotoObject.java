@@ -11,7 +11,11 @@ package org.telegram.objects;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.FileLoader;
 
 import java.util.ArrayList;
@@ -62,7 +66,11 @@ public class PhotoObject {
         for (TLRPC.PhotoSize obj : sizes) {
             int diffW = Math.abs(obj.w - width);
             int diffH = Math.abs(obj.h - height);
+<<<<<<< HEAD
             if (closestObject == null || closestObject instanceof TLRPC.TL_photoCachedSize || closestWidth > diffW || closestHeight > diffH) {
+=======
+            if (closestObject == null || closestWidth > diffW && closestHeight > diffH) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 closestObject = obj;
                 closestWidth = diffW;
                 closestHeight = diffH;

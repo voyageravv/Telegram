@@ -55,6 +55,10 @@
     <string name="Cancel">Cancel·la</string>
     <string name="CancelDownload">Descàrrega cancel·lada</string>
     <string name="CancelRegistration">Cancel·la el registre</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatBackground">Fons de xat</string>
     <string name="ChatDocument">Document</string>
     <string name="ChatGallery">Galeria</string>
@@ -276,7 +280,10 @@
     <string name="ShortMessageLifetime5s">5sg</string>
     <string name="ShortMessageLifetimeForever">Apagat</string>
     <string name="ShowAllMedia">Mostra tots els continguts</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">Desliza para cancelar</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Sound">So</string>
     <string name="StartEncryptedChat">Inicia xat secret</string>
     <string name="StartMessaging">Comença la conversa</string>

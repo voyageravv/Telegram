@@ -11,6 +11,10 @@ package org.telegram.ui;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -25,6 +29,10 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
+=======
+import org.telegram.messenger.BackgroundService;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessagesController;
@@ -43,6 +51,10 @@ public class ApplicationLoader extends Application {
     private GoogleCloudMessaging gcm;
     private AtomicInteger msgId = new AtomicInteger();
     private String regid;
+<<<<<<< HEAD
+=======
+    private String SENDER_ID = "760348033672";
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";
     private static final String PROPERTY_APP_VERSION = "appVersion";
@@ -130,6 +142,11 @@ public class ApplicationLoader extends Application {
 
         lastPauseTime = System.currentTimeMillis();
         FileLog.e("tmessages", "start application with time " + lastPauseTime);
+<<<<<<< HEAD
+=======
+
+        startService(new Intent(this, BackgroundService.class));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -144,7 +161,10 @@ public class ApplicationLoader extends Application {
             }
             currentLocale = newLocale;
         }
+<<<<<<< HEAD
         Utilities.checkDisplaySize();
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public static void resetLastPauseTime() {
@@ -206,7 +226,11 @@ public class ApplicationLoader extends Application {
                 while (count < 1000) {
                     try {
                         count++;
+<<<<<<< HEAD
                         regid = gcm.register(ConnectionsManager.GCM_SENDER_ID);
+=======
+                        regid = gcm.register(SENDER_ID);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         sendRegistrationIdToBackend(true);
                         storeRegistrationId(applicationContext, regid);
                         return true;

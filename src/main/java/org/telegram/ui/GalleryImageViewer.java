@@ -35,7 +35,11 @@ import org.telegram.objects.PhotoObject;
 import org.telegram.ui.Views.AbstractGalleryActivity;
 import org.telegram.ui.Views.GalleryViewPager;
 import org.telegram.ui.Views.PZSImageView;
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.objects.MessageObject;
 import org.telegram.messenger.FileLoader;
 import org.telegram.messenger.MessagesController;
@@ -479,7 +483,11 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
     }
 
     private TLRPC.FileLocation getCurrentFile() {
+<<<<<<< HEAD
         if (mViewPager == null || localPagerAdapter == null) {
+=======
+        if (mViewPager == null) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             return null;
         }
         int item = mViewPager.getCurrentItem();
@@ -497,6 +505,7 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
                     }
                 }
             } else if (message.messageOwner.media instanceof TLRPC.TL_messageMediaPhoto) {
+<<<<<<< HEAD
                 int width = (int)(Math.min(displaySize.x, displaySize.y) * 0.7f);
                 int height = width + Utilities.dp(100);
                 if (width > 800) {
@@ -507,6 +516,9 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
                 }
 
                 TLRPC.PhotoSize sizeFull = PhotoObject.getClosestPhotoSizeWithSize(message.messageOwner.media.photo.sizes, width, height);
+=======
+                TLRPC.PhotoSize sizeFull = PhotoObject.getClosestPhotoSizeWithSize(message.messageOwner.media.photo.sizes, 800, 800);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (sizeFull != null) {
                     return sizeFull.location;
                 }
@@ -547,6 +559,7 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
             } else {
                 ArrayList<TLRPC.PhotoSize> sizes = obj.messageOwner.action.photo.sizes;
                 if (sizes.size() > 0) {
+<<<<<<< HEAD
                     int width = (int)(Math.min(displaySize.x, displaySize.y) * 0.7f);
                     int height = width + Utilities.dp(100);
                     if (width > 800) {
@@ -557,6 +570,9 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
                     }
 
                     TLRPC.PhotoSize sizeFull = PhotoObject.getClosestPhotoSizeWithSize(sizes, width, height);
+=======
+                    TLRPC.PhotoSize sizeFull = PhotoObject.getClosestPhotoSizeWithSize(sizes, 800, 800);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     if (sizeFull != null) {
                         currentFileName = sizeFull.location.volume_id + "_" + sizeFull.location.local_id + ".jpg";
                     }
@@ -652,6 +668,7 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
             obs.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
                 @Override
                 public boolean onPreDraw() {
+<<<<<<< HEAD
                     try {
                         mViewPager.beginFakeDrag();
                         if (mViewPager.isFakeDragging()) {
@@ -660,6 +677,12 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
                         }
                     } catch (Exception e) {
                         FileLog.e("tmessages", e);
+=======
+                    mViewPager.beginFakeDrag();
+                    if (mViewPager.isFakeDragging()) {
+                        mViewPager.fakeDragBy(1);
+                        mViewPager.endFakeDrag();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                     mViewPager.getViewTreeObserver().removeOnPreDrawListener(this);
                     return false;
@@ -682,9 +705,13 @@ public class GalleryImageViewer extends AbstractGalleryActivity implements Notif
         switch (itemId) {
             case android.R.id.home:
                 cancelRunning = true;
+<<<<<<< HEAD
                 if (mViewPager != null) {
                     mViewPager.setAdapter(null);
                 }
+=======
+                mViewPager.setAdapter(null);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 localPagerAdapter = null;
                 finish();
                 System.gc();

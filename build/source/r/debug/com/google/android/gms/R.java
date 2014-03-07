@@ -41,6 +41,7 @@ public final class R {
 		public static final int common_signin_btn_text_light = 0x7f080015;
 	}
 	public static final class drawable {
+<<<<<<< HEAD
 		public static final int common_signin_btn_icon_dark = 0x7f02007d;
 		public static final int common_signin_btn_icon_disabled_dark = 0x7f02007e;
 		public static final int common_signin_btn_icon_disabled_focus_dark = 0x7f02007f;
@@ -69,6 +70,36 @@ public final class R {
 		public static final int ic_plusone_small_off_client = 0x7f02010b;
 		public static final int ic_plusone_standard_off_client = 0x7f02010c;
 		public static final int ic_plusone_tall_off_client = 0x7f02010d;
+=======
+		public static final int common_signin_btn_icon_dark = 0x7f020075;
+		public static final int common_signin_btn_icon_disabled_dark = 0x7f020076;
+		public static final int common_signin_btn_icon_disabled_focus_dark = 0x7f020077;
+		public static final int common_signin_btn_icon_disabled_focus_light = 0x7f020078;
+		public static final int common_signin_btn_icon_disabled_light = 0x7f020079;
+		public static final int common_signin_btn_icon_focus_dark = 0x7f02007a;
+		public static final int common_signin_btn_icon_focus_light = 0x7f02007b;
+		public static final int common_signin_btn_icon_light = 0x7f02007c;
+		public static final int common_signin_btn_icon_normal_dark = 0x7f02007d;
+		public static final int common_signin_btn_icon_normal_light = 0x7f02007e;
+		public static final int common_signin_btn_icon_pressed_dark = 0x7f02007f;
+		public static final int common_signin_btn_icon_pressed_light = 0x7f020080;
+		public static final int common_signin_btn_text_dark = 0x7f020081;
+		public static final int common_signin_btn_text_disabled_dark = 0x7f020082;
+		public static final int common_signin_btn_text_disabled_focus_dark = 0x7f020083;
+		public static final int common_signin_btn_text_disabled_focus_light = 0x7f020084;
+		public static final int common_signin_btn_text_disabled_light = 0x7f020085;
+		public static final int common_signin_btn_text_focus_dark = 0x7f020086;
+		public static final int common_signin_btn_text_focus_light = 0x7f020087;
+		public static final int common_signin_btn_text_light = 0x7f020088;
+		public static final int common_signin_btn_text_normal_dark = 0x7f020089;
+		public static final int common_signin_btn_text_normal_light = 0x7f02008a;
+		public static final int common_signin_btn_text_pressed_dark = 0x7f02008b;
+		public static final int common_signin_btn_text_pressed_light = 0x7f02008c;
+		public static final int ic_plusone_medium_off_client = 0x7f0200fd;
+		public static final int ic_plusone_small_off_client = 0x7f0200fe;
+		public static final int ic_plusone_standard_off_client = 0x7f0200ff;
+		public static final int ic_plusone_tall_off_client = 0x7f020100;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 	}
 	public static final class id {
 		public static final int hybrid = 0x7f09000f;
@@ -81,6 +112,7 @@ public final class R {
 		public static final int google_play_services_version = 0x7f0b0001;
 	}
 	public static final class string {
+<<<<<<< HEAD
 		public static final int auth_client_needs_enabling_title = 0x7f0c0141;
 		public static final int auth_client_needs_installation_title = 0x7f0c0142;
 		public static final int auth_client_needs_update_title = 0x7f0c0143;
@@ -107,6 +139,34 @@ public final class R {
 		public static final int common_google_play_services_update_title = 0x7f0c0158;
 		public static final int common_signin_button_text = 0x7f0c0159;
 		public static final int common_signin_button_text_long = 0x7f0c015a;
+=======
+		public static final int auth_client_needs_enabling_title = 0x7f0c0140;
+		public static final int auth_client_needs_installation_title = 0x7f0c0141;
+		public static final int auth_client_needs_update_title = 0x7f0c0142;
+		public static final int auth_client_play_services_err_notification_msg = 0x7f0c0143;
+		public static final int auth_client_requested_by_msg = 0x7f0c0144;
+		public static final int auth_client_using_bad_version_title = 0x7f0c0145;
+		public static final int common_google_play_services_enable_button = 0x7f0c0146;
+		public static final int common_google_play_services_enable_text = 0x7f0c0147;
+		public static final int common_google_play_services_enable_title = 0x7f0c0148;
+		public static final int common_google_play_services_install_button = 0x7f0c0149;
+		public static final int common_google_play_services_install_text_phone = 0x7f0c014a;
+		public static final int common_google_play_services_install_text_tablet = 0x7f0c014b;
+		public static final int common_google_play_services_install_title = 0x7f0c014c;
+		public static final int common_google_play_services_invalid_account_text = 0x7f0c014d;
+		public static final int common_google_play_services_invalid_account_title = 0x7f0c014e;
+		public static final int common_google_play_services_network_error_text = 0x7f0c014f;
+		public static final int common_google_play_services_network_error_title = 0x7f0c0150;
+		public static final int common_google_play_services_unknown_issue = 0x7f0c0151;
+		public static final int common_google_play_services_unsupported_date_text = 0x7f0c0152;
+		public static final int common_google_play_services_unsupported_text = 0x7f0c0153;
+		public static final int common_google_play_services_unsupported_title = 0x7f0c0154;
+		public static final int common_google_play_services_update_button = 0x7f0c0155;
+		public static final int common_google_play_services_update_text = 0x7f0c0156;
+		public static final int common_google_play_services_update_title = 0x7f0c0157;
+		public static final int common_signin_button_text = 0x7f0c0158;
+		public static final int common_signin_button_text_long = 0x7f0c0159;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 	}
 	public static final class styleable {
 		public static final int[] AdsAttrs = { 0x7f010055, 0x7f010056, 0x7f010057 };

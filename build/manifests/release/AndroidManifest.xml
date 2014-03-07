@@ -1,5 +1,9 @@
 <!-- From: file:/home/tino/Telegram/TMessagesProj/src/main/AndroidManifest.xml -->
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="185" android:versionName="1.3.27" package="org.telegram.messenger.release">
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:versionCode="164" android:versionName="1.3.21.4" package="org.telegram.messenger.release">
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
 
@@ -42,11 +46,15 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<<<<<<< HEAD
     <uses-permission android:name="com.google.android.gallery3d.permission.GALLERY_PROVIDER"/>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <permission android:name="org.telegram.messenger.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
     <permission android:name="org.telegram.messenger.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
 
+<<<<<<< HEAD
     <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/AppName" android:largeHeap="true" android:name="org.telegram.ui.ApplicationLoader" android:theme="@style/Theme.TMessages.Start">
 
         <!--release-->
@@ -56,6 +64,14 @@
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="org.telegram.ui.LaunchActivity" android:windowSoftInputMode="adjustResize">
+=======
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/AppName" android:largeHeap="true" android:name="org.telegram.ui.ApplicationLoader" android:theme="@style/Theme.TMessages.Start">
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="your-google-maps-api-key-here"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="org.telegram.ui.LaunchActivity" android:windowSoftInputMode="adjustResize">
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -71,16 +87,20 @@
                 <data android:mimeType="video/*"/>
             </intent-filter>
             <intent-filter>
+<<<<<<< HEAD
                 <action android:name="android.intent.action.SEND_MULTIPLE"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="image/*"/>
             </intent-filter>
             <intent-filter>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="text/plain"/>
             </intent-filter>
             <intent-filter>
+<<<<<<< HEAD
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="*/*"/>
@@ -91,6 +111,8 @@
                 <data android:mimeType="*/*"/>
             </intent-filter>
             <intent-filter>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="vnd.android.cursor.item/vnd.org.telegram.messenger.android.profile"/>
@@ -102,6 +124,11 @@
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="org.telegram.ui.IntroActivity" android:screenOrientation="portrait">
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="org.telegram.ui.ApplicationActivity" android:theme="@style/Theme.TMessages" android:windowSoftInputMode="adjustResize">
+        </activity>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="org.telegram.ui.GalleryImageViewer" android:theme="@style/Theme.TMessages.Gallery">
         </activity>
 
@@ -136,6 +163,12 @@
             <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_contacts"/>
             <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts"/>
         </service>
+<<<<<<< HEAD
+=======
+        
+        <service android:enabled="true" android:exported="true" android:name="org.telegram.messenger.GcmService"/>
+        <service android:enabled="true" android:name="org.telegram.messenger.BackgroundService" android:stopWithTask="false"/>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
         <uses-library android:name="com.google.android.maps" android:required="false"/>
     </application>

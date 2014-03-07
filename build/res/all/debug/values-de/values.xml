@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
+<<<<<<< HEAD
     <!-- From: file:/home/tino/Telegram/TMessagesProj/src/main/res/values-de/strings.xml -->
     <eat-comment />
 
@@ -312,6 +313,8 @@
     <string name="YourName">Dein Name</string>
     <string name="YourPhone">Dein Telefon</string>
     <string name="YourPhoneNumber">DEINE TELEFONNUMMER</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <!-- From: file:/home/tino/Telegram/TMessagesProj/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values-de/values.xml -->
     <eat-comment />
 

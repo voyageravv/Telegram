@@ -55,6 +55,10 @@
     <string name="Cancel">Ezeztatu</string>
     <string name="CancelDownload">Deskarga ezeztatu</string>
     <string name="CancelRegistration">Deuseztatu Izen ematea</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatBackground">Txatetarako atzealdea</string>
     <string name="ChatDocument">Dokumentua</string>
     <string name="ChatGallery">Galeria</string>
@@ -276,7 +280,10 @@
     <string name="ShortMessageLifetime5s">5s</string>
     <string name="ShortMessageLifetimeForever">Inoiz ez</string>
     <string name="ShowAllMedia">Media guztia ikusi</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">SLIDE TO CANCEL</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Sound">Soinua</string>
     <string name="StartEncryptedChat">Hasi ezkutuko txata</string>
     <string name="StartMessaging">Mezuak bidali!</string>

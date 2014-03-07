@@ -9,6 +9,7 @@
 package org.telegram.ui.Cells;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.graphics.Canvas;
 import android.text.Spannable;
 import android.text.style.ClickableSpan;
@@ -183,5 +184,20 @@ public class ChatMessageCell extends ChatBaseCell {
             block.textLayout.draw(canvas);
             canvas.restore();
         }
+=======
+import android.util.AttributeSet;
+
+public class ChatMessageCell extends BaseCell {
+    public ChatMessageCell(Context context) {
+        super(context);
+    }
+
+    public ChatMessageCell(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public ChatMessageCell(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 }

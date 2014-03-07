@@ -24,7 +24,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.MessagesController;
@@ -131,6 +135,7 @@ public class ContactAddActivity extends BaseFragment implements NotificationCent
             onlineText.setText(getStringEntry(R.string.Offline));
         } else {
             int currentTime = ConnectionsManager.Instance.getCurrentTime();
+<<<<<<< HEAD
             if (user.status.expires > currentTime) {
                 onlineText.setText(getStringEntry(R.string.Online));
             } else {
@@ -138,6 +143,19 @@ public class ContactAddActivity extends BaseFragment implements NotificationCent
                     onlineText.setText(getStringEntry(R.string.Invisible));
                 } else {
                     onlineText.setText(Utilities.formatDateOnline(user.status.expires));
+=======
+            if (user.status.expires > currentTime || user.status.was_online > currentTime) {
+                onlineText.setText(getStringEntry(R.string.Online));
+            } else {
+                if (user.status.was_online <= 10000 && user.status.expires <= 10000) {
+                    onlineText.setText(getStringEntry(R.string.Invisible));
+                } else {
+                    int value = user.status.was_online;
+                    if (value == 0) {
+                        value = user.status.expires;
+                    }
+                    onlineText.setText(Utilities.formatDateOnline(value));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             }
         }
@@ -214,7 +232,11 @@ public class ContactAddActivity extends BaseFragment implements NotificationCent
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
         boolean animations = preferences.getBoolean("view_animations", true);

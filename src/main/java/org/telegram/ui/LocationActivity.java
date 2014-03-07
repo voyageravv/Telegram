@@ -28,7 +28,11 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.objects.MessageObject;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.NotificationCenter;
@@ -207,8 +211,13 @@ public class LocationActivity extends BaseFragment implements NotificationCenter
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override

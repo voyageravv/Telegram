@@ -107,7 +107,10 @@ public class PyroClient {
      * set
      */
 
+<<<<<<< HEAD
     @SuppressWarnings("unchecked")
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public <T> T attachment() {
         return (T) this.attachment;
     }
@@ -156,6 +159,15 @@ public class PyroClient {
         ((SocketChannel) key.channel()).socket().setKeepAlive(enabled);
     }
 
+<<<<<<< HEAD
+=======
+    //
+
+    //
+
+    //
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private boolean doEagerWrite = false;
 
     /**
@@ -315,7 +327,11 @@ public class PyroClient {
             public void run() {
                 try {
                     if (key.channel().isOpen()) {
+<<<<<<< HEAD
                         (key.channel()).close();
+=======
+                        ((SocketChannel) key.channel()).close();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                 } catch (Exception exc) {
                     selector().scheduleTask(this);
@@ -335,7 +351,11 @@ public class PyroClient {
     public boolean isDisconnected() {
         this.selector.checkThread();
 
+<<<<<<< HEAD
         return !this.key.channel().isOpen();
+=======
+        return !((SocketChannel) this.key.channel()).isOpen();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     //
@@ -363,7 +383,13 @@ public class PyroClient {
     private long lastEventTime;
 
     boolean didTimeout(long now) {
+<<<<<<< HEAD
         return this.timeout != 0 && (now - this.lastEventTime) > this.timeout;
+=======
+        if (this.timeout == 0)
+            return false; // never timeout
+        return (now - this.lastEventTime) > this.timeout;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     private void onReadyToConnect(long now) throws IOException {
@@ -435,7 +461,11 @@ public class PyroClient {
 
         try {
             // if the key is invalid, the channel may remain open!!
+<<<<<<< HEAD
             this.key.channel().close();
+=======
+            ((SocketChannel) this.key.channel()).close();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         } catch (Exception exc) {
             // type: java.io.IOException
             // message:
@@ -481,7 +511,11 @@ public class PyroClient {
                 + "]";
     }
 
+<<<<<<< HEAD
     private String getAddressText() {
+=======
+    private final String getAddressText() {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (!this.key.channel().isOpen())
             return "closed";
 
@@ -503,7 +537,11 @@ public class PyroClient {
                 interested);
     }
 
+<<<<<<< HEAD
     static SelectionKey bindAndConfigure(PyroSelector selector,
+=======
+    static final SelectionKey bindAndConfigure(PyroSelector selector,
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             SocketChannel channel, InetSocketAddress bind) throws IOException {
         selector.checkThread();
 
@@ -512,7 +550,11 @@ public class PyroClient {
         return configure(selector, channel, true);
     }
 
+<<<<<<< HEAD
     static SelectionKey configure(PyroSelector selector,
+=======
+    static final SelectionKey configure(PyroSelector selector,
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             SocketChannel channel, boolean connect) throws IOException {
         selector.checkThread();
 

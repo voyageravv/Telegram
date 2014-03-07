@@ -30,8 +30,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessagesController;
@@ -292,8 +297,13 @@ public class SettingsNotificationsActivity extends BaseFragment {
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override

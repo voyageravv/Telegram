@@ -22,7 +22,11 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.R;
 import org.telegram.messenger.Utilities;
@@ -111,8 +115,13 @@ public class IdenticonActivity extends BaseFragment {
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         fixLayout();
     }
 

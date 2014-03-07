@@ -58,12 +58,18 @@ public class PhoneFormat {
         return res.toString();
     }
 
+<<<<<<< HEAD
     public static String stripExceptNumbers(String str, boolean includePlus) {
         StringBuilder res = new StringBuilder(str);
         String phoneChars = "0123456789";
         if (includePlus) {
             phoneChars += "+";
         }
+=======
+    public static String stripExceptNumbers(String str) {
+        StringBuilder res = new StringBuilder(str);
+        String phoneChars = "0123456789";
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         for (int i = res.length() - 1; i >= 0; i--) {
             if (!phoneChars.contains(res.substring(i, i + 1))) {
                 res.deleteCharAt(i);
@@ -72,10 +78,13 @@ public class PhoneFormat {
         return res.toString();
     }
 
+<<<<<<< HEAD
     public static String stripExceptNumbers(String str) {
         return stripExceptNumbers(str, false);
     }
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public PhoneFormat() {
         init(null);
     }

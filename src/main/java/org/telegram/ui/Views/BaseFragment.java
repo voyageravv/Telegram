@@ -17,7 +17,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import org.telegram.messenger.ConnectionsManager;
+<<<<<<< HEAD
 import org.telegram.ui.LaunchActivity;
+=======
+import org.telegram.ui.ApplicationActivity;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.ui.ApplicationLoader;
 
 public class BaseFragment extends Fragment {
@@ -55,7 +59,11 @@ public class BaseFragment extends Fragment {
             onFragmentDestroy();
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).finishFragment(bySwipe);
+=======
+        ((ApplicationActivity)parentActivity).finishFragment(bySwipe);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (getActivity() == null) {
             if (fragmentView != null) {
                 ViewGroup parent = (ViewGroup)fragmentView.getParent();
@@ -80,7 +88,11 @@ public class BaseFragment extends Fragment {
             onFragmentDestroy();
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).removeFromStack(this);
+=======
+        ((ApplicationActivity)parentActivity).removeFromStack(this);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (getActivity() == null) {
             if (fragmentView != null) {
                 ViewGroup parent = (ViewGroup)fragmentView.getParent();

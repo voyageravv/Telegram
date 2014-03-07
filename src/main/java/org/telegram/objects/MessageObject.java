@@ -9,6 +9,7 @@
 package org.telegram.objects;
 
 import android.graphics.Bitmap;
+<<<<<<< HEAD
 import android.graphics.Paint;
 import android.text.Layout;
 import android.text.Spannable;
@@ -19,6 +20,12 @@ import android.text.util.Linkify;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import android.view.View;
+
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.Emoji;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.R;
@@ -40,6 +47,7 @@ public class MessageObject {
     public PhotoObject previewPhoto;
     public String dateKey;
     public boolean deleted = false;
+<<<<<<< HEAD
     public float audioProgress;
     public int audioProgressSec;
 
@@ -67,6 +75,11 @@ public class MessageObject {
             textPaint.linkColor = 0xff316f9f;
         }
 
+=======
+    public Object TAG;
+
+    public MessageObject(TLRPC.Message message, AbstractMap<Integer, TLRPC.User> users) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         messageOwner = message;
 
         if (message instanceof TLRPC.TL_messageService) {
@@ -252,6 +265,10 @@ public class MessageObject {
             messageText = message.message;
         }
         messageText = Emoji.replaceEmoji(messageText);
+<<<<<<< HEAD
+=======
+        //messageText = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageText);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
         if (message instanceof TLRPC.TL_message || (message instanceof TLRPC.TL_messageForwarded && (message.media == null || !(message.media instanceof TLRPC.TL_messageMediaEmpty)))) {
             if (message.media == null || message.media instanceof TLRPC.TL_messageMediaEmpty) {
@@ -298,9 +315,15 @@ public class MessageObject {
                 }
             } else if (message.media != null && message.media instanceof TLRPC.TL_messageMediaAudio) {
                 if (message.from_id == UserConfig.clientUserId) {
+<<<<<<< HEAD
                     type = 18;
                 } else {
                     type = 19;
+=======
+                    type = 0;
+                } else {
+                    type = 1;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             }
         } else if (message instanceof TLRPC.TL_messageService) {
@@ -325,8 +348,11 @@ public class MessageObject {
         int dateYear = rightNow.get(Calendar.YEAR);
         int dateMonth = rightNow.get(Calendar.MONTH);
         dateKey = String.format("%d_%02d_%02d", dateYear, dateMonth, dateDay);
+<<<<<<< HEAD
 
         generateLayout();
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public String getFileName() {
@@ -367,6 +393,7 @@ public class MessageObject {
         }
         return "";
     }
+<<<<<<< HEAD
 
     private void generateLayout() {
         if (type != 0 && type != 1 && type != 8 && type != 9 || messageOwner.to_id == null || messageText == null || messageText.length() == 0 || !(messageOwner.media instanceof TLRPC.TL_messageMediaEmpty) && !(messageOwner.media instanceof TLRPC.TL_messageMediaUnsupported) && !(messageOwner.media == null)) {
@@ -485,4 +512,6 @@ public class MessageObject {
             linesOffset += currentBlockLinesCount;
         }
     }
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 }

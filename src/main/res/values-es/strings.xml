@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<<<<<<< HEAD
 <!--Translation by Borja Campina, Edited by Victor Espinoza and Francisco Vila-->
+=======
+<!--Translation by Borja Campina, Edited by Voyageravv-->
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
 <resources>
     <string name="AppName">Shurgram</string>
@@ -32,12 +36,20 @@
     <string name="Search">Buscar</string>
     <string name="NewMessages">Nuevo mensaje</string>
     <string name="Settings">Ajustes</string>
+<<<<<<< HEAD
     <string name="Contacts">Contactos</string>
+=======
+    <string name="Contacts">Shurmanos</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NewGroup">Nuevo grupo</string>
     <string name="Yesterday">ayer</string>
     <string name="NoResult">Sin resultados</string>
     <string name="NoChats">No tienes conversaciones todavía...</string>
+<<<<<<< HEAD
     <string name="NoChatsHelp">Empieza a chatear presionando el\nbotón de Nuevo mensaje en la esquina superior\nderecha o ve a la sección de Contactos.</string>
+=======
+    <string name="NoChatsHelp">Empieza a chatear presionando el\nbotón de Nuevo mensaje en la esquina superior\nderecha o ve a la sección de Shurmanos.</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="WaitingForNetwork">Esperando red...</string>
     <string name="Connecting">Conectando...</string>
     <string name="Updating">Actualizando...</string>
@@ -78,6 +90,10 @@
     <string name="ChatGallery">Galería</string>
     <string name="ChatLocation">Ubicación</string>
     <string name="ChatVideo">Vídeo</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatDocument">Archivo</string>
     <string name="NoMessages">No hay mensajes aún...</string>
     <string name="ViewPhoto">Ver foto</string>
@@ -86,16 +102,28 @@
     <string name="ForwardedMessage">Mensaje reenviado</string>
     <string name="From">De</string>
     <string name="NoRecent">No hay recientes</string>
+<<<<<<< HEAD
     <string name="Members">miembros</string>
+=======
+    <string name="Members">surmanos</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Message">Mensaje</string>
     <string name="TypeMessage">Escribe un mensaje</string>
     <string name="DOWNLOAD">Descargar</string>
     <string name="Selected">Elegidos:</string>
+<<<<<<< HEAD
     <string name="ShareMyContactInfo">COMPARTIR MI INFORMACIÓN DE CONTACTO</string>
     <string name="AddToContacts">AÑADIR A CONTACTOS</string>
     <string name="EncryptedPlaceholderTitleIncoming">%s te ha invitado a un chat secreto.</string>
     <string name="EncryptedPlaceholderTitleOutgoing">Has invitado a %s a un chat secreto.</string>
     <string name="EncryptedDescriptionTitle">Los chats secretos:</string>
+=======
+    <string name="ShareMyContactInfo">COMPARTIR MI INFORMACIÓN DE SHURMANO</string>
+    <string name="AddToContacts">AÑADIR A SHURMANOS</string>
+    <string name="EncryptedPlaceholderTitleIncoming">%s te ha invitado a un chat secreto.</string>
+    <string name="EncryptedPlaceholderTitleOutgoing">Has invitado a %s a un chat secreto.</string>
+    <string name="EncryptedDescriptionTitle">Los Chats Secretos:</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="EncryptedDescription1">Usan cifrado de móvil-a-móvil</string>
     <string name="EncryptedDescription2">No dejan rastro en nuestros servidores</string>
     <string name="EncryptedDescription3">Tienen autodestrucción de mensajes</string>
@@ -105,7 +133,10 @@
     <string name="YouWereKicked">Has sido expulsado de este grupo</string>
     <string name="YouLeft">Has abandonado este grupo</string>
     <string name="DeleteThisGroup">Eliminar este grupo</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">DESLIZA PARA CANCELAR</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--notification-->
     <string name="EncryptedChatRequested">Chat secreto solicitado</string>
@@ -125,7 +156,11 @@
     <string name="NotificationMessageNoText">%1$s te envió un mensaje</string>
     <string name="NotificationMessagePhoto">%1$s te envió una foto</string>
     <string name="NotificationMessageVideo">%1$s te envió un vídeo</string>
+<<<<<<< HEAD
     <string name="NotificationMessageContact">%1$s compartió un contacto contigo</string>
+=======
+    <string name="NotificationMessageContact">%1$s compartió un surmano contigo</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageMap">%1$s te envió un mapa</string>
     <string name="NotificationMessageDocument">%1$s te envió un archivo</string>
     <string name="NotificationMessageAudio">%1$s te envió un audio</string>
@@ -133,7 +168,11 @@
     <string name="NotificationMessageGroupNoText">%1$s envió un mensaje al grupo %2$s</string>
     <string name="NotificationMessageGroupPhoto">%1$s envió una foto al grupo %2$s</string>
     <string name="NotificationMessageGroupVideo">%1$s envió un vídeo al grupo %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationMessageGroupContact">%1$s compartió un contacto en el grupo %2$s</string>
+=======
+    <string name="NotificationMessageGroupContact">%1$s compartió un surmano en el grupo %2$s</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageGroupMap">%1$s envió un mapa al grupo %2$s</string>
     <string name="NotificationMessageGroupDocument">%1$s envió un archivo al grupo %2$s</string>
     <string name="NotificationMessageGroupAudio">%1$s envió un audio al grupo %2$s</string>
@@ -149,9 +188,15 @@
     <string name="NotificationContactNewPhoto">%1$s actualizó su foto de perfil</string>
 
     <!--contacts view-->
+<<<<<<< HEAD
     <string name="SelectContact">Seleccionar contacto</string>
     <string name="NoContacts">No hay contactos aún</string>
     <string name="InviteText">Oye, cambiémonos a Shurgram: http://telegram.org/dl2</string>
+=======
+    <string name="SelectContact">Seleccionar surmano</string>
+    <string name="NoContacts">No hay surmanos aún</string>
+    <string name="InviteText">Hey, cambiémonos a Shurgram: http://telegram.org/dl2</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="TodayAt">hoy a las</string>
     <string name="YesterdayAt">ayer a las</string>
     <string name="OtherAt">a las</string>
@@ -166,8 +211,13 @@
     <string name="EnterGroupNamePlaceholder">El nombre del grupo</string>
     <string name="MEMBER">MIEMBRO</string>
     <string name="GroupName">Nombre del grupo</string>
+<<<<<<< HEAD
     <string name="MEMBERS">MIEMBROS</string>
     <string name="AllContacts">TODOS LOS CONTACTOS</string>
+=======
+    <string name="MEMBERS">SHURMANOS</string>
+    <string name="AllContacts">TODOS LOS SHURMANOS</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--group info view-->
     <string name="EnterGroupNameTitle">INGRESA EL NOMBRE DEL GRUPO</string>
@@ -191,7 +241,11 @@
     <string name="PhoneWork">TRABAJO</string>
     <string name="PhoneOther">OTRO</string>
     <string name="PhoneMain">PRINCIPAL</string>
+<<<<<<< HEAD
     <string name="ContactInfo">Información del contacto</string>
+=======
+    <string name="ContactInfo">Información del surmano</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="PHONE">TELÉFONO</string>
     <string name="StartEncryptedChat">Iniciar chat secreto</string>
     <string name="CreateEncryptedChatError">Ocurrió un error.</string>
@@ -214,8 +268,13 @@
     <string name="AskAQuestion">Hacer una pregunta</string>
     <string name="EnableAnimations">Activar animaciones</string>
     <string name="Unblock">Desbloquear</string>
+<<<<<<< HEAD
     <string name="UnblockText">Mantén pulsado un usuario para desbloquearlo</string>
     <string name="NoBlocked">No hay usuarios bloqueados</string>
+=======
+    <string name="UnblockText">Mantén pulsado un shurmano para desbloquearlo</string>
+    <string name="NoBlocked">No hay shurmanos bloqueados</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="YourPhoneNumber">TU NÚMERO DE TELÉFONO</string>
     <string name="MessageNotifications">NOTIFICACIONES DE MENSAJES</string>
     <string name="Alert">Alerta</string>
@@ -229,7 +288,11 @@
     <string name="InAppPreview">Vista previa en la app</string>
     <string name="Reset">RESTABLECER</string>
     <string name="ResetAllNotifications">Restablecer todas las notificaciones</string>
+<<<<<<< HEAD
     <string name="UndoAllCustom">Deshacer todas las notificaciones personalizadas para todos tus usuarios y grupos</string>
+=======
+    <string name="UndoAllCustom">Deshacer todas las notificaciones personalizadas para todos tus shurmanos y grupos</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationsAndSounds">Notificaciones y sonidos</string>
     <string name="BlockedUsers">Usuarios bloqueados</string>
     <string name="SaveIncomingPhotos">Guardar fotos entrantes</string>
@@ -247,7 +310,11 @@
     <string name="AutomaticPhotoDownloadGroups">Grupos</string>
     <string name="AutomaticPhotoDownloadPrivateChats">Chats</string>
     <string name="Events">EVENTOS</string>
+<<<<<<< HEAD
     <string name="ContactJoined">Un contacto se unió a Shurgram</string>
+=======
+    <string name="ContactJoined">Un surmano se unió a Shurgram</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--media view-->
     <string name="NoMedia">No hay fotos ni vídeos compartidos aún</string>
@@ -293,7 +360,11 @@
     <!--messages-->
     <string name="ActionKickUser">un1 expulsó a un2</string>
     <string name="ActionLeftUser">un1 dejó el grupo</string>
+<<<<<<< HEAD
     <string name="ActionAddUser">un1 añadió a un2</string>
+=======
+    <string name="ActionAddUser">un1 agregó a un2</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ActionRemovedPhoto">un1 eliminó la foto del grupo</string>
     <string name="ActionChangedPhoto">un1 cambió la foto del grupo</string>
     <string name="ActionChangedTitle">un1 cambió el nombre del grupo a un2</string>
@@ -311,7 +382,11 @@
     <string name="AttachPhoto">Foto</string>
     <string name="AttachVideo">Vídeo</string>
     <string name="AttachLocation">Ubicación</string>
+<<<<<<< HEAD
     <string name="AttachContact">Contacto</string>
+=======
+    <string name="AttachContact">Shurmano</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="AttachDocument">Archivo</string>
     <string name="AttachAudio">Audio</string>
     <string name="FromYou">Tú</string>
@@ -326,9 +401,15 @@
     <string name="Loading">Cargando...</string>
     <string name="NoPlayerInstalled">No tienes reproductor de vídeo. Por favor, instala uno para continuar.</string>
     <string name="NoHandleAppInstalled">No tienes una aplicación que pueda manejar el tipo mime \'%1$s\'. Por favor, instala una para continuar</string>
+<<<<<<< HEAD
     <string name="InviteUser">Este usuario no tiene Shurgram aún. ¿Enviarle una invitación?</string>
     <string name="AreYouSure">¿Estás seguro?</string>
     <string name="AddContactQ">¿Añadir contacto?</string>
+=======
+    <string name="InviteUser">Este shurmano no tiene Shurgram aún. ¿Enviarle una invitación?</string>
+    <string name="AreYouSure">¿Estás seguro?</string>
+    <string name="AddContactQ">¿Añadir shurmano?</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="AddToTheGroup">¿Añadir a %1$s al grupo?</string>
     <string name="ForwardMessagesTo">¿Reenviar mensajes a %1$s?</string>
     <string name="DeleteChatQuestion">¿Eliminar este chat?</string>
@@ -344,7 +425,11 @@
     <string name="Page1Message">Bienvenidos a la era de la mensajería rápida y segura.</string>
     <string name="Page2Message"><![CDATA[<b>Shurgram</b>]]> entrega mensajes más rápido que<![CDATA[<br/>]]>cualquier otra aplicación.</string>
     <string name="Page3Message"><![CDATA[<b>Shurgram</b>]]> es gratis para siempre. Sin publicidad.<![CDATA[<br/>]]>Sin cuotas de suscripción.</string>
+<<<<<<< HEAD
     <string name="Page4Message"><![CDATA[<b>Shurgram</b>]]> mantiene tus mensajes<![CDATA[<br/>]]>a salvo del ataque de hackers.</string>
+=======
+    <string name="Page4Message"><![CDATA[<b>Shurgram</b>]]> mantiene tus mensajes<![CDATA[<br/>]]>a salvo del ataque de juanquers.</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Page5Message"><![CDATA[<b>Shurgram</b>]]> no tiene límites en el tamaño de tus<![CDATA[<br/>]]>chats y archivos.</string>
     <string name="Page6Message"><![CDATA[<b>Shurgram</b>]]> te permite acceder a tus mensajes<![CDATA[<br/>]]>desde múltiples dispositivos.</string>
     <string name="Page7Message">Los mensajes de <![CDATA[<b>Shurgram</b>]]> están fuertemente<![CDATA[<br/>]]>cifrados y se pueden autodestruir.</string>

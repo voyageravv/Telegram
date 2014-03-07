@@ -16,6 +16,12 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.util.Base64;
 
+<<<<<<< HEAD
+=======
+import org.telegram.TL.TLClassStore;
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.ui.ApplicationLoader;
 
 import java.io.File;
@@ -34,8 +40,12 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
     public static int APP_ID = 2458;
     public static String APP_HASH = "5bce48dc7d331e62c955669eb7233217";
     public static String HOCKEY_APP_HASH = "your-hockeyapp-api-key-here";
+<<<<<<< HEAD
     public static String GCM_SENDER_ID = "760348033672";
     public static String SEND_LOGS_EMAIL = "email@gmail.com";
+=======
+    public static boolean disableContactsImport = false;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     private HashMap<Integer, Datacenter> datacenters = new HashMap<Integer, Datacenter>();
     private HashMap<Long, ArrayList<Long>> processedMessageIdsSet = new HashMap<Long, ArrayList<Long>>();
@@ -65,7 +75,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
     public int timeDifference = 0;
     public int currentPingTime;
     private int lastDestroySessionRequestTime;
+<<<<<<< HEAD
     public static final boolean isDebugSession = false;
+=======
+    private final boolean isDebugSession = false;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private boolean updatingDcSettings = false;
     private int updatingDcStartTime = 0;
     private int lastDcUpdateTime = 0;
@@ -484,7 +498,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
     }
 
     long getNewSessionId() {
+<<<<<<< HEAD
         long newSessionId = MessagesController.random.nextLong();
+=======
+        long newSessionId = (long)(MessagesController.random.nextDouble() * Long.MAX_VALUE);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         return isDebugSession ? (0xabcd000000000000L | (newSessionId & 0x0000ffffffffffffL)) : newSessionId;
     }
 
@@ -612,7 +630,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                         if (existing == null) {
                             existing = new Datacenter();
                             existing.datacenterId = datacenterDesc.id;
+<<<<<<< HEAD
                             existing.authSessionId = MessagesController.random.nextLong();
+=======
+                            existing.authSessionId = (long)(MessagesController.random.nextDouble() * Long.MAX_VALUE);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             datacentersArr.add(existing);
                             datacenterMap.put(existing.datacenterId, existing);
                         }
@@ -691,7 +713,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                 }
                 object = invoke;
             }
+<<<<<<< HEAD
             TLRPC.invokeWithLayer12 invoke = new TLRPC.invokeWithLayer12();
+=======
+            TLRPC.invokeWithLayer11 invoke = new TLRPC.invokeWithLayer11();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             invoke.query = object;
             FileLog.d("wrap in layer", "" + object);
             return invoke;
@@ -919,6 +945,7 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
         final ArrayList<Integer> unauthorizedDatacenterIds = new ArrayList<Integer>();
 
         int currentTime = (int)(System.currentTimeMillis() / 1000);
+<<<<<<< HEAD
         for (int i = 0; i < runningRequests.size(); i++) {
             RPCRequest request = runningRequests.get(i);
 
@@ -929,6 +956,22 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                     runningRequests.remove(i);
                     i--;
                     continue;
+=======
+        for (RPCRequest request : runningRequests) {
+            if (updatingDcSettings && datacenters.size() > 1 && request.rawRequest instanceof TLRPC.TL_help_getConfig) {
+                if (updatingDcStartTime < currentTime - 60) {
+                    updatingDcStartTime = currentTime;
+                    ArrayList<Datacenter> allDc = new ArrayList<Datacenter>(datacenters.values());
+                    for (int a = 0; a < allDc.size(); a++) {
+                        Datacenter dc = allDc.get(a);
+                        if (dc.datacenterId == request.runningDatacenterId) {
+                            allDc.remove(a);
+                            break;
+                        }
+                    }
+                    Datacenter newDc = allDc.get(Math.abs(MessagesController.random.nextInt()) % allDc.size());
+                    request.runningDatacenterId = newDc.datacenterId;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             }
 
@@ -943,9 +986,12 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             Datacenter requestDatacenter = datacenterWithId(datacenterId);
             if (!request.initRequest && requestDatacenter.lastInitVersion != currentAppVersion) {
                 request.rpcRequest = wrapInLayer(request.rawRequest, requestDatacenter.datacenterId, request);
+<<<<<<< HEAD
                 SerializedData os = new SerializedData(true);
                 request.rpcRequest.serializeToStream(os);
                 request.serializedLength = os.length();
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
 
             if (requestDatacenter == null) {
@@ -1179,6 +1225,12 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                     Integer tokenIt = activeTransportTokens.get(requestDatacenter.datacenterId);
                     request.transportChannelToken = tokenIt != null ? tokenIt : 0;
                 } else if ((request.flags & RPCRequest.RPCRequestClassUploadMedia) != 0) {
+<<<<<<< HEAD
+=======
+                    if (uploadRunningRequestCount >= 20)
+                        continue;
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     if (!haveNetwork) {
                         FileLog.d("tmessages", "Don't have any network connection, skipping upload request");
                         continue;
@@ -1567,12 +1619,21 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             TLRPC.TL_protoMessage message = networkMessage.protoMessage;
 
             if (DEBUG_VERSION) {
+<<<<<<< HEAD
                 if (message.body instanceof TLRPC.invokeWithLayer12) {
                     FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer12)message.body).query);
                 } else if (message.body instanceof TLRPC.initConnection) {
                     TLRPC.initConnection r = (TLRPC.initConnection)message.body;
                     if (r.query instanceof TLRPC.invokeWithLayer12) {
                         FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer12)r.query).query);
+=======
+                if (message.body instanceof TLRPC.invokeWithLayer11) {
+                    FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer11)message.body).query);
+                } else if (message.body instanceof TLRPC.initConnection) {
+                    TLRPC.initConnection r = (TLRPC.initConnection)message.body;
+                    if (r.query instanceof TLRPC.invokeWithLayer11) {
+                        FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer11)r.query).query);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     } else {
                         FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + r.query);
                     }
@@ -1607,12 +1668,21 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                 TLRPC.TL_protoMessage message = networkMessage.protoMessage;
                 containerMessages.add(message);
                 if (DEBUG_VERSION) {
+<<<<<<< HEAD
                     if (message.body instanceof TLRPC.invokeWithLayer12) {
                         FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer12)message.body).query);
                     } else if (message.body instanceof TLRPC.initConnection) {
                         TLRPC.initConnection r = (TLRPC.initConnection)message.body;
                         if (r.query instanceof TLRPC.invokeWithLayer12) {
                             FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer12)r.query).query);
+=======
+                    if (message.body instanceof TLRPC.invokeWithLayer11) {
+                        FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer11)message.body).query);
+                    } else if (message.body instanceof TLRPC.initConnection) {
+                        TLRPC.initConnection r = (TLRPC.initConnection)message.body;
+                        if (r.query instanceof TLRPC.invokeWithLayer11) {
+                            FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + ((TLRPC.invokeWithLayer11)r.query).query);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         } else {
                             FileLog.d("tmessages", sessionId + ":DC" + datacenter.datacenterId + "> Send message (" + message.seqno + ", " + message.msg_id + "): " + r.query);
                         }
@@ -1666,11 +1736,19 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             dataForEncryption.writeByte(b[0]);
         }
 
+<<<<<<< HEAD
         byte[] encryptedData = Utilities.aesIgeEncryption(dataForEncryption.toByteArray(), keyData.aesKey, keyData.aesIv, true, false, 0);
 
         try {
             SerializedData data = new SerializedData(8 + messageKey.length + encryptedData.length);
             data.writeInt64(datacenter.authKeyId);
+=======
+        byte[] encryptedData = Utilities.aesIgeEncryption(dataForEncryption.toByteArray(), keyData.aesKey, keyData.aesIv, true, false);
+
+        try {
+            SerializedData data = new SerializedData(datacenter.authKeyId.length + messageKey.length + encryptedData.length);
+            data.writeRaw(datacenter.authKeyId);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             data.writeRaw(messageKey);
             data.writeRaw(encryptedData);
 
@@ -1681,7 +1759,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             messageData = null;
             System.gc();
             SerializedData data = new SerializedData();
+<<<<<<< HEAD
             data.writeInt64(datacenter.authKeyId);
+=======
+            data.writeRaw(datacenter.authKeyId);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             data.writeRaw(messageKey);
             data.writeRaw(encryptedData);
 
@@ -1853,8 +1935,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                         request.completionBlock.run(futureSalts, null);
                     }
 
+<<<<<<< HEAD
                     futureSalts.freeResources();
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     messagesConfirmed(requestMid);
                     rpcCompleted(requestMid);
 
@@ -2068,8 +2153,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                     }
                 }
 
+<<<<<<< HEAD
                 resultContainer.freeResources();
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (!found) {
                     FileLog.d("tmessages", "Response received, but request wasn't found.");
                     rpcCompleted(resultMid);
@@ -2196,9 +2284,14 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             return null;
         }
 
+<<<<<<< HEAD
         TLRPC.TL_ping_delay_disconnect ping = new TLRPC.TL_ping_delay_disconnect();
         ping.ping_id = nextPingId++;
         ping.disconnect_delay = 35;
+=======
+        TLRPC.TL_ping ping = new TLRPC.TL_ping();
+        ping.ping_id = nextPingId++;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
         if (recordTime && sessionId == datacenter.authSessionId) {
             pingIdToDate.put(ping.ping_id, (int)(System.currentTimeMillis() / 1000));
@@ -2233,11 +2326,18 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
 
         byte[] keyId = is.readData(8);
         SerializedData keyIdData = new SerializedData(keyId);
+<<<<<<< HEAD
         long key = keyIdData.readInt64();
         if (key == 0) {
             return -1;
         } else {
             if (datacenter.authKeyId == 0 || key != datacenter.authKeyId) {
+=======
+        if (keyIdData.readInt64() == 0) {
+            return -1;
+        } else {
+            if (datacenter.authKeyId == null || !Arrays.equals(keyId, datacenter.authKeyId)) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 FileLog.e("tmessages", "Error: invalid auth key id " + connection);
                 return -1;
             }
@@ -2246,7 +2346,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             MessageKeyData keyData = Utilities.generateMessageKeyData(datacenter.authKey, messageKey, true);
 
             byte[] messageData = is.readData(data.length - 24);
+<<<<<<< HEAD
             messageData = Utilities.aesIgeEncryption(messageData, keyData.aesKey, keyData.aesIv, false, false, 0);
+=======
+            messageData = Utilities.aesIgeEncryption(messageData, keyData.aesKey, keyData.aesIv, false, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
             if (messageData == null) {
                 return -1;
@@ -2441,7 +2545,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
     }
 
     @Override
+<<<<<<< HEAD
     public void tcpConnectionReceivedData(TcpConnection connection, ByteBufferDesc data, int length) {
+=======
+    public void tcpConnectionReceivedData(TcpConnection connection, byte[] data) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (connection.getDatacenterId() == currentDatacenterId && (connection.transportRequestClass & RPCRequest.RPCRequestClassGeneric) != 0) {
             if (connectionState == 1 || connectionState == 2) {
                 connectionState = 3;
@@ -2456,18 +2564,35 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
         }
         Datacenter datacenter = datacenterWithId(connection.getDatacenterId());
 
+<<<<<<< HEAD
         long keyId = data.readInt64();
         if (keyId == 0) {
             long messageId = data.readInt64();
+=======
+        SerializedData is = new SerializedData(data);
+
+        byte[] keyId = is.readData(8);
+        SerializedData keyIdData = new SerializedData(keyId);
+        if (keyIdData.readInt64() == 0) {
+            long messageId = is.readInt64();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             if (isMessageIdProcessed(0, messageId)) {
                 finishUpdatingState(connection);
                 return;
             }
 
+<<<<<<< HEAD
             int messageLength = data.readInt32();
             int constructor = data.readInt32();
 
             TLObject object = TLClassStore.Instance().TLdeserialize(data, constructor, getRequestWithMessageId(messageId));
+=======
+            int messageLength = is.readInt32();
+
+            int constructor = is.readInt32();
+
+            TLObject object = TLClassStore.Instance().TLdeserialize(is, constructor, getRequestWithMessageId(messageId));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
             processMessage(object, messageId, 0, 0, connection, 0, 0, 0);
 
@@ -2475,13 +2600,18 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                 addProcessedMessageId(0, messageId);
             }
         } else {
+<<<<<<< HEAD
             if (datacenter.authKeyId == 0 || keyId != datacenter.authKeyId) {
+=======
+            if (datacenter.authKeyId == null || !Arrays.equals(keyId, datacenter.authKeyId)) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 FileLog.e("tmessages", "Error: invalid auth key id " + connection);
                 connection.suspendConnection(true);
                 connection.connect();
                 return;
             }
 
+<<<<<<< HEAD
             byte[] messageKey = data.readData(16);
             MessageKeyData keyData = Utilities.generateMessageKeyData(datacenter.authKey, messageKey, true);
             data.compact();
@@ -2498,6 +2628,24 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
 
             long messageServerSalt = data.readInt64();
             long messageSessionId = data.readInt64();
+=======
+            byte[] messageKey = is.readData(16);
+            MessageKeyData keyData = Utilities.generateMessageKeyData(datacenter.authKey, messageKey, true);
+
+            byte[] messageData = is.readData(data.length - 24);
+
+            messageData = Utilities.aesIgeEncryption(messageData, keyData.aesKey, keyData.aesIv, false, false);
+            if (messageData == null) {
+                FileLog.e("tmessages", "Error: can't decrypt message data " + connection);
+                connection.suspendConnection(true);
+                connection.connect();
+                return;
+            }
+
+            SerializedData messageIs = new SerializedData(messageData);
+            long messageServerSalt = messageIs.readInt64();
+            long messageSessionId = messageIs.readInt64();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
             if (messageSessionId != datacenter.authSessionId && messageSessionId != datacenter.authDownloadSessionId && messageSessionId != datacenter.authUploadSessionId) {
                 FileLog.e("tmessages", String.format("***** Error: invalid message session ID (%d instead of %d)", messageSessionId, datacenter.authSessionId));
@@ -2507,9 +2655,15 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
 
             boolean doNotProcess = false;
 
+<<<<<<< HEAD
             long messageId = data.readInt64();
             int messageSeqNo = data.readInt32();
             int messageLength = data.readInt32();
+=======
+            long messageId = messageIs.readInt64();
+            int messageSeqNo = messageIs.readInt32();
+            int messageLength = messageIs.readInt32();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
             if (isMessageIdProcessed(messageSessionId, messageId)) {
                 doNotProcess = true;
@@ -2524,7 +2678,11 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
                 set.add(messageId);
             }
 
+<<<<<<< HEAD
             byte[] realMessageKeyFull = Utilities.computeSHA1(data.buffer, 0, Math.min(messageLength + 32, data.limit()));
+=======
+            byte[] realMessageKeyFull = Utilities.computeSHA1(messageData, 0, Math.min(messageLength + 32, messageData.length));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             if (realMessageKeyFull == null) {
                 return;
             }
@@ -2539,8 +2697,13 @@ public class ConnectionsManager implements Action.ActionDelegate, TcpConnection.
             }
 
             if (!doNotProcess) {
+<<<<<<< HEAD
                 int constructor = data.readInt32();
                 TLObject message = TLClassStore.Instance().TLdeserialize(data, constructor, getRequestWithMessageId(messageId));
+=======
+                int constructor = messageIs.readInt32();
+                TLObject message = TLClassStore.Instance().TLdeserialize(messageIs, constructor, getRequestWithMessageId(messageId));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
                 if (message == null) {
                     FileLog.e("tmessages", "***** Error parsing message: " + constructor);

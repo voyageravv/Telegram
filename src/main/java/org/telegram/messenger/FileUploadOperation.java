@@ -8,6 +8,12 @@
 
 package org.telegram.messenger;
 
+<<<<<<< HEAD
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import java.io.File;
 import java.io.FileInputStream;
 import java.math.BigInteger;
@@ -62,7 +68,11 @@ public class FileUploadOperation {
                 FileLog.e("tmessages", e);
             }
         }
+<<<<<<< HEAD
         currentFileId = MessagesController.random.nextLong();
+=======
+        currentFileId = (long)(MessagesController.random.nextDouble() * Long.MAX_VALUE);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         try {
             mdEnc = MessageDigest.getInstance("MD5");
         } catch (NoSuchAlgorithmException e) {
@@ -131,7 +141,11 @@ public class FileUploadOperation {
             }
             System.arraycopy(readBuffer, 0, sendBuffer, 0, readed);
             if (key != null) {
+<<<<<<< HEAD
                 sendBuffer = Utilities.aesIgeEncryption(sendBuffer, key, iv, true, true, 0);
+=======
+                sendBuffer = Utilities.aesIgeEncryption(sendBuffer, key, iv, true, true);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
             mdEnc.update(sendBuffer, 0, readed + toAdd);
             if (isBigFile) {

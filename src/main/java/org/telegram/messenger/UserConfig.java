@@ -12,6 +12,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Base64;
 
+<<<<<<< HEAD
+=======
+import org.telegram.TL.TLClassStore;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.ui.ApplicationLoader;
 
 import java.io.File;
@@ -28,7 +33,10 @@ public class UserConfig {
     public static String importHash = "";
     private final static Integer sync = 1;
     public static boolean saveIncomingPhotos = false;
+<<<<<<< HEAD
     public static int contactsVersion = 1;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public static boolean hideLastSeen = false;
 
     public static int getNewMessageId() {
@@ -49,6 +57,7 @@ public class UserConfig {
             try {
                 SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("userconfing", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
+<<<<<<< HEAD
                 editor.putBoolean("registeredForPush", registeredForPush);
                 editor.putString("pushString", pushString);
                 editor.putInt("lastSendMessageId", lastSendMessageId);
@@ -58,6 +67,16 @@ public class UserConfig {
                 editor.putBoolean("saveIncomingPhotos", saveIncomingPhotos);
                 editor.putInt("contactsVersion", contactsVersion);
                 if (currentUser != null) {
+=======
+                if (currentUser != null) {
+                    editor.putBoolean("registeredForPush", registeredForPush);
+                    editor.putString("pushString", pushString);
+                    editor.putInt("lastSendMessageId", lastSendMessageId);
+                    editor.putInt("lastLocalId", lastLocalId);
+                    editor.putString("contactsHash", contactsHash);
+                    editor.putString("importHash", importHash);
+                    editor.putBoolean("saveIncomingPhotos", saveIncomingPhotos);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     if (withFile) {
                         SerializedData data = new SerializedData();
                         currentUser.serializeToStream(data);
@@ -67,6 +86,16 @@ public class UserConfig {
                         editor.putString("user", userString);
                     }
                 } else {
+<<<<<<< HEAD
+=======
+                    editor.putBoolean("registeredForPush", registeredForPush);
+                    editor.putString("pushString", pushString);
+                    editor.putInt("lastSendMessageId", lastSendMessageId);
+                    editor.putInt("lastLocalId", lastLocalId);
+                    editor.putString("contactsHash", contactsHash);
+                    editor.putString("importHash", importHash);
+                    editor.putBoolean("saveIncomingPhotos", saveIncomingPhotos);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     editor.remove("user");
                 }
                 editor.commit();
@@ -102,7 +131,17 @@ public class UserConfig {
                         importHash = data.readString();
                         saveIncomingPhotos = data.readBool();
                         hideLastSeen = data.readBool();
+<<<<<<< HEAD
                         contactsVersion = 0;
+=======
+                        if (currentUser.status != null) {
+                            if (currentUser.status.expires != 0) {
+                                currentUser.status.was_online = currentUser.status.expires;
+                            } else {
+                                currentUser.status.expires = currentUser.status.was_online;
+                            }
+                        }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         MessagesStorage.lastQtsValue = data.readInt32();
                         MessagesStorage.lastSecretVersion = data.readInt32();
                         int val = data.readInt32();
@@ -132,7 +171,10 @@ public class UserConfig {
                         importHash = preferences.getString("importHash", "");
                         saveIncomingPhotos = preferences.getBoolean("saveIncomingPhotos", false);
                         hideLastSeen = preferences2.getBoolean("hideLastSeen", false);
+<<<<<<< HEAD
                         contactsVersion = preferences.getInt("contactsVersion", 0);
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                     if (lastLocalId > -210000) {
                         lastLocalId = -210000;
@@ -160,7 +202,10 @@ public class UserConfig {
                 importHash = preferences.getString("importHash", "");
                 saveIncomingPhotos = preferences.getBoolean("saveIncomingPhotos", false);
                 hideLastSeen = preferences2.getBoolean("hideLastSeen", false);
+<<<<<<< HEAD
                 contactsVersion = preferences.getInt("contactsVersion", 0);
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 String user = preferences.getString("user", null);
                 if (user != null) {
                     byte[] userBytes = Base64.decode(user, Base64.DEFAULT);
@@ -188,7 +233,10 @@ public class UserConfig {
         importHash = "";
         lastLocalId = -210000;
         lastSendMessageId = -210000;
+<<<<<<< HEAD
         contactsVersion = 1;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         saveIncomingPhotos = false;
         hideLastSeen = false;
         saveConfig(true);

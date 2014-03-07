@@ -37,8 +37,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.FileLog;
@@ -178,13 +183,21 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                             bundle.putLong("dialog_id", user_id);
                         }
                         fragment.setArguments(bundle);
+<<<<<<< HEAD
                         ((LaunchActivity)parentActivity).presentFragment(fragment, "media_user_" + user_id, false);
+=======
+                        ((ApplicationActivity)parentActivity).presentFragment(fragment, "media_user_" + user_id, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     } else if (i == 5 && dialog_id != 0 && currentEncryptedChat instanceof TLRPC.TL_encryptedChat) {
                         IdenticonActivity fragment = new IdenticonActivity();
                         Bundle bundle = new Bundle();
                         bundle.putInt("chat_id", (int)(dialog_id >> 32));
                         fragment.setArguments(bundle);
+<<<<<<< HEAD
                         ((LaunchActivity)parentActivity).presentFragment(fragment, "key_" + dialog_id, false);
+=======
+                        ((ApplicationActivity)parentActivity).presentFragment(fragment, "key_" + dialog_id, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     } else if (i == 4 && dialog_id != 0 && currentEncryptedChat instanceof TLRPC.TL_encryptedChat) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(parentActivity);
                         builder.setTitle(getStringEntry(R.string.MessageLifetime));
@@ -312,7 +325,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 Bundle bundle = new Bundle();
                 bundle.putInt("enc_id", encryptedChat.id);
                 fragment.setArguments(bundle);
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
         } else if (id == MessagesController.encryptedChatUpdated) {
             TLRPC.EncryptedChat chat = (TLRPC.EncryptedChat)args[0];
@@ -373,8 +390,13 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
             listAdapter.notifyDataSetChanged();
         }
         firstStart = false;
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         fixLayout();
     }
 
@@ -439,7 +461,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 Bundle args = new Bundle();
                 args.putInt("user_id", user.id);
                 fragment.setArguments(args);
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "add_contact_" + user.id, false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "add_contact_" + user.id, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case R.id.share_contact: {
@@ -449,7 +475,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 args.putBoolean("serverOnly", true);
                 fragment.setArguments(args);
                 fragment.delegate = this;
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "chat_select", false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat_select", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case R.id.edit_contact: {
@@ -457,7 +487,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 Bundle args = new Bundle();
                 args.putInt("user_id", user_id);
                 fragment.setArguments(args);
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "add_contact_" + user_id, false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "add_contact_" + user_id, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case R.id.delete_contact: {
@@ -513,7 +547,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                     bundle.putInt("user_id", lower_part);
                     fragment.setArguments(bundle);
                     fragment.scrollToTopOnResume = true;
+<<<<<<< HEAD
                     ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+=======
+                    ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     removeSelfFromStack();
                     messageFragment.removeSelfFromStack();
                 } else if (lower_part < 0) {
@@ -521,7 +559,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                     bundle.putInt("chat_id", -lower_part);
                     fragment.setArguments(bundle);
                     fragment.scrollToTopOnResume = true;
+<<<<<<< HEAD
                     ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+=======
+                    ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     messageFragment.removeSelfFromStack();
                     removeSelfFromStack();
                 }
@@ -531,7 +573,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 bundle.putInt("enc_id", id);
                 fragment.setArguments(bundle);
                 fragment.scrollToTopOnResume = true;
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 messageFragment.removeSelfFromStack();
                 removeSelfFromStack();
             }
@@ -632,6 +678,7 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                     onlineText.setText(getStringEntry(R.string.Offline));
                 } else {
                     int currentTime = ConnectionsManager.Instance.getCurrentTime();
+<<<<<<< HEAD
                     if (user.status.expires > currentTime) {
                         onlineText.setText(getStringEntry(R.string.Online));
                     } else {
@@ -639,6 +686,19 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                             onlineText.setText(getStringEntry(R.string.Invisible));
                         } else {
                             onlineText.setText(Utilities.formatDateOnline(user.status.expires));
+=======
+                    if (user.status.expires > currentTime || user.status.was_online > currentTime) {
+                        onlineText.setText(getStringEntry(R.string.Online));
+                    } else {
+                        if (user.status.was_online <= 10000 && user.status.expires <= 10000) {
+                            onlineText.setText(getStringEntry(R.string.Invisible));
+                        } else {
+                            int value = user.status.was_online;
+                            if (value == 0) {
+                                value = user.status.expires;
+                            }
+                            onlineText.setText(Utilities.formatDateOnline(value));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         }
                     }
                 }
@@ -718,9 +778,12 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+<<<<<<< HEAD
                         if (parentActivity == null) {
                             return;
                         }
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         TLRPC.User user = MessagesController.Instance.users.get(user_id);
                         if (user == null || user instanceof TLRPC.TL_userEmpty) {
                             return;
@@ -730,7 +793,11 @@ public class UserProfileActivity extends BaseFragment implements NotificationCen
                         Bundle bundle = new Bundle();
                         bundle.putInt("user_id", user_id);
                         fragment.setArguments(bundle);
+<<<<<<< HEAD
                         ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+=======
+                        ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                 });
                 TextView textView = (TextView)view.findViewById(R.id.settings_row_text);

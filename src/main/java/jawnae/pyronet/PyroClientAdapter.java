@@ -18,9 +18,12 @@
 
 package jawnae.pyronet;
 
+<<<<<<< HEAD
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLog;
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
@@ -30,16 +33,25 @@ public class PyroClientAdapter implements PyroClientListener {
     }
 
     public void unconnectableClient(PyroClient client, Exception cause) {
+<<<<<<< HEAD
         if (ConnectionsManager.DEBUG_VERSION) {
             FileLog.e("tmessages", "unconnectable");
         }
+=======
+        System.out.println("unconnectable");
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public void droppedClient(PyroClient client, IOException cause) {
         if (cause != null) {
+<<<<<<< HEAD
             if (ConnectionsManager.DEBUG_VERSION) {
                 FileLog.e("tmessages", this.getClass().getSimpleName() + ".droppedClient() caught exception: " + cause);
             }
+=======
+            System.out.println(this.getClass().getSimpleName()
+                    + ".droppedClient() caught exception: " + cause);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
     }
 

@@ -14,7 +14,10 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
+<<<<<<< HEAD
 import android.net.Uri;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.util.AttributeSet;
@@ -232,12 +235,15 @@ public class PhotoCropActivity extends BaseFragment {
             int x = (int)(percX * imageToCrop.getWidth());
             int y = (int)(percY * imageToCrop.getHeight());
             int size = (int)(percSize * imageToCrop.getWidth());
+<<<<<<< HEAD
             if (x + size > imageToCrop.getWidth()) {
                 size = imageToCrop.getWidth() - x;
             }
             if (y + size > imageToCrop.getHeight()) {
                 size = imageToCrop.getHeight() - y;
             }
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             try {
                 return Bitmap.createBitmap(imageToCrop, x, y, size, size);
             } catch (Exception e) {
@@ -284,6 +290,7 @@ public class PhotoCropActivity extends BaseFragment {
     public boolean onFragmentCreate() {
         super.onFragmentCreate();
         String photoPath = getArguments().getString("photoPath");
+<<<<<<< HEAD
         Uri photoUri = getArguments().getParcelable("photoUri");
         if (photoPath == null && photoUri == null) {
             return false;
@@ -293,6 +300,14 @@ public class PhotoCropActivity extends BaseFragment {
             if (!f.exists()) {
                 return false;
             }
+=======
+        if (photoPath == null) {
+            return false;
+        }
+        File f = new File(photoPath);
+        if (!f.exists()) {
+            return false;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
         Point displaySize = new Point();
         Display display = ((WindowManager)ApplicationLoader.applicationContext.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
@@ -302,7 +317,11 @@ public class PhotoCropActivity extends BaseFragment {
             display.getSize(displaySize);
         }
         int size = Math.max(displaySize.x, displaySize.y);
+<<<<<<< HEAD
         imageToCrop = FileLoader.loadBitmap(photoPath, photoUri, size, size);
+=======
+        imageToCrop = FileLoader.loadBitmap(photoPath, size, size);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (imageToCrop == null) {
             return false;
         }
@@ -386,6 +405,10 @@ public class PhotoCropActivity extends BaseFragment {
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 }

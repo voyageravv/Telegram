@@ -606,6 +606,7 @@
     <string name="AccessError">Access error</string>
     <string name="ActionAddUser">un1 added un2</string>
     <string name="ActionAddUserYou">un1 added you</string>
+<<<<<<< HEAD
     <string name="ActionChangedPhoto">un1 changed the group photo</string>
     <string name="ActionChangedTitle">un1 changed the group name to un2</string>
     <string name="ActionCreateGroup">un1 created the group</string>
@@ -620,6 +621,22 @@
     <string name="ActionYouKickUser">You removed un2</string>
     <string name="ActionYouLeftUser">You left group</string>
     <string name="ActionYouRemovedPhoto">You removed the group photo</string>
+=======
+    <string name="ActionChangedPhoto">un1 changed group photo</string>
+    <string name="ActionChangedTitle">un1 changed group name to un2</string>
+    <string name="ActionCreateGroup">un1 created the group</string>
+    <string name="ActionKickUser">un1 kicked un2</string>
+    <string name="ActionKickUserYou">un1 kicked you</string>
+    <string name="ActionLeftUser">un1 left group</string>
+    <string name="ActionRemovedPhoto">un1 removed group photo</string>
+    <string name="ActionYouAddUser">You added un2</string>
+    <string name="ActionYouChangedPhoto">You changed group photo</string>
+    <string name="ActionYouChangedTitle">You changed group name to un2</string>
+    <string name="ActionYouCreateGroup">You created the group</string>
+    <string name="ActionYouKickUser">You kicked un2</string>
+    <string name="ActionYouLeftUser">You left group</string>
+    <string name="ActionYouRemovedPhoto">You removed group photo</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Add">Add</string>
     <string name="AddContact">Add</string>
     <string name="AddContactQ">Add contact?</string>
@@ -654,6 +671,10 @@
     <string name="Cancel">Cancel</string>
     <string name="CancelDownload">Cancel Download</string>
     <string name="CancelRegistration">Cancel registration</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatBackground">Chat Background</string>
     <string name="ChatDocument">Document</string>
     <string name="ChatGallery">Gallery</string>
@@ -676,11 +697,19 @@
     <string name="Default">Default</string>
     <string name="Delete">Delete</string>
     <string name="DeleteAndExit">Delete and leave group</string>
+<<<<<<< HEAD
     <string name="DeleteChat">Delete and exit</string>
     <string name="DeleteChatQuestion">Delete this chat?</string>
     <string name="DeleteContact">Delete</string>
     <string name="DeletePhoto">Delete photo</string>
     <string name="DeleteThisGroup">Delete this group</string>
+=======
+    <string name="DeleteChat">Delete and Exit</string>
+    <string name="DeleteChatQuestion">Delete this chat?</string>
+    <string name="DeleteContact">Delete</string>
+    <string name="DeletePhoto">Delete photo</string>
+    <string name="DeleteThisGroup">Delete this Group</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Done">Done</string>
     <string name="Edit">Edit</string>
     <string name="EditContact">Edit</string>
@@ -722,7 +751,10 @@
     <string name="GroupName">Group name</string>
     <string name="GroupNotifications">GROUP NOTIFICATIONS</string>
     <string name="HiddenName">Hidden Name</string>
+<<<<<<< HEAD
     <string name="HideLastSeen">Hide Last Connection</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Hybrid">Hybrid</string>
     <string name="InAppNotifications">IN-APP NOTIFICATIONS</string>
     <string name="InAppPreview">In-App Preview</string>
@@ -739,7 +771,11 @@
     <string name="InviteUser">This user does not have Telegram yet, send an invitation?</string>
     <string name="IsTyping">is typing...</string>
     <string name="KMetersAway">km away</string>
+<<<<<<< HEAD
     <string name="KickFromGroup">Remove from group</string>
+=======
+    <string name="KickFromGroup">Kick from group</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="LastName">Last name (optional)</string>
     <string name="LastSeen">last seen</string>
     <string name="LastSeenDate">last seen</string>
@@ -788,8 +824,13 @@
     <string name="NotificationEditedGroupName">%1$s edited the group\'s %2$s name</string>
     <string name="NotificationEditedGroupPhoto">%1$s edited the group\'s %2$s photo</string>
     <string name="NotificationGroupAddMember">%1$s invited %3$s to the group %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationGroupKickMember">%1$s removed %3$s from the group %2$s</string>
     <string name="NotificationGroupKickYou">%1$s removed you from the group %2$s</string>
+=======
+    <string name="NotificationGroupKickMember">%1$s kicked %3$s from the group %2$s</string>
+    <string name="NotificationGroupKickYou">%1$s kicked you from the group %2$s</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationGroupLeftMember">%1$s has left the group %2$s</string>
     <string name="NotificationInvitedToGroup">%1$s invited you to the group %2$s</string>
     <string name="NotificationMessageAudio">%1$s sent you an audio</string>
@@ -798,12 +839,20 @@
     <string name="NotificationMessageGroupAudio">%1$s sent an audio to the group %2$s</string>
     <string name="NotificationMessageGroupContact">%1$s shared a contact in the group %2$s</string>
     <string name="NotificationMessageGroupDocument">%1$s sent a document to the group %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationMessageGroupMap">%1$s sent a location to the group %2$s</string>
+=======
+    <string name="NotificationMessageGroupMap">%1$s sent a map to the group %2$s</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageGroupNoText">%1$s sent a message to the group %2$s</string>
     <string name="NotificationMessageGroupPhoto">%1$s sent a photo to the group %2$s</string>
     <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
     <string name="NotificationMessageGroupVideo">%1$s sent a video to the group %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationMessageMap">%1$s sent you a location</string>
+=======
+    <string name="NotificationMessageMap">%1$s sent you a map</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageNoText">%1$s sent you a message</string>
     <string name="NotificationMessagePhoto">%1$s sent you a photo</string>
     <string name="NotificationMessageText">%1$s: %2$s</string>
@@ -875,7 +924,10 @@
     <string name="ShortMessageLifetime5s">5s</string>
     <string name="ShortMessageLifetimeForever">Off</string>
     <string name="ShowAllMedia">Show all media</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">SLIDE TO CANCEL</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Sound">Sound</string>
     <string name="StartEncryptedChat">Start Secret Chat</string>
     <string name="StartMessaging">Start Messaging</string>
@@ -893,7 +945,11 @@
     <string name="UnknownError">Unknown error</string>
     <string name="UnsuppotedMedia">This message is not supported on your version of Telegram.</string>
     <string name="Updating">Updating...</string>
+<<<<<<< HEAD
     <string name="UsbActive">USB transfer active</string>
+=======
+    <string name="UsbActive">Usb transfer active</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Vibrate">Vibrate</string>
     <string name="ViewLocation">View Location</string>
     <string name="ViewPhoto">View Photo</string>
@@ -905,7 +961,11 @@
     <string name="YesterdayAt">yesterday at</string>
     <string name="YouHaveNewMessage">You have a new message</string>
     <string name="YouLeft">You left this group</string>
+<<<<<<< HEAD
     <string name="YouWereKicked">You were removed from this group</string>
+=======
+    <string name="YouWereKicked">You were kicked from this group</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="YourCode">Your code</string>
     <string name="YourFirstNameAndLastName">YOUR FIRST AND LAST NAME</string>
     <string name="YourName">Your name</string>

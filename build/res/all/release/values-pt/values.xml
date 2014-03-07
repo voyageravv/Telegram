@@ -55,6 +55,10 @@
     <string name="Cancel">Cancelar</string>
     <string name="CancelDownload">Cancelar Baixada</string>
     <string name="CancelRegistration">Cancelar rexistro</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatBackground">Fondo da Conversa</string>
     <string name="ChatDocument">Documento</string>
     <string name="ChatGallery">Galería</string>
@@ -276,7 +280,10 @@
     <string name="ShortMessageLifetime5s">5s</string>
     <string name="ShortMessageLifetimeForever">Off</string>
     <string name="ShowAllMedia">Mostrar todas</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">Desliza para Cancelar</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Sound">Son</string>
     <string name="StartEncryptedChat">Comezar conversa secreta</string>
     <string name="StartMessaging">Comece a enviar Mensaxes</string>

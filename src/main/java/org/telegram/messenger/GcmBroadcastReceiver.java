@@ -9,18 +9,28 @@
 package org.telegram.messenger;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.PowerManager;
 
 public class GcmBroadcastReceiver extends BroadcastReceiver {
+=======
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.support.v4.content.WakefulBroadcastReceiver;
+
+public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     public static final int NOTIFICATION_ID = 1;
 
     @Override
     public void onReceive(final Context context, final Intent intent) {
         FileLog.d("tmessages", "GCM received intent: " + intent);
+<<<<<<< HEAD
 
         if (intent.getAction().equals("com.google.android.c2dm.intent.RECEIVE")) {
             PowerManager pm = (PowerManager)context.getSystemService(Context.POWER_SERVICE);
@@ -53,6 +63,10 @@ public class GcmBroadcastReceiver extends BroadcastReceiver {
             }
         }
 
+=======
+        ComponentName comp = new ComponentName(context.getPackageName(), GcmService.class.getName());
+        startWakefulService(context, (intent.setComponent(comp)));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         setResultCode(Activity.RESULT_OK);
     }
 }

@@ -29,8 +29,13 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLoader;
 import org.telegram.messenger.FileLog;
@@ -193,7 +198,11 @@ public class SettingsWallpapersActivity extends BaseFragment implements Notifica
             if (requestCode == 0) {
                 Utilities.addMediaToGallery(currentPicturePath);
                 try {
+<<<<<<< HEAD
                     Bitmap bitmap = FileLoader.loadBitmap(currentPicturePath, null, Utilities.dp(320), Utilities.dp(480));
+=======
+                    Bitmap bitmap = FileLoader.loadBitmap(currentPicturePath, Utilities.dp(320), Utilities.dp(480));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     File toFile = new File(ApplicationLoader.applicationContext.getFilesDir(), "wallpaper.jpg");
                     FileOutputStream stream = new FileOutputStream(toFile);
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 87, stream);
@@ -218,7 +227,11 @@ public class SettingsWallpapersActivity extends BaseFragment implements Notifica
                     }
                     cursor.close();
 
+<<<<<<< HEAD
                     Bitmap bitmap = FileLoader.loadBitmap(imageFilePath, null, Utilities.dp(320), Utilities.dp(480));
+=======
+                    Bitmap bitmap = FileLoader.loadBitmap(imageFilePath, Utilities.dp(320), Utilities.dp(480));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     File toFile = new File(ApplicationLoader.applicationContext.getFilesDir(), "wallpaper.jpg");
                     FileOutputStream stream = new FileOutputStream(toFile);
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 87, stream);
@@ -356,9 +369,12 @@ public class SettingsWallpapersActivity extends BaseFragment implements Notifica
         long reqId = ConnectionsManager.Instance.performRpc(req, new RPCRequest.RPCRequestDelegate() {
             @Override
             public void run(final TLObject response, TLRPC.TL_error error) {
+<<<<<<< HEAD
                 if (error != null) {
                     return;
                 }
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 Utilities.RunOnUIThread(new Runnable() {
                     @Override
                     public void run() {
@@ -424,7 +440,11 @@ public class SettingsWallpapersActivity extends BaseFragment implements Notifica
             listAdapter.notifyDataSetChanged();
         }
 
+<<<<<<< HEAD
         ((LaunchActivity) parentActivity).hideActionBar();
+=======
+        ((ApplicationActivity) parentActivity).hideActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
         processSelectedBackground();
 

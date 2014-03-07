@@ -10,7 +10,10 @@ package org.telegram.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+<<<<<<< HEAD
 import android.app.ProgressDialog;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,7 +23,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+<<<<<<< HEAD
 import android.util.Base64;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,10 +40,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
 import org.telegram.messenger.SerializedData;
 import org.telegram.messenger.TLClassStore;
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessagesController;
@@ -74,7 +85,10 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     int askQuestionRow;
     int logoutRow;
     int sendLogsRow;
+<<<<<<< HEAD
     int clearLogsRow;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     int rowCount;
     int messagesSectionRow;
     int sendByEnterRow;
@@ -166,7 +180,10 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         supportSectionRow = rowCount++;
         if (ConnectionsManager.DEBUG_VERSION) {
             sendLogsRow = rowCount++;
+<<<<<<< HEAD
             clearLogsRow = rowCount++;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
         askQuestionRow = rowCount++;
         logoutRow = rowCount++;
@@ -206,7 +223,10 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                                 SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
                                 SharedPreferences.Editor editor = preferences.edit();
                                 editor.putInt("fons_size", 12 + which);
+<<<<<<< HEAD
                                 MessagesController.Instance.fontSize = 12 + which;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 editor.commit();
                                 if (listView != null) {
                                     listView.invalidateViews();
@@ -225,6 +245,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                             listView.invalidateViews();
                         }
                     } else if (i == notificationRow) {
+<<<<<<< HEAD
                         ((LaunchActivity)parentActivity).presentFragment(new SettingsNotificationsActivity(), "settings_notifications", false);
                     } else if (i == blockedRow) {
                         ((LaunchActivity)parentActivity).presentFragment(new SettingsBlockedUsers(), "settings_blocked", false);
@@ -317,6 +338,21 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         sendLogs();
                     } else if (i == clearLogsRow) {
                         FileLog.cleanupLogs();
+=======
+                        ((ApplicationActivity)parentActivity).presentFragment(new SettingsNotificationsActivity(), "settings_notifications", false);
+                    } else if (i == blockedRow) {
+                        ((ApplicationActivity)parentActivity).presentFragment(new SettingsBlockedUsers(), "settings_blocked", false);
+                    } else if (i == backgroundRow) {
+                        ((ApplicationActivity)parentActivity).presentFragment(new SettingsWallpapersActivity(), "settings_wallpapers", false);
+                    } else if (i == askQuestionRow) {
+                        ChatActivity fragment = new ChatActivity();
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("user_id", 333000);
+                        fragment.setArguments(bundle);
+                        ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+                    } else if (i == sendLogsRow) {
+                        sendLogs();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     } else if (i == sendByEnterRow) {
                         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
                         boolean send = preferences.getBoolean("send_by_enter", false);
@@ -348,7 +384,11 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                                     public void run(TLObject response, TLRPC.TL_error error) {
                                         ActionBarActivity inflaterActivity = parentActivity;
                                         if (inflaterActivity == null) {
+<<<<<<< HEAD
                                             inflaterActivity = (ActionBarActivity)getActivity();
+=======
+                                            inflaterActivity = (ActionBarActivity) getActivity();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                         }
                                         if (inflaterActivity == null) {
                                             return;
@@ -387,10 +427,17 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                             listView.invalidateViews();
                         }
                     }
+<<<<<<< HEAD
                 else if (i == 6) {
                     UserConfig.saveIncomingPhotos = !UserConfig.saveIncomingPhotos;
                     listView.invalidateViews();
                 }
+=======
+//                else if (i == 6) {
+//                    UserConfig.saveIncomingPhotos = !UserConfig.saveIncomingPhotos;
+//                    listView.invalidateViews();
+//                }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             });
 
@@ -411,7 +458,15 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+<<<<<<< HEAD
         avatarUpdater.onActivityResult(requestCode, resultCode, data);
+=======
+        if (requestCode == 232) {
+            FileLog.cleanupLogs();
+        } else {
+            avatarUpdater.onActivityResult(requestCode, resultCode, data);
+        }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -467,10 +522,17 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             }
             Intent i = new Intent(Intent.ACTION_SEND_MULTIPLE);
             i.setType("message/rfc822") ;
+<<<<<<< HEAD
             i.putExtra(Intent.EXTRA_EMAIL, new String[]{ConnectionsManager.SEND_LOGS_EMAIL});
             i.putExtra(Intent.EXTRA_SUBJECT, "last logs");
             i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
             startActivity(Intent.createChooser(i, "Select email application."));
+=======
+            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"voyageravv@gmail.com"});
+            i.putExtra(Intent.EXTRA_SUBJECT, "last logs");
+            i.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
+            startActivityForResult(Intent.createChooser(i, "Select email application."), 232);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -489,8 +551,13 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             listAdapter.notifyDataSetChanged();
         }
         firstStart = false;
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -519,8 +586,13 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         @Override
         public boolean isEnabled(int i) {
             return i == textSizeRow || i == enableAnimationsRow || i == blockedRow || i == notificationRow || i == backgroundRow ||
+<<<<<<< HEAD
                     i == askQuestionRow || i == sendLogsRow || i == sendByEnterRow || i == hideLastSeenRow || i == terminateSessionsRow || i == photoDownloadPrivateRow ||
                     i == photoDownloadChatRow || i == clearLogsRow;
+=======
+                    i == askQuestionRow || i == sendLogsRow || i == sendByEnterRow ||i == hideLastSeenRow || i == terminateSessionsRow || i == photoDownloadPrivateRow ||
+                    i == photoDownloadChatRow;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
 
         @Override
@@ -555,7 +627,11 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+<<<<<<< HEAD
                             ((LaunchActivity)parentActivity).presentFragment(new SettingsChangeNameActivity(), "change_name", false);
+=======
+                            ((ApplicationActivity)parentActivity).presentFragment(new SettingsChangeNameActivity(), "change_name", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         }
                     });
 
@@ -712,9 +788,12 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 } else if (i == sendLogsRow) {
                     textView.setText("Send Logs");
                     divider.setVisibility(View.VISIBLE);
+<<<<<<< HEAD
                 } else if (i == clearLogsRow) {
                     textView.setText("Clear Logs");
                     divider.setVisibility(View.VISIBLE);
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 } else if (i == askQuestionRow) {
                     textView.setText(getStringEntry(R.string.AskAQuestion));
                     divider.setVisibility(View.INVISIBLE);
@@ -748,7 +827,11 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         checkButton.setImageResource(R.drawable.btn_check_on);
                     } else {
                         checkButton.setImageResource(R.drawable.btn_check_off);
+<<<<<<< HEAD
                     }
+=======
+                    } 
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 } else if (i == hideLastSeenRow) {
                     textView.setText(getStringEntry(R.string.HideLastSeen));
                     divider.setVisibility(View.INVISIBLE);
@@ -758,7 +841,13 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     } else {
                         checkButton.setImageResource(R.drawable.btn_check_off);
                     }
+<<<<<<< HEAD
                 } else if (i == photoDownloadChatRow) {
+=======
+
+                }
+                else if (i == photoDownloadChatRow) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     textView.setText(getStringEntry(R.string.AutomaticPhotoDownloadGroups));
                     divider.setVisibility(View.VISIBLE);
                     boolean enabled = preferences.getBoolean("photo_download_chat", true);
@@ -767,7 +856,12 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     } else {
                         checkButton.setImageResource(R.drawable.btn_check_off);
                     }
+<<<<<<< HEAD
                 } else if (i == photoDownloadPrivateRow) {
+=======
+                }
+                else if (i == photoDownloadPrivateRow) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     textView.setText(getStringEntry(R.string.AutomaticPhotoDownloadPrivateChats));
                     divider.setVisibility(View.INVISIBLE);
                     boolean enabled = preferences.getBoolean("photo_download_user", true);
@@ -777,6 +871,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         checkButton.setImageResource(R.drawable.btn_check_off);
                     }
                 }
+<<<<<<< HEAD
                 if (i == 7) {
                     textView.setText(getStringEntry(R.string.SaveIncomingPhotos));
                     divider.setVisibility(View.INVISIBLE);
@@ -788,6 +883,19 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         checkButton.setImageResource(R.drawable.btn_check_off);
                    }
                 }
+=======
+//                if (i == 7) {
+//                    textView.setText(getStringEntry(R.string.SaveIncomingPhotos));
+//                    divider.setVisibility(View.INVISIBLE);
+//
+//                    ImageView checkButton = (ImageView)view.findViewById(R.id.settings_row_check_button);
+//                    if (UserConfig.saveIncomingPhotos) {
+//                        checkButton.setImageResource(R.drawable.btn_check_on);
+//                    } else {
+//                        checkButton.setImageResource(R.drawable.btn_check_off);
+//                    }
+//                }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             } else if (type == 4) {
                 if (view == null) {
                     LayoutInflater li = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -843,7 +951,11 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 return 5;
             } else if (i == enableAnimationsRow || i == sendByEnterRow || i == hideLastSeenRow || i == photoDownloadChatRow || i == photoDownloadPrivateRow) {
                 return 3;
+<<<<<<< HEAD
             } else if (i == numberRow || i == notificationRow || i == blockedRow || i == backgroundRow || i == askQuestionRow || i == sendLogsRow || i == terminateSessionsRow || i == clearLogsRow) {
+=======
+            } else if (i == numberRow || i == notificationRow || i == blockedRow || i == backgroundRow || i == askQuestionRow || i == sendLogsRow || i == terminateSessionsRow) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 return 2;
             } else if (i == logoutRow) {
                 return 4;

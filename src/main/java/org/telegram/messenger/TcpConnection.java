@@ -33,7 +33,11 @@ public class TcpConnection extends PyroClientAdapter {
         public abstract void tcpConnectionClosed(TcpConnection connection);
         public abstract void tcpConnectionConnected(TcpConnection connection);
         public abstract void tcpConnectionQuiackAckReceived(TcpConnection connection, int ack);
+<<<<<<< HEAD
         public abstract void tcpConnectionReceivedData(TcpConnection connection, ByteBufferDesc data, int length);
+=======
+        public abstract void tcpConnectionReceivedData(TcpConnection connection, byte[] data);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         public abstract void tcpConnectionProgressChanged(TcpConnection connection, long messageId, int currentSize, int length);
     }
 
@@ -46,14 +50,21 @@ public class TcpConnection extends PyroClientAdapter {
     private int datacenterId;
     private int failedConnectionCount;
     public TcpConnectionDelegate delegate;
+<<<<<<< HEAD
     private ByteBufferDesc restOfTheData;
+=======
+    private ByteBuffer restOfTheData;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private long lastMessageId = 0;
     private boolean hasSomeDataSinceLastConnect = false;
     private int willRetryConnectCount = 5;
     private boolean isNextPort = false;
     private final Integer timerSync = 1;
     private boolean wasConnected;
+<<<<<<< HEAD
     private int lastPacketLength;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     public int transportRequestClass;
 
@@ -65,7 +76,10 @@ public class TcpConnection extends PyroClientAdapter {
         if (selector == null) {
             selector = new PyroSelector();
             selector.spawnNetworkThread("network thread");
+<<<<<<< HEAD
             BuffersStorage storage = BuffersStorage.Instance;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
         datacenterId = did;
         connectionState = TcpConnectionState.TcpConnectionStageIdle;
@@ -105,11 +119,15 @@ public class TcpConnection extends PyroClientAdapter {
                     hostPort = datacenter.getCurrentPort();
                     FileLog.d("tmessages", String.format(TcpConnection.this + " Connecting (%s:%d)", hostAddress, hostPort));
                     firstPacket = true;
+<<<<<<< HEAD
                     if (restOfTheData != null) {
                         BuffersStorage.Instance.reuseFreeBuffer(restOfTheData);
                         restOfTheData = null;
                     }
                     lastPacketLength = 0;
+=======
+                    restOfTheData = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     wasConnected = false;
                     hasSomeDataSinceLastConnect = false;
                     if (client != null) {
@@ -224,11 +242,15 @@ public class TcpConnection extends PyroClientAdapter {
             });
         }
         firstPacket = true;
+<<<<<<< HEAD
         if (restOfTheData != null) {
             BuffersStorage.Instance.reuseFreeBuffer(restOfTheData);
             restOfTheData = null;
         }
         lastPacketLength = 0;
+=======
+        restOfTheData = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         channelToken = 0;
         wasConnected = false;
     }
@@ -304,6 +326,7 @@ public class TcpConnection extends PyroClientAdapter {
     }
 
     private void readData(ByteBuffer buffer) throws Exception {
+<<<<<<< HEAD
         buffer.order(ByteOrder.LITTLE_ENDIAN);
         buffer.rewind();
 
@@ -369,6 +392,17 @@ public class TcpConnection extends PyroClientAdapter {
             }
         }
 
+=======
+        if (restOfTheData != null) {
+            ByteBuffer newBuffer = ByteBuffer.allocate(restOfTheData.limit() + buffer.limit());
+            newBuffer.put(restOfTheData);
+            newBuffer.put(buffer);
+            buffer = newBuffer;
+            restOfTheData = null;
+        }
+
+        buffer.order(ByteOrder.LITTLE_ENDIAN);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         buffer.rewind();
 
         while (buffer.hasRemaining()) {
@@ -376,7 +410,11 @@ public class TcpConnection extends PyroClientAdapter {
                 Datacenter datacenter = ConnectionsManager.Instance.datacenterWithId(datacenterId);
                 datacenter.storeCurrentAddressAndPortNum();
                 isNextPort = false;
+<<<<<<< HEAD
                 client.setTimeout(25000);
+=======
+                client.setTimeout(20000);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
             hasSomeDataSinceLastConnect = true;
 
@@ -387,6 +425,7 @@ public class TcpConnection extends PyroClientAdapter {
             if ((fByte & (1 << 7)) != 0) {
                 buffer.reset();
                 if (buffer.remaining() < 4) {
+<<<<<<< HEAD
                     ByteBufferDesc reuseLater = restOfTheData;
                     restOfTheData = BuffersStorage.Instance.getFreeBuffer(16384);
                     restOfTheData.put(buffer);
@@ -397,6 +436,11 @@ public class TcpConnection extends PyroClientAdapter {
                         BuffersStorage.Instance.reuseFreeBuffer(reuseLater);
                         //FileLog.e("tmessages", this +  " 1 - reuse later buffer1");
                     }
+=======
+                    restOfTheData = ByteBuffer.allocate(buffer.remaining());
+                    restOfTheData.put(buffer);
+                    restOfTheData.rewind();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     break;
                 }
                 buffer.order(ByteOrder.BIG_ENDIAN);
@@ -419,6 +463,7 @@ public class TcpConnection extends PyroClientAdapter {
             } else {
                 buffer.reset();
                 if (buffer.remaining() < 4) {
+<<<<<<< HEAD
                     //FileLog.e("tmessages", this +  " 2 - size less than 4 bytes - write to free buffer");
                     if (restOfTheData == null || restOfTheData != null && restOfTheData.position() != 0) {
                         ByteBufferDesc reuseLater = restOfTheData;
@@ -433,6 +478,11 @@ public class TcpConnection extends PyroClientAdapter {
                     } else {
                         restOfTheData.position(restOfTheData.limit());
                     }
+=======
+                    restOfTheData = ByteBuffer.allocate(buffer.remaining());
+                    restOfTheData.put(buffer);
+                    restOfTheData.rewind();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     break;
                 }
                 currentPacketLength = (buffer.getInt() >> 8) * 4;
@@ -472,6 +522,7 @@ public class TcpConnection extends PyroClientAdapter {
                         }
                     }
                 }
+<<<<<<< HEAD
 
                 ByteBufferDesc reuseLater = null;
                 int len = currentPacketLength + (fByte != 0x7f ? 1 : 4);
@@ -504,12 +555,25 @@ public class TcpConnection extends PyroClientAdapter {
             toProceed.put(buffer);
             buffer.limit(old);
             toProceed.rewind();
+=======
+                buffer.reset();
+                restOfTheData = ByteBuffer.allocate(buffer.remaining());
+                restOfTheData.order(ByteOrder.LITTLE_ENDIAN);
+                restOfTheData.put(buffer);
+                restOfTheData.rewind();
+                return;
+            }
+
+            final byte[] packetData = new byte[currentPacketLength];
+            buffer.get(packetData);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
             if (delegate != null) {
                 final TcpConnectionDelegate finalDelegate = delegate;
                 Utilities.stageQueue.postRunnable(new Runnable() {
                     @Override
                     public void run() {
+<<<<<<< HEAD
                         finalDelegate.tcpConnectionReceivedData(TcpConnection.this, toProceed, length);
                         BuffersStorage.Instance.reuseFreeBuffer(toProceed);
                     }
@@ -534,6 +598,12 @@ public class TcpConnection extends PyroClientAdapter {
                 buffer = parseLaterBuffer;
                 parseLaterBuffer = null;
             }
+=======
+                        finalDelegate.tcpConnectionReceivedData(TcpConnection.this, packetData);
+                    }
+                });
+            }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
     }
 
@@ -551,12 +621,17 @@ public class TcpConnection extends PyroClientAdapter {
         }
         boolean switchToNextPort = wasConnected && !hasSomeDataSinceLastConnect && timedout;
         firstPacket = true;
+<<<<<<< HEAD
         if (restOfTheData != null) {
             BuffersStorage.Instance.reuseFreeBuffer(restOfTheData);
             restOfTheData = null;
         }
         channelToken = 0;
         lastPacketLength = 0;
+=======
+        restOfTheData = null;
+        channelToken = 0;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         wasConnected = false;
         if (connectionState != TcpConnectionState.TcpConnectionStageSuspended && connectionState != TcpConnectionState.TcpConnectionStageIdle) {
             connectionState = TcpConnectionState.TcpConnectionStageIdle;
@@ -657,7 +732,11 @@ public class TcpConnection extends PyroClientAdapter {
             failedConnectionCount = 0;
             readData(data);
         } catch (Exception e) {
+<<<<<<< HEAD
             FileLog.e("tmessages", e);
+=======
+            FileLog.d("tmessages", "read data error");
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             reconnect();
         }
     }

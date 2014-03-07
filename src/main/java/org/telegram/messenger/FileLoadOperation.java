@@ -12,13 +12,22 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 
+<<<<<<< HEAD
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import java.io.RandomAccessFile;
 import java.net.URL;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URLConnection;
+<<<<<<< HEAD
 import java.nio.channels.FileChannel;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import java.util.Scanner;
 
 public class FileLoadOperation {
@@ -236,18 +245,28 @@ public class FileLoadOperation {
                                 opts.inSampleSize = (int)scaleFactor;
                             }
 
+<<<<<<< HEAD
                             if (filter == null) {
                                 opts.inPreferredConfig = Bitmap.Config.ARGB_8888;
                             } else {
                                 opts.inPreferredConfig = Bitmap.Config.RGB_565;
                             }
+=======
+                            opts.inPreferredConfig = Bitmap.Config.ARGB_8888;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             opts.inDither = false;
                             image = BitmapFactory.decodeStream(is, null, opts);
                             is.close();
                             if (image == null) {
+<<<<<<< HEAD
                                 if (!dontDelete && cacheFileFinal.length() == 0) {
                                    cacheFileFinal.delete();
                                 }
+=======
+                                //if (!dontDelete) {
+                                //    cacheFileFinal.delete();
+                                //}
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             } else {
                                 if (filter != null && image != null) {
                                     float bitmapW = image.getWidth();
@@ -280,9 +299,15 @@ public class FileLoadOperation {
                             }
                         });
                     } catch (Exception e) {
+<<<<<<< HEAD
                         if (!dontDelete && cacheFileFinal.length() == 0) {
                             cacheFileFinal.delete();
                         }
+=======
+                        //if (!dontDelete) {
+                        //    cacheFileFinal.delete();
+                        //}
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         FileLog.e("tmessages", e);
                     }
                 }
@@ -438,12 +463,16 @@ public class FileLoadOperation {
                         opts.inSampleSize = (int) scaleFactor;
                     }
 
+<<<<<<< HEAD
                     if (filter == null) {
                         opts.inPreferredConfig = Bitmap.Config.ARGB_8888;
                     } else {
                         opts.inPreferredConfig = Bitmap.Config.RGB_565;
                     }
 
+=======
+                    opts.inPreferredConfig = Bitmap.Config.ARGB_8888;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     opts.inDither = false;
                     try {
                         if (renamed) {
@@ -565,6 +594,7 @@ public class FileLoadOperation {
         }
         TLRPC.TL_upload_getFile req = new TLRPC.TL_upload_getFile();
         req.location = location;
+<<<<<<< HEAD
         //if (totalBytesCount == -1) {
         //    req.offset = 0;
         //    req.limit = 0;
@@ -572,6 +602,15 @@ public class FileLoadOperation {
             req.offset = downloadedBytes;
             req.limit = downloadChunkSize;
         //}
+=======
+        if (totalBytesCount == -1) {
+            req.offset = 0;
+            req.limit = 0;
+        } else {
+            req.offset = downloadedBytes;
+            req.limit = downloadChunkSize;
+        }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         requestToken = ConnectionsManager.Instance.performRpc(req, new RPCRequest.RPCRequestDelegate() {
             @Override
             public void run(TLObject response, TLRPC.TL_error error) {
@@ -579,22 +618,38 @@ public class FileLoadOperation {
                 if (error == null) {
                     TLRPC.TL_upload_file res = (TLRPC.TL_upload_file)response;
                     try {
+<<<<<<< HEAD
                         if (res.bytes.limit() == 0) {
+=======
+                        if (res.bytes.length == 0) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             onFinishLoadingFile();
                             return;
                         }
                         if (key != null) {
+<<<<<<< HEAD
                             Utilities.aesIgeEncryption2(res.bytes.buffer, key, iv, false, true, res.bytes.limit());
                         }
                         if (fileOutputStream != null) {
                             FileChannel channel = fileOutputStream.getChannel();
                             channel.write(res.bytes.buffer);
+=======
+                            res.bytes = Utilities.aesIgeEncryption(res.bytes, key, iv, false, true);
+                        }
+                        if (fileOutputStream != null) {
+                            fileOutputStream.write(res.bytes);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         }
                         if (fiv != null) {
                             fiv.seek(0);
                             fiv.write(iv);
                         }
+<<<<<<< HEAD
                         downloadedBytes += res.bytes.limit();
+=======
+                        downloadedBytes += res.bytes.length;
+                        res.bytes = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         if (totalBytesCount > 0) {
                             delegate.didChangedLoadProgress(FileLoadOperation.this,  Math.min(1.0f, (float)downloadedBytes / (float)totalBytesCount));
                         }

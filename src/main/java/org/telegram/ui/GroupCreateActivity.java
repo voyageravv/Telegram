@@ -35,7 +35,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.Emoji;
@@ -106,10 +110,13 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (fragmentView == null) {
+<<<<<<< HEAD
 
             searching = false;
             searchWas = false;
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             fragmentView = inflater.inflate(R.layout.group_create_layout, container, false);
 
             epmtyTextView = (TextView)fragmentView.findViewById(R.id.searchEmptyView);
@@ -294,8 +301,13 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public Emoji.XImageSpan createAndPutChipForUser(TLRPC.User user) {
@@ -426,7 +438,11 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
                 } else {
                     return;
                 }
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(new GroupCreateFinalActivity(), "group_craate_final", false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(new GroupCreateFinalActivity(), "group_craate_final", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
         });
     }
@@ -550,6 +566,7 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
                 holder.messageTextView.setTextColor(0xff808080);
             } else {
                 int currentTime = ConnectionsManager.Instance.getCurrentTime();
+<<<<<<< HEAD
                 if (user.status.expires > currentTime) {
                     holder.messageTextView.setTextColor(0xff357aa8);
                     holder.messageTextView.setText(getStringEntry(R.string.Online));
@@ -558,6 +575,20 @@ public class GroupCreateActivity extends BaseFragment implements NotificationCen
                         holder.messageTextView.setText(getStringEntry(R.string.Invisible));
                     } else {
                         holder.messageTextView.setText(Utilities.formatDateOnline(user.status.expires));
+=======
+                if (user.status.expires > currentTime || user.status.was_online > currentTime) {
+                    holder.messageTextView.setTextColor(0xff357aa8);
+                    holder.messageTextView.setText(getStringEntry(R.string.Online));
+                } else {
+                    if (user.status.was_online <= 10000 && user.status.expires <= 10000) {
+                        holder.messageTextView.setText(getStringEntry(R.string.Invisible));
+                    } else {
+                        int value = user.status.was_online;
+                        if (value == 0) {
+                            value = user.status.expires;
+                        }
+                        holder.messageTextView.setText(Utilities.formatDateOnline(value));
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                     holder.messageTextView.setTextColor(0xff808080);
                 }

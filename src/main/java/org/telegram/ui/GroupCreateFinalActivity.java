@@ -25,7 +25,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.NotificationCenter;
@@ -162,8 +166,13 @@ public class GroupCreateFinalActivity extends BaseFragment implements Notificati
         if (getActivity() == null) {
             return;
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -244,7 +253,11 @@ public class GroupCreateFinalActivity extends BaseFragment implements Notificati
                     Bundle bundle = new Bundle();
                     bundle.putInt("chat_id", (Integer)args[0]);
                     fragment.setArguments(bundle);
+<<<<<<< HEAD
                     ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+=======
+                    ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), true, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             });
         }

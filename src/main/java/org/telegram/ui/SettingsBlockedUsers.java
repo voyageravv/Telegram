@@ -25,8 +25,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.NotificationCenter;
@@ -95,7 +100,11 @@ public class SettingsBlockedUsers extends BaseFragment implements NotificationCe
                         Bundle args = new Bundle();
                         args.putInt("user_id", blockedContacts.get(i).user_id);
                         fragment.setArguments(args);
+<<<<<<< HEAD
                         ((LaunchActivity)parentActivity).presentFragment(fragment, "user_" + blockedContacts.get(i).user_id, false);
+=======
+                        ((ApplicationActivity)parentActivity).presentFragment(fragment, "user_" + blockedContacts.get(i).user_id, false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                 }
             });
@@ -269,7 +278,11 @@ public class SettingsBlockedUsers extends BaseFragment implements NotificationCe
             title.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
             title.setCompoundDrawablePadding(0);
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).fixBackButton();
+=======
+        ((ApplicationActivity)parentActivity).fixBackButton();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -285,8 +298,13 @@ public class SettingsBlockedUsers extends BaseFragment implements NotificationCe
             listViewAdapter.notifyDataSetChanged();
         }
         firstStart = false;
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -310,7 +328,11 @@ public class SettingsBlockedUsers extends BaseFragment implements NotificationCe
                 bundle.putBoolean("returnAsResult", true);
                 fragment.delegate = this;
                 fragment.setArguments(bundle);
+<<<<<<< HEAD
                 ((LaunchActivity)parentActivity).presentFragment(fragment, "contacts_block", false);
+=======
+                ((ApplicationActivity)parentActivity).presentFragment(fragment, "contacts_block", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
         }
         return true;

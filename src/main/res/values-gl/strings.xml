@@ -75,6 +75,10 @@
     <string name="ChatGallery">Galería</string>
     <string name="ChatLocation">Ubicación</string>
     <string name="ChatVideo">Video</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatDocument">Documento</string>
     <string name="NoMessages">Aínda non hai mensaxes...</string>
     <string name="ViewPhoto">Ver foto</string>
@@ -102,7 +106,11 @@
     <string name="YouWereKicked">Fuches expulsado deste grupo</string>
     <string name="YouLeft">Abandoaches o grupo</string>
     <string name="DeleteThisGroup">Borrar este grupo</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">Desliza para cancelar</string>
+=======
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <!--notification-->
     <string name="EncryptedChatRequested">Conversa secreta solicitada</string>
     <string name="EncryptedChatAccepted">Comezou a conversa secreta </string>

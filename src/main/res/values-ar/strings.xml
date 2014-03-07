@@ -37,7 +37,11 @@
     <string name="Yesterday">أمس</string>
     <string name="NoResult">لا توجد نتائج</string>
     <string name="NoChats">...لا توجد محادثات بعد</string>
+<<<<<<< HEAD
     <string name="NoChatsHelp">إبدأ المراسلة بالضغط على \nأيقونة النقاط في أعلى يمين الشاشة\nأو اذهب لقسم جهات الاتصال.</string>
+=======
+    <string name="NoChatsHelp">إبدأ المراسلة بالضغط على \nأيقونة القلم في أعلى يمين الشاشة\nأو اذهب لقسم جهات الاتصال.</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="WaitingForNetwork">في إنتظار الشبكة...</string>
     <string name="Connecting">جاري الاتصال...</string>
     <string name="Updating">جاري التحديث...</string>
@@ -78,6 +82,10 @@
     <string name="ChatGallery">صورة</string>
     <string name="ChatLocation"> موقع</string>
     <string name="ChatVideo">مقطع مرئي</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatDocument">مستند</string>
     <string name="NoMessages">...لا توجد رسائل بعد</string>
     <string name="ViewPhoto">عرض الصورة</string>
@@ -105,7 +113,10 @@
     <string name="YouWereKicked">لقد تم إخراجك من هذه المجموعة</string>
     <string name="YouLeft">لقد قمت بمغادرة المجموعة</string>
     <string name="DeleteThisGroup">حذف المجموعة</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">قم بالسحب للإلغاء</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--notification-->
     <string name="EncryptedChatRequested">تم طلب محادثة سرية</string>
@@ -241,13 +252,20 @@
     <string name="ChatBackground">خلفية الدردشة</string>
     <string name="MessagesSettings">الرسائل</string>
     <string name="SendByEnter">أرسل بزر الإدخال</string>
+<<<<<<< HEAD
     <string name="HideLastSeen">Hide Last Connection</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="TerminateAllSessions">سجل الخروج من كافة الأجهزة الأخرى</string>
     <string name="AutomaticPhotoDownload">تنزيل الصور تلقائيًا</string>
     <string name="AutomaticPhotoDownloadGroups">المجموعات</string>
     <string name="AutomaticPhotoDownloadPrivateChats">المحادثات</string>
     <string name="Events">الأحداث</string>
+<<<<<<< HEAD
     <string name="ContactJoined">اشترك صديق في تيليجرام</string>
+=======
+    <string name="ContactJoined">عندما يشترك صديق في تيليجرام</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--media view-->
     <string name="NoMedia">لا توجد وسائط بعد</string>

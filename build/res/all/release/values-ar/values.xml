@@ -55,6 +55,10 @@
     <string name="Cancel">إلغاء</string>
     <string name="CancelDownload">إلغاء التنزيل</string>
     <string name="CancelRegistration">إلغاء التسجيل</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatBackground">خلفية الدردشة</string>
     <string name="ChatDocument">مستند</string>
     <string name="ChatGallery">صورة</string>
@@ -68,7 +72,11 @@
     <string name="CodeExpired">انتهت صلاحية الرمز الخاص بك، يرجى تسجيل الدخول مرة أخرى</string>
     <string name="Connecting">جاري الاتصال...</string>
     <string name="ContactInfo">معلومات جهة الاتصال</string>
+<<<<<<< HEAD
     <string name="ContactJoined">اشترك صديق في تيليجرام</string>
+=======
+    <string name="ContactJoined">عندما يشترك صديق في تيليجرام</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Contacts">جهات الاتصال</string>
     <string name="Copy">نسخ</string>
     <string name="CreateEncryptedChatError">حدث خطأ.</string>
@@ -123,7 +131,10 @@
     <string name="GroupName">اسم المجموعة</string>
     <string name="GroupNotifications">إشعارات المجموعات</string>
     <string name="HiddenName">الاسم مخفي</string>
+<<<<<<< HEAD
     <string name="HideLastSeen">Hide Last Connection</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Hybrid">هجين</string>
     <string name="InAppNotifications">إشعارات داخل التطبيق</string>
     <string name="InAppPreview">معاينة داخل التطبيق</string>
@@ -173,7 +184,11 @@
     <string name="Next">التالي</string>
     <string name="NoBlocked">لا توجد جهات اتصال محظورة</string>
     <string name="NoChats">...لا توجد محادثات بعد</string>
+<<<<<<< HEAD
     <string name="NoChatsHelp">إبدأ المراسلة بالضغط على \nأيقونة النقاط في أعلى يمين الشاشة\nأو اذهب لقسم جهات الاتصال.</string>
+=======
+    <string name="NoChatsHelp">إبدأ المراسلة بالضغط على \nأيقونة القلم في أعلى يمين الشاشة\nأو اذهب لقسم جهات الاتصال.</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NoContacts">لا توجد جهات اتصال بعد</string>
     <string name="NoFiles">لا يوجد ملفات بعد...</string>
     <string name="NoHandleAppInstalled">لا يوجد لديك تطبيق يمكنه فتح \'%1$s\'، يرجى تنزيل تطبيق مناسب للإستمرار</string>
@@ -276,7 +291,10 @@
     <string name="ShortMessageLifetime5s">٥ ثوانٍ</string>
     <string name="ShortMessageLifetimeForever">إيقاف</string>
     <string name="ShowAllMedia">عرض كافة الوسائط</string>
+<<<<<<< HEAD
     <string name="SlideToCancel">قم بالسحب للإلغاء</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="Sound">الصوت</string>
     <string name="StartEncryptedChat">إبدأ محادثة سرية</string>
     <string name="StartMessaging">إبدأ المراسلة</string>

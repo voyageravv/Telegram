@@ -14,10 +14,16 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
+<<<<<<< HEAD
 import android.net.Uri;
 import android.os.Build;
 import android.os.ParcelFileDescriptor;
 
+=======
+import android.os.Build;
+
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.objects.MessageObject;
 import org.telegram.ui.ApplicationLoader;
 import org.telegram.ui.Views.BackupImageView;
@@ -25,7 +31,10 @@ import org.telegram.ui.Views.ImageReceiver;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+<<<<<<< HEAD
 import java.io.FileDescriptor;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import java.io.FileOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -47,7 +56,10 @@ public class FileLoader {
     private final int maxConcurentLoadingOpertaionsCount = 2;
     private Queue<FileUploadOperation> uploadOperationQueue;
     private ConcurrentHashMap<String, FileUploadOperation> uploadOperationPaths;
+<<<<<<< HEAD
     private ConcurrentHashMap<String, FileUploadOperation> uploadOperationPathsEnc;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private int currentUploadOperationsCount = 0;
     private Queue<FileLoadOperation> loadOperationQueue;
     private ConcurrentHashMap<String, FileLoadOperation> loadOperationPaths;
@@ -297,11 +309,15 @@ public class FileLoader {
         runningOperation = new LinkedList<FileLoadOperation>();
         uploadOperationQueue = new LinkedList<FileUploadOperation>();
         uploadOperationPaths = new ConcurrentHashMap<String, FileUploadOperation>();
+<<<<<<< HEAD
         uploadOperationPathsEnc = new ConcurrentHashMap<String, FileUploadOperation>();
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         loadOperationPaths = new ConcurrentHashMap<String, FileLoadOperation>();
         loadOperationQueue = new LinkedList<FileLoadOperation>();
     }
 
+<<<<<<< HEAD
     public void cancelUploadFile(final String location, final boolean enc) {
         Utilities.fileUploadQueue.postRunnable(new Runnable() {
             @Override
@@ -318,6 +334,16 @@ public class FileLoader {
                         uploadOperationQueue.remove(operation);
                         operation.cancel();
                     }
+=======
+    public void cancelUploadFile(final String location) {
+        Utilities.fileUploadQueue.postRunnable(new Runnable() {
+            @Override
+            public void run() {
+                FileUploadOperation operation = uploadOperationPaths.get(location);
+                if (operation != null) {
+                    uploadOperationQueue.remove(operation);
+                    operation.cancel();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
             }
         });
@@ -331,6 +357,7 @@ public class FileLoader {
         Utilities.fileUploadQueue.postRunnable(new Runnable() {
             @Override
             public void run() {
+<<<<<<< HEAD
                 if (key != null) {
                     if (uploadOperationPathsEnc.containsKey(location)) {
                         return;
@@ -364,6 +391,19 @@ public class FileLoader {
                                 } else {
                                     uploadOperationPaths.remove(location);
                                 }
+=======
+                FileUploadOperation operation = new FileUploadOperation(location, key, iv);
+                uploadOperationPaths.put(location, operation);
+                operation.delegate = new FileUploadOperation.FileUploadOperationDelegate() {
+                    @Override
+                    public void didFinishUploadingFile(FileUploadOperation operation, final TLRPC.InputFile inputFile, final TLRPC.InputEncryptedFile inputEncryptedFile) {
+                        NotificationCenter.Instance.postNotificationName(FileDidUpload, location, inputFile, inputEncryptedFile);
+                        fileProgresses.remove(location);
+                        Utilities.fileUploadQueue.postRunnable(new Runnable() {
+                            @Override
+                            public void run() {
+                                uploadOperationPaths.remove(location);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 currentUploadOperationsCount--;
                                 if (currentUploadOperationsCount < 2) {
                                     FileUploadOperation operation = uploadOperationQueue.poll();
@@ -377,6 +417,7 @@ public class FileLoader {
                     }
 
                     @Override
+<<<<<<< HEAD
                     public void didFailedUploadingFile(final FileUploadOperation operation) {
                         Utilities.fileUploadQueue.postRunnable(new Runnable() {
                             @Override
@@ -395,6 +436,17 @@ public class FileLoader {
                                 } else {
                                     uploadOperationPaths.remove(location);
                                 }
+=======
+                    public void didFailedUploadingFile(FileUploadOperation operation) {
+                        fileProgresses.remove(location);
+                        if (operation.state != 2) {
+                            NotificationCenter.Instance.postNotificationName(FileDidFailUpload, location);
+                        }
+                        Utilities.fileUploadQueue.postRunnable(new Runnable() {
+                            @Override
+                            public void run() {
+                                uploadOperationPaths.remove(location);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 currentUploadOperationsCount--;
                                 if (currentUploadOperationsCount < 2) {
                                     FileUploadOperation operation = uploadOperationQueue.poll();
@@ -418,7 +470,11 @@ public class FileLoader {
                             Utilities.RunOnUIThread(new Runnable() {
                                 @Override
                                 public void run() {
+<<<<<<< HEAD
                                     NotificationCenter.Instance.postNotificationName(FileUploadProgressChanged, location, progress, key != null);
+=======
+                                    NotificationCenter.Instance.postNotificationName(FileUploadProgressChanged, location, progress);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 }
                             });
                         }
@@ -964,6 +1020,7 @@ public class FileLoader {
         });
     }
 
+<<<<<<< HEAD
     public static Bitmap loadBitmap(String path, Uri uri, float maxWidth, float maxHeight) {
         BitmapFactory.Options bmOptions = new BitmapFactory.Options();
         bmOptions.inJustDecodeBounds = true;
@@ -989,6 +1046,12 @@ public class FileLoader {
                 return null;
             }
         }
+=======
+    public static Bitmap loadBitmap(String path, float maxWidth, float maxHeight) {
+        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+        bmOptions.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(path, bmOptions);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         float photoW = bmOptions.outWidth;
         float photoH = bmOptions.outHeight;
         float scaleFactor = Math.max(photoW / maxWidth, photoH / maxHeight);
@@ -998,6 +1061,7 @@ public class FileLoader {
         bmOptions.inJustDecodeBounds = false;
         bmOptions.inSampleSize = (int)scaleFactor;
 
+<<<<<<< HEAD
         String exifPath = null;
         if (path != null) {
             exifPath = path;
@@ -1062,6 +1126,41 @@ public class FileLoader {
                 } catch (Exception e) {
                     FileLog.e("tmessages", e);
                 }
+=======
+        ExifInterface exif;
+        Matrix matrix = null;
+        try {
+            exif = new ExifInterface(path);
+            int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, 1);
+            matrix = new Matrix();
+            switch (orientation) {
+                case ExifInterface.ORIENTATION_ROTATE_90:
+                    matrix.postRotate(90);
+                    break;
+                case ExifInterface.ORIENTATION_ROTATE_180:
+                    matrix.postRotate(180);
+                    break;
+                case ExifInterface.ORIENTATION_ROTATE_270:
+                    matrix.postRotate(270);
+                    break;
+            }
+        } catch (Exception e) {
+            FileLog.e("tmessages", e);
+        }
+
+        Bitmap b;
+        try {
+            b = BitmapFactory.decodeFile(path, bmOptions);
+            if (b != null && matrix != null) {
+                b = Bitmap.createBitmap(b, 0, 0, b.getWidth(), b.getHeight(), matrix, true);
+            }
+        } catch (Exception e) {
+            FileLog.e("tmessages", e);
+            FileLoader.Instance.memCache.evictAll();
+            b = BitmapFactory.decodeFile(path, bmOptions);
+            if (b != null && matrix != null) {
+                b = Bitmap.createBitmap(b, 0, 0, b.getWidth(), b.getHeight(), matrix, true);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
         }
 

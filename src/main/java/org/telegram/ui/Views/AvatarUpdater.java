@@ -15,13 +15,21 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.FileLoader;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.UserConfig;
 import org.telegram.messenger.Utilities;
+<<<<<<< HEAD
 import org.telegram.ui.LaunchActivity;
+=======
+import org.telegram.ui.ApplicationActivity;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.ui.PhotoCropActivity;
 
 import java.io.File;
@@ -32,6 +40,10 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
     private TLRPC.PhotoSize bigPhoto;
     public String uploadingAvatar = null;
     File picturePath = null;
+<<<<<<< HEAD
+=======
+    public Activity parentActivity = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public BaseFragment parentFragment = null;
     public AvatarUpdaterDelegate delegate;
     private boolean clearAfterUpdate = false;
@@ -46,6 +58,10 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
             clearAfterUpdate = true;
         } else {
             parentFragment = null;
+<<<<<<< HEAD
+=======
+            parentActivity = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             delegate = null;
         }
     }
@@ -58,7 +74,15 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(image));
                 currentPicturePath = image.getAbsolutePath();
             }
+<<<<<<< HEAD
             parentFragment.startActivityForResult(takePictureIntent, 0);
+=======
+            if (parentFragment != null) {
+                parentFragment.startActivityForResult(takePictureIntent, 0);
+            } else if (parentActivity != null) {
+                parentActivity.startActivityForResult(takePictureIntent, 0);
+            }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         } catch (Exception e) {
             FileLog.e("tmessages", e);
         }
@@ -68,12 +92,21 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
         try {
             Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
             photoPickerIntent.setType("image/*");
+<<<<<<< HEAD
             parentFragment.startActivityForResult(photoPickerIntent, 1);
+=======
+            if (parentFragment != null) {
+                parentFragment.startActivityForResult(photoPickerIntent, 1);
+            } else if (parentActivity != null) {
+                parentActivity.startActivityForResult(photoPickerIntent, 1);
+            }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         } catch (Exception e) {
             FileLog.e("tmessages", e);
         }
     }
 
+<<<<<<< HEAD
     private void startCrop(String path, Uri uri) {
         try {
             LaunchActivity activity = (LaunchActivity)parentFragment.parentActivity;
@@ -96,6 +129,46 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
         } catch (Exception e) {
             FileLog.e("tmessages", e);
             Bitmap bitmap = FileLoader.loadBitmap(path, uri, 800, 800);
+=======
+    private void startCrop(String path) {
+        try {
+            if (parentFragment != null) {
+                ApplicationActivity activity = (ApplicationActivity)parentFragment.parentActivity;
+                if (activity == null) {
+                    activity = (ApplicationActivity)parentFragment.getActivity();
+                }
+                if (activity == null) {
+                    return;
+                }
+                Bundle params = new Bundle();
+                params.putString("photoPath", path);
+                PhotoCropActivity photoCropActivity = new PhotoCropActivity();
+                photoCropActivity.delegate = this;
+                photoCropActivity.setArguments(params);
+                activity.presentFragment(photoCropActivity, "crop", false);
+            } else {
+                Intent cropIntent = new Intent("com.android.camera.action.CROP");
+                cropIntent.setDataAndType(Uri.fromFile(new File(path)), "image/*");
+                cropIntent.putExtra("crop", "true");
+                cropIntent.putExtra("aspectX", 1);
+                cropIntent.putExtra("aspectY", 1);
+                cropIntent.putExtra("outputX", 800);
+                cropIntent.putExtra("outputY", 800);
+                cropIntent.putExtra("scale", true);
+                cropIntent.putExtra("return-data", false);
+                picturePath = Utilities.generatePicturePath();
+                cropIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(picturePath));
+                cropIntent.putExtra("output", Uri.fromFile(picturePath));
+                if (parentFragment != null) {
+                    parentFragment.startActivityForResult(cropIntent, 2);
+                } else if (parentActivity != null) {
+                    parentActivity.startActivityForResult(cropIntent, 2);
+                }
+            }
+        } catch (Exception e) {
+            FileLog.e("tmessages", e);
+            Bitmap bitmap = FileLoader.loadBitmap(path, 800, 800);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             processBitmap(bitmap);
         }
     }
@@ -104,6 +177,7 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
         if (resultCode == Activity.RESULT_OK) {
             if (requestCode == 0) {
                 Utilities.addMediaToGallery(currentPicturePath);
+<<<<<<< HEAD
                 startCrop(currentPicturePath, null);
 
                 currentPicturePath = null;
@@ -112,6 +186,27 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
                     return;
                 }
                 startCrop(null, data.getData());
+=======
+                startCrop(currentPicturePath);
+
+                currentPicturePath = null;
+            } else if (requestCode == 1) {
+                if (data == null) {
+                    return;
+                }
+                try {
+                    Uri imageUri = data.getData();
+                    if (imageUri != null) {
+                        String imageFilePath = Utilities.getPath(imageUri);
+                        startCrop(imageFilePath);
+                    }
+                } catch (Exception e) {
+                    FileLog.e("tmessages", e);
+                }
+            } else if (requestCode == 2) {
+                Bitmap bitmap = FileLoader.loadBitmap(picturePath.getAbsolutePath(), 800, 800);
+                processBitmap(bitmap);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
         }
     }
@@ -158,6 +253,10 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
                         uploadingAvatar = null;
                         if (clearAfterUpdate) {
                             parentFragment = null;
+<<<<<<< HEAD
+=======
+                            parentActivity = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             delegate = null;
                         }
                     }
@@ -172,8 +271,15 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
                         NotificationCenter.Instance.removeObserver(AvatarUpdater.this, FileLoader.FileDidUpload);
                         NotificationCenter.Instance.removeObserver(AvatarUpdater.this, FileLoader.FileDidFailUpload);
                         uploadingAvatar = null;
+<<<<<<< HEAD
                         if (clearAfterUpdate) {
                             parentFragment = null;
+=======
+                        //delegate.didUploadedPhoto(null, null, null);
+                        if (clearAfterUpdate) {
+                            parentFragment = null;
+                            parentActivity = null;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             delegate = null;
                         }
                     }

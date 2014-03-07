@@ -30,8 +30,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.MessagesController;
@@ -121,9 +126,12 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (fragmentView == null) {
+<<<<<<< HEAD
             searching = false;
             searchWas = false;
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             fragmentView = inflater.inflate(R.layout.messages_list, container, false);
 
             messagesListViewAdapter = new MessagesAdapter(parentActivity);
@@ -193,17 +201,29 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
                             if (lower_part > 0) {
                                 bundle.putInt("user_id", lower_part);
                                 fragment.setArguments(bundle);
+<<<<<<< HEAD
                                 ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
                             } else if (lower_part < 0) {
                                 bundle.putInt("chat_id", -lower_part);
                                 fragment.setArguments(bundle);
                                 ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+=======
+                                ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+                            } else if (lower_part < 0) {
+                                bundle.putInt("chat_id", -lower_part);
+                                fragment.setArguments(bundle);
+                                ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                             }
                         } else {
                             int id = (int)(dialog_id >> 32);
                             bundle.putInt("enc_id", id);
                             fragment.setArguments(bundle);
+<<<<<<< HEAD
                             ((LaunchActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+=======
+                            ((ApplicationActivity)parentActivity).presentFragment(fragment, "chat" + Math.random(), false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                         }
                     }
                 }
@@ -306,7 +326,11 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
             actionBar.setSubtitle(null);
             actionBar.setCustomView(null);
             actionBar.setTitle(getStringEntry(R.string.SelectChat));
+<<<<<<< HEAD
             ((LaunchActivity)parentActivity).fixBackButton();
+=======
+            ((ApplicationActivity)parentActivity).fixBackButton();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         } else {
             ImageView view = (ImageView)parentActivity.findViewById(16908332);
             if (view == null) {
@@ -349,8 +373,13 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
         if (messagesListViewAdapter != null) {
             messagesListViewAdapter.notifyDataSetChanged();
         }
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override
@@ -607,7 +636,11 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
                     messagesListViewAdapter.notifyDataSetChanged();
                 }
                 if (onlySelect) {
+<<<<<<< HEAD
                     ((LaunchActivity)parentActivity).fixBackButton();
+=======
+                    ((ApplicationActivity)parentActivity).fixBackButton();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 }
                 return true;
             }
@@ -629,11 +662,19 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
         switch (itemId) {
 
             case R.id.messages_list_menu_settings: {
+<<<<<<< HEAD
                 ((LaunchActivity)inflaterActivity).presentFragment(new SettingsActivity(), "settings", false);
                 break;
             }
             case R.id.messages_list_menu_contacts: {
                 ((LaunchActivity)inflaterActivity).presentFragment(new ContactsActivity(), "contacts", false);
+=======
+                ((ApplicationActivity)inflaterActivity).presentFragment(new SettingsActivity(), "settings", false);
+                break;
+            }
+            case R.id.messages_list_menu_contacts: {
+                ((ApplicationActivity)inflaterActivity).presentFragment(new ContactsActivity(), "contacts", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case R.id.messages_list_menu_new_messages: {
@@ -644,7 +685,11 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
                 bundle.putBoolean("usersAsSections", true);
                 fragment.animationType = 1;
                 fragment.setArguments(bundle);
+<<<<<<< HEAD
                 ((LaunchActivity)inflaterActivity).presentFragment(fragment, "contacts_chat", false);
+=======
+                ((ApplicationActivity)inflaterActivity).presentFragment(fragment, "contacts_chat", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case R.id.messages_list_menu_new_secret_chat: {
@@ -656,11 +701,19 @@ public class MessagesActivity extends BaseFragment implements NotificationCenter
                 bundle.putBoolean("createSecretChat", true);
                 fragment.animationType = 1;
                 fragment.setArguments(bundle);
+<<<<<<< HEAD
                 ((LaunchActivity)inflaterActivity).presentFragment(fragment, "contacts_chat", false);
                 break;
             }
             case R.id.messages_list_menu_new_chat: {
                 ((LaunchActivity)inflaterActivity).presentFragment(new GroupCreateActivity(), "group_create", false);
+=======
+                ((ApplicationActivity)inflaterActivity).presentFragment(fragment, "contacts_chat", false);
+                break;
+            }
+            case R.id.messages_list_menu_new_chat: {
+                ((ApplicationActivity)inflaterActivity).presentFragment(new GroupCreateActivity(), "group_create", false);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 break;
             }
             case android.R.id.home:

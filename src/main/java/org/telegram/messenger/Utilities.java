@@ -15,7 +15,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+<<<<<<< HEAD
 import android.graphics.Point;
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
@@ -28,11 +31,19 @@ import android.text.SpannableStringBuilder;
 import android.text.format.DateFormat;
 import android.util.AttributeSet;
 import android.util.Base64;
+<<<<<<< HEAD
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
+=======
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+
+import org.telegram.TL.TLClassStore;
+import org.telegram.TL.TLObject;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.ui.ApplicationLoader;
 
 import java.io.ByteArrayInputStream;
@@ -66,7 +77,10 @@ public class Utilities {
     public static Handler applicationHandler;
     public static int statusBarHeight = 0;
     public static float density = 1;
+<<<<<<< HEAD
     public static Point displaySize = new Point();
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public static boolean isRTL = false;
     public static Pattern pattern = Pattern.compile("[0-9]+");
     private final static Integer lock = 1;
@@ -87,8 +101,12 @@ public class Utilities {
     public static DispatchQueue fileUploadQueue = new DispatchQueue("fileUploadQueue");
 
     public native static long doPQNative(long _what);
+<<<<<<< HEAD
     public native static byte[] aesIgeEncryption(byte[] _what, byte[] _key, byte[] _iv, boolean encrypt, boolean changeIv, int len);
     public native static void aesIgeEncryption2(ByteBuffer _what, byte[] _key, byte[] _iv, boolean encrypt, boolean changeIv, int len);
+=======
+    public native static byte[] aesIgeEncryption(byte[] _what, byte[] _key, byte[] _iv, boolean encrypt, boolean changeIv);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     public static boolean isWaitingForSms() {
         boolean value = false;
@@ -114,6 +132,7 @@ public class Utilities {
         return val;
     }
 
+<<<<<<< HEAD
     public static String parseIntToString(String value) {
         Matcher matcher = pattern.matcher(value);
         if (matcher.find()) {
@@ -122,6 +141,8 @@ public class Utilities {
         return null;
     }
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     static {
         density = ApplicationLoader.applicationContext.getResources().getDisplayMetrics().density;
         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("primes", Context.MODE_PRIVATE);
@@ -175,10 +196,13 @@ public class Utilities {
         return (int)(density * value);
     }
 
+<<<<<<< HEAD
     public static int dpf(float value) {
         return (int)Math.ceil(density * value);
     }
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public static boolean isGoodPrime(byte[] prime, int g) {
         if (!(g >= 2 && g <= 7)) {
             return false;
@@ -297,6 +321,7 @@ public class Utilities {
         return null;
     }
 
+<<<<<<< HEAD
     public static byte[] computeSHA1(ByteBuffer convertme, int offset, int len) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -314,6 +339,8 @@ public class Utilities {
         return null;
     }
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public static byte[] computeSHA1(byte[] convertme) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -565,6 +592,7 @@ public class Utilities {
         }
     }
 
+<<<<<<< HEAD
     public static void checkDisplaySize() {
         try {
             WindowManager manager = (WindowManager)ApplicationLoader.applicationContext.getSystemService(Context.WINDOW_SERVICE);
@@ -587,6 +615,10 @@ public class Utilities {
     static {
         recreateFormatters();
         Utilities.checkDisplaySize();
+=======
+    static {
+        recreateFormatters();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public static String formatDateChat(long date) {
@@ -730,14 +762,22 @@ public class Utilities {
     }
 
     public static int getColorForId(int id) {
+<<<<<<< HEAD
         if (id / 1000 == 333) {
+=======
+        if (id == 333000) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             return 0xff0f94ed;
         }
         return arrColors[getColorIndex(id)];
     }
 
     public static int getUserAvatarForId(int id) {
+<<<<<<< HEAD
         if (id / 1000 == 333) {
+=======
+        if (id == 333000) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             return R.drawable.telegram_avatar;
         }
         return arrUsersAvatars[getColorIndex(id)];
@@ -859,12 +899,18 @@ public class Utilities {
                 final int column_index = cursor.getColumnIndexOrThrow(column);
                 return cursor.getString(column_index);
             }
+<<<<<<< HEAD
         } catch (Exception e) {
             FileLog.e("tmessages", e);
         } finally {
             if (cursor != null) {
                 cursor.close();
             }
+=======
+        } finally {
+            if (cursor != null)
+                cursor.close();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         }
         return null;
     }

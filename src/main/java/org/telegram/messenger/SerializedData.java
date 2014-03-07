@@ -14,8 +14,14 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+<<<<<<< HEAD
 
 public class SerializedData extends AbsSerializedData {
+=======
+import java.io.IOException;
+
+public class SerializedData {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     protected boolean isOut = true;
     private ByteArrayOutputStream outbuf;
     private DataOutputStream out;
@@ -43,13 +49,21 @@ public class SerializedData extends AbsSerializedData {
         out = new DataOutputStream(outbuf);
     }
 
+<<<<<<< HEAD
     public SerializedData(byte[] data) {
+=======
+    public SerializedData(byte[] data){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         isOut = false;
         inbuf = new ByteArrayInputStream(data);
         in = new DataInputStream(inbuf);
     }
 
+<<<<<<< HEAD
     public SerializedData(File file) throws Exception {
+=======
+    public SerializedData(File file) throws IOException {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         FileInputStream is = new FileInputStream(file);
         byte[] data = new byte[(int)file.length()];
         new DataInputStream(is).readFully(data);
@@ -73,7 +87,11 @@ public class SerializedData extends AbsSerializedData {
             for(int i = 0; i < 4; i++) {
                 out.write(x >> (i * 8));
             }
+<<<<<<< HEAD
         } catch(Exception e) {
+=======
+        } catch(IOException gfdsgd) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write int32 error");
         }
     }
@@ -88,10 +106,17 @@ public class SerializedData extends AbsSerializedData {
 
     private void writeInt64(long x, DataOutputStream out) {
         try {
+<<<<<<< HEAD
             for(int i = 0; i < 8; i++) {
                 out.write((int)(x >> (i * 8)));
             }
         } catch(Exception e) {
+=======
+            for(int i = 0; i < 8; i++){
+                out.write((int)(x >> (i * 8)));
+            }
+        } catch(IOException gfdsgd) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write int64 error");
         }
     }
@@ -126,14 +151,22 @@ public class SerializedData extends AbsSerializedData {
     public int readInt32(boolean[] error) {
         try {
             int i = 0;
+<<<<<<< HEAD
             for(int j = 0; j < 4; j++) {
+=======
+            for(int j = 0; j < 4; j++){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 i |= (in.read() << (j * 8));
             }
             if (error != null) {
                 error[0] = false;
             }
             return i;
+<<<<<<< HEAD
         } catch(Exception x) {
+=======
+        } catch(IOException x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             if (error != null) {
                 error[0] = true;
             }
@@ -149,14 +182,22 @@ public class SerializedData extends AbsSerializedData {
     public long readInt64(boolean[] error) {
         try {
             long i = 0;
+<<<<<<< HEAD
             for(int j = 0; j < 8; j++) {
+=======
+            for(int j = 0; j < 8; j++){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 i |= ((long)in.read() << (j * 8));
             }
             if (error != null) {
                 error[0] = false;
             }
             return i;
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(IOException x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             if (error != null) {
                 error[0] = true;
             }
@@ -172,7 +213,11 @@ public class SerializedData extends AbsSerializedData {
             } else {
                 len += b.length;
             }
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write raw error");
         }
     }
@@ -184,7 +229,11 @@ public class SerializedData extends AbsSerializedData {
             } else {
                 len += count;
             }
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write raw error");
         }
     }
@@ -216,7 +265,11 @@ public class SerializedData extends AbsSerializedData {
     public void readRaw(byte[] b) {
         try {
             in.read(b);
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "read raw error");
         }
     }
@@ -231,7 +284,11 @@ public class SerializedData extends AbsSerializedData {
         try {
             int sl = 1;
             int l = in.read();
+<<<<<<< HEAD
             if(l >= 254) {
+=======
+            if(l >= 254){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 l = in.read() | (in.read() << 8) | (in.read() << 16);
                 sl = 4;
             }
@@ -243,7 +300,11 @@ public class SerializedData extends AbsSerializedData {
                 i++;
             }
             return new String(b, "UTF-8");
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "read string error");
         }
         return null;
@@ -253,24 +314,37 @@ public class SerializedData extends AbsSerializedData {
         try {
             int sl = 1;
             int l = in.read();
+<<<<<<< HEAD
             if (l >= 254) {
+=======
+            if (l >= 254){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 l = in.read() | (in.read() << 8) | (in.read() << 16);
                 sl = 4;
             }
             byte[] b = new byte[l];
             in.read(b);
             int i = sl;
+<<<<<<< HEAD
             while((l + i) % 4 != 0) {
+=======
+            while((l + i) % 4 != 0){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 in.read();
                 i++;
             }
             return b;
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "read byte array error");
         }
         return null;
     }
 
+<<<<<<< HEAD
     public ByteBufferDesc readByteBuffer() {
         throw new RuntimeException("SerializedData don't support readByteBuffer");
     }
@@ -278,6 +352,11 @@ public class SerializedData extends AbsSerializedData {
     public void writeByteArray(byte[] b) {
         try {
             if (b.length <= 253) {
+=======
+    public void writeByteArray(byte[] b) {
+        try {
+            if (b.length <= 253){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (!justCalc) {
                     out.write(b.length);
                 } else {
@@ -299,7 +378,11 @@ public class SerializedData extends AbsSerializedData {
                 len += b.length;
             }
             int i = b.length <= 253 ? 1 : 4;
+<<<<<<< HEAD
             while((b.length + i) % 4 != 0) {
+=======
+            while((b.length + i) % 4 != 0){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (!justCalc) {
                     out.write(0);
                 } else {
@@ -307,12 +390,20 @@ public class SerializedData extends AbsSerializedData {
                 }
                 i++;
             }
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write byte array error");
         }
     }
 
+<<<<<<< HEAD
     public void writeString(String s) {
+=======
+    public void writeString(String s){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         try {
             writeByteArray(s.getBytes("UTF-8"));
         } catch(Exception x) {
@@ -322,7 +413,11 @@ public class SerializedData extends AbsSerializedData {
 
     public void writeByteArray(byte[] b, int offset, int count) {
         try {
+<<<<<<< HEAD
             if(count <= 253) {
+=======
+            if(count <= 253){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (!justCalc) {
                     out.write(count);
                 } else {
@@ -344,7 +439,11 @@ public class SerializedData extends AbsSerializedData {
                 len += count;
             }
             int i = count <= 253 ? 1 : 4;
+<<<<<<< HEAD
             while ((count + i) % 4 != 0) {
+=======
+            while ((count + i) % 4 != 0){
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                 if (!justCalc) {
                     out.write(0);
                 } else {
@@ -352,7 +451,11 @@ public class SerializedData extends AbsSerializedData {
                 }
                 i++;
             }
+<<<<<<< HEAD
         } catch (Exception x) {
+=======
+        } catch(Exception x) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             FileLog.e("tmessages", "write byte array error");
         }
     }

@@ -26,8 +26,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import org.telegram.PhoneFormat.PhoneFormat;
+<<<<<<< HEAD
 import org.telegram.messenger.TLObject;
 import org.telegram.messenger.TLRPC;
+=======
+import org.telegram.TL.TLObject;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ConnectionsManager;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.R;
@@ -48,8 +53,11 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
     private EditText phoneField;
     private TextView countryButton;
 
+<<<<<<< HEAD
     private int countryState = 0;
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     private ArrayList<String> countriesArray = new ArrayList<String>();
     private HashMap<String, String> countriesMap = new HashMap<String, String>();
     private HashMap<String, String> codesMap = new HashMap<String, String>();
@@ -106,6 +114,7 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
                 ignoreOnTextChange = true;
                 String text = PhoneFormat.stripExceptNumbers(codeField.getText().toString());
                 codeField.setText(text);
+<<<<<<< HEAD
                 if (text.length() == 0) {
                     countryButton.setText(R.string.ChooseCountry);
                     countryState = 1;
@@ -129,6 +138,19 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
                     }
                     codeField.setSelection(codeField.getText().length());
                 }
+=======
+                String country = codesMap.get(text);
+                if (country != null) {
+                    int index = countriesArray.indexOf(country);
+                    if (index != -1) {
+                        ignoreSelection = true;
+                        countryButton.setText(countriesArray.get(index));
+
+                        updatePhoneField();
+                    }
+                }
+                codeField.setSelection(codeField.getText().length());
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
         });
         codeField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -212,6 +234,7 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
                 }
             });
 
+<<<<<<< HEAD
             String country = null;
 
             try {
@@ -256,6 +279,58 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
                 return false;
             }
         });
+=======
+            boolean codeProceed = false;
+
+            if (!codeProceed) {
+                String country = "RU";
+
+                try {
+                    TelephonyManager telephonyManager = (TelephonyManager)ApplicationLoader.applicationContext.getSystemService(Context.TELEPHONY_SERVICE);
+                    if (telephonyManager != null) {
+                        country = telephonyManager.getSimCountryIso().toUpperCase();
+                    }
+                } catch (Exception e) {
+                    FileLog.e("tmessages", e);
+                }
+
+                if (country == null || country.length() == 0) {
+                    try {
+                        Locale current = ApplicationLoader.applicationContext.getResources().getConfiguration().locale;
+                        country = current.getCountry().toUpperCase();
+                    } catch (Exception e) {
+                        FileLog.e("tmessages", e);
+                    }
+                }
+                if (country == null || country.length() == 0) {
+                    country = "RU";
+                }
+
+                String countryName = languageMap.get(country);
+                if (countryName == null) {
+                    countryName = "Russia";
+                }
+
+                int index = countriesArray.indexOf(countryName);
+                if (index != -1) {
+                    codeField.setText(countriesMap.get(countryName));
+                }
+            }
+
+            Utilities.showKeyboard(phoneField);
+            phoneField.requestFocus();
+            phoneField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                    if (i == EditorInfo.IME_ACTION_NEXT) {
+                        delegate.onNextAction();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+        }
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     public void selectCountry(String name) {
@@ -309,6 +384,7 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
 
     @Override
     public void onNextPressed() {
+<<<<<<< HEAD
         if (countryState == 1) {
             delegate.needShowAlert(ApplicationLoader.applicationContext.getString(R.string.ChooseCountry));
             return;
@@ -316,6 +392,8 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
             delegate.needShowAlert(ApplicationLoader.applicationContext.getString(R.string.WrongCountry));
             return;
         }
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         if (codeField.length() == 0 || phoneField.length() == 0) {
             delegate.needShowAlert(ApplicationLoader.applicationContext.getString(R.string.InvalidPhoneNumber));
             return;
@@ -342,7 +420,10 @@ public class LoginActivityPhoneView extends SlideView implements AdapterView.OnI
                 if (error == null) {
                     final TLRPC.TL_auth_sentCode res = (TLRPC.TL_auth_sentCode)response;
                     params.putString("phoneHash", res.phone_code_hash);
+<<<<<<< HEAD
                     params.putInt("calltime", res.send_call_timeout * 1000);
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     if (res.phone_registered) {
                         params.putString("registered", "true");
                     }

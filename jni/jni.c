@@ -7,7 +7,11 @@
 #include "aes.h"
 #include "log.h"
 
+<<<<<<< HEAD
 JNIEXPORT jbyteArray Java_org_telegram_messenger_Utilities_aesIgeEncryption(JNIEnv *env, jclass class, jbyteArray _what, jbyteArray _key, jbyteArray _iv, jboolean encrypt, jboolean changeIv, jint l) {
+=======
+JNIEXPORT jbyteArray Java_org_telegram_messenger_Utilities_aesIgeEncryption(JNIEnv *env, jclass class, jbyteArray _what, jbyteArray _key, jbyteArray _iv, jboolean encrypt, jboolean changeIv) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     unsigned char *what = (unsigned char *)(*env)->GetByteArrayElements(env, _what, NULL);
     unsigned char *key = (unsigned char *)(*env)->GetByteArrayElements(env, _key, NULL);
     unsigned char *__iv = (unsigned char *)(*env)->GetByteArrayElements(env, _iv, NULL);
@@ -20,7 +24,11 @@ JNIEXPORT jbyteArray Java_org_telegram_messenger_Utilities_aesIgeEncryption(JNIE
         iv = __iv;
     }
     
+<<<<<<< HEAD
     int len = l == 0 ? (*env)->GetArrayLength(env, _what) : l;
+=======
+    int len = (*env)->GetArrayLength(env, _what);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     AES_KEY akey;
     if (!encrypt) {
         AES_set_decrypt_key(key, (*env)->GetArrayLength(env, _key) * 8, &akey);
@@ -40,6 +48,7 @@ JNIEXPORT jbyteArray Java_org_telegram_messenger_Utilities_aesIgeEncryption(JNIE
     return _what;
 }
 
+<<<<<<< HEAD
 JNIEXPORT void Java_org_telegram_messenger_Utilities_aesIgeEncryption2(JNIEnv *env, jclass class, jobject _what, jbyteArray _key, jbyteArray _iv, jboolean encrypt, jboolean changeIv, jint l) {
     jbyte *what = (*env)->GetDirectBufferAddress(env, _what);
     unsigned char *key = (unsigned char *)(*env)->GetByteArrayElements(env, _key, NULL);
@@ -70,6 +79,8 @@ JNIEXPORT void Java_org_telegram_messenger_Utilities_aesIgeEncryption2(JNIEnv *e
     }
 }
 
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 uint64_t gcd(uint64_t a, uint64_t b){
     while(a != 0 && b != 0) {
         while((b & 1) == 0) b >>= 1;

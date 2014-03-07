@@ -185,8 +185,13 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
         tabsContainer.removeAllViews();
 
+<<<<<<< HEAD
         tabCount = pager.getAdapter().getCount();
 
+=======
+        tabCount = pager.getAdapter().getCount()+1;
+       ;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
         for (int i = 0; i < tabCount; i++) {
 
             if (pager.getAdapter() instanceof IconTabProvider) {

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<<<<<<< HEAD
 <!--Translated by Telegram Team, corrected by Florian Keller-->
+=======
+<!-- -->
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
 <resources>
     <string name="AppName">Telegram</string>
@@ -48,7 +52,11 @@
     <string name="EncryptedChatStartedOutgoing">%s joined your secret chat.</string>
     <string name="EncryptedChatStartedIncoming">You joined the secret chat.</string>
     <string name="ClearHistory">Clear History</string>
+<<<<<<< HEAD
     <string name="DeleteChat">Delete and exit</string>
+=======
+    <string name="DeleteChat">Delete and Exit</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="HiddenName">Hidden Name</string>
     <string name="SelectChat">Select Chat</string>
 
@@ -60,7 +68,11 @@
     <string name="NoFiles">No files yet...</string>
     <string name="FileUploadLimit">File size shouldn\'t be greater than %1$s</string>
     <string name="NotMounted">Storage not mounted</string>
+<<<<<<< HEAD
     <string name="UsbActive">USB transfer active</string>
+=======
+    <string name="UsbActive">Usb transfer active</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="InternalStorage">Internal Storage</string>
     <string name="ExternalStorage">External Storage</string>
     <string name="SystemRoot">System Root</string>
@@ -78,6 +90,10 @@
     <string name="ChatGallery">Gallery</string>
     <string name="ChatLocation">Location</string>
     <string name="ChatVideo">Video</string>
+<<<<<<< HEAD
+=======
+    <string name="ChatAudio">Audio</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ChatDocument">Document</string>
     <string name="NoMessages">No messages here yet...</string>
     <string name="ViewPhoto">View Photo</string>
@@ -102,10 +118,16 @@
     <string name="EncryptedDescription4">Do not allow forwarding</string>
     <string name="OneNewMessage">%1$d new message</string>
     <string name="FewNewMessages">%1$d new messages</string>
+<<<<<<< HEAD
     <string name="YouWereKicked">You were removed from this group</string>
     <string name="YouLeft">You left this group</string>
     <string name="DeleteThisGroup">Delete this group</string>
     <string name="SlideToCancel">SLIDE TO CANCEL</string>
+=======
+    <string name="YouWereKicked">You were kicked from this group</string>
+    <string name="YouLeft">You left this group</string>
+    <string name="DeleteThisGroup">Delete this Group</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--notification-->
     <string name="EncryptedChatRequested">Secret chat requested</string>
@@ -126,7 +148,11 @@
     <string name="NotificationMessagePhoto">%1$s sent you a photo</string>
     <string name="NotificationMessageVideo">%1$s sent you a video</string>
     <string name="NotificationMessageContact">%1$s shared a contact with you</string>
+<<<<<<< HEAD
     <string name="NotificationMessageMap">%1$s sent you a location</string>
+=======
+    <string name="NotificationMessageMap">%1$s sent you a map</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageDocument">%1$s sent you a document</string>
     <string name="NotificationMessageAudio">%1$s sent you an audio</string>
     <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
@@ -134,15 +160,24 @@
     <string name="NotificationMessageGroupPhoto">%1$s sent a photo to the group %2$s</string>
     <string name="NotificationMessageGroupVideo">%1$s sent a video to the group %2$s</string>
     <string name="NotificationMessageGroupContact">%1$s shared a contact in the group %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationMessageGroupMap">%1$s sent a location to the group %2$s</string>
+=======
+    <string name="NotificationMessageGroupMap">%1$s sent a map to the group %2$s</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationMessageGroupDocument">%1$s sent a document to the group %2$s</string>
     <string name="NotificationMessageGroupAudio">%1$s sent an audio to the group %2$s</string>
     <string name="NotificationInvitedToGroup">%1$s invited you to the group %2$s</string>
     <string name="NotificationEditedGroupName">%1$s edited the group\'s %2$s name</string>
     <string name="NotificationEditedGroupPhoto">%1$s edited the group\'s %2$s photo</string>
     <string name="NotificationGroupAddMember">%1$s invited %3$s to the group %2$s</string>
+<<<<<<< HEAD
     <string name="NotificationGroupKickMember">%1$s removed %3$s from the group %2$s</string>
     <string name="NotificationGroupKickYou">%1$s removed you from the group %2$s</string>
+=======
+    <string name="NotificationGroupKickMember">%1$s kicked %3$s from the group %2$s</string>
+    <string name="NotificationGroupKickYou">%1$s kicked you from the group %2$s</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="NotificationGroupLeftMember">%1$s has left the group %2$s</string>
     <string name="NotificationContactJoined">%1$s joined Telegram!</string>
     <string name="NotificationUnrecognizedDevice">%1$s,\nWe detected a login into your account from a new device on %2$s\n\nDevice: %3$s\nLocation: %4$s\n\nIf this wasn’t you, you can go to Settings – Terminate all sessions.\n\nThanks,\nThe Telegram Team</string>
@@ -178,7 +213,11 @@
     <string name="AddMember">Add member</string>
     <string name="DeleteAndExit">Delete and leave group</string>
     <string name="Notifications">Notifications</string>
+<<<<<<< HEAD
     <string name="KickFromGroup">Remove from group</string>
+=======
+    <string name="KickFromGroup">Kick from group</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 
     <!--contact info view-->
     <string name="ShareContact">Share</string>
@@ -241,7 +280,10 @@
     <string name="ChatBackground">Chat Background</string>
     <string name="MessagesSettings">MESSAGES</string>
     <string name="SendByEnter">Send by Enter</string>
+<<<<<<< HEAD
     <string name="HideLastSeen">Hide Last Connection</string>
+=======
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="TerminateAllSessions">Terminate All Other Sessions</string>
     <string name="AutomaticPhotoDownload">AUTOMATIC PHOTO DOWNLOAD</string>
     <string name="AutomaticPhotoDownloadGroups">Groups</string>
@@ -291,6 +333,7 @@
     <string name="OK">OK</string>
 
     <!--messages-->
+<<<<<<< HEAD
     <string name="ActionKickUser">un1 removed un2</string>
     <string name="ActionLeftUser">un1 left group</string>
     <string name="ActionAddUser">un1 added un2</string>
@@ -306,6 +349,23 @@
     <string name="ActionYouChangedTitle">You changed the group name to un2</string>
     <string name="ActionYouCreateGroup">You created the group</string>
     <string name="ActionKickUserYou">un1 removed you</string>
+=======
+    <string name="ActionKickUser">un1 kicked un2</string>
+    <string name="ActionLeftUser">un1 left group</string>
+    <string name="ActionAddUser">un1 added un2</string>
+    <string name="ActionRemovedPhoto">un1 removed group photo</string>
+    <string name="ActionChangedPhoto">un1 changed group photo</string>
+    <string name="ActionChangedTitle">un1 changed group name to un2</string>
+    <string name="ActionCreateGroup">un1 created the group</string>
+    <string name="ActionYouKickUser">You kicked un2</string>
+    <string name="ActionYouLeftUser">You left group</string>
+    <string name="ActionYouAddUser">You added un2</string>
+    <string name="ActionYouRemovedPhoto">You removed group photo</string>
+    <string name="ActionYouChangedPhoto">You changed group photo</string>
+    <string name="ActionYouChangedTitle">You changed group name to un2</string>
+    <string name="ActionYouCreateGroup">You created the group</string>
+    <string name="ActionKickUserYou">un1 kicked you</string>
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     <string name="ActionAddUserYou">un1 added you</string>
     <string name="UnsuppotedMedia">This message is not supported on your version of Telegram.</string>
     <string name="AttachPhoto">Photo</string>

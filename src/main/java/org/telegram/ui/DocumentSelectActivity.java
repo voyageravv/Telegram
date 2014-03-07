@@ -79,6 +79,7 @@ public class DocumentSelectActivity extends BaseFragment {
         public void onReceive(Context arg0, Intent intent) {
             Runnable r = new Runnable() {
                 public void run() {
+<<<<<<< HEAD
                     try {
                         if (currentDir == null){
                             listRoots();
@@ -87,6 +88,12 @@ public class DocumentSelectActivity extends BaseFragment {
                         }
                     } catch (Exception e) {
                         FileLog.e("tmessages", e);
+=======
+                    if (currentDir == null){
+                        listRoots();
+                    } else {
+                        listFiles(currentDir);
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     }
                 }
             };
@@ -240,8 +247,13 @@ public class DocumentSelectActivity extends BaseFragment {
             listAdapter.notifyDataSetChanged();
         }
         firstStart = false;
+<<<<<<< HEAD
         ((LaunchActivity)parentActivity).showActionBar();
         ((LaunchActivity)parentActivity).updateActionBar();
+=======
+        ((ApplicationActivity)parentActivity).showActionBar();
+        ((ApplicationActivity)parentActivity).updateActionBar();
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     }
 
     @Override

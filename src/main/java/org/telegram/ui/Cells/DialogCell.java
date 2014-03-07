@@ -16,10 +16,18 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.TextUtils;
+<<<<<<< HEAD
 import android.view.View;
 
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.TLRPC;
+=======
+import android.util.AttributeSet;
+import android.view.View;
+
+import org.telegram.PhoneFormat.PhoneFormat;
+import org.telegram.TL.TLRPC;
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.Emoji;
 import org.telegram.messenger.MessagesController;
@@ -142,6 +150,19 @@ public class DialogCell extends BaseCell {
         init();
     }
 
+<<<<<<< HEAD
+=======
+    public DialogCell(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public DialogCell(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
     public void setDialog(TLRPC.TL_dialog dialog) {
         currentDialog = dialog;
         update(0);
@@ -448,6 +469,10 @@ public class DialogCell extends BaseCell {
                                 checkMessage = false;
                                 if (message.messageOwner.message != null) {
                                     messageString = Emoji.replaceEmoji(Html.fromHtml(String.format("<font color=#316f9f>%s:</font> <font color=#808080>%s</font>", name, message.messageOwner.message.replace("\n", " "))));
+<<<<<<< HEAD
+=======
+                                    messageString = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageString,getRootView() );
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                                 }
                             }
                         } else {
@@ -514,7 +539,11 @@ public class DialogCell extends BaseCell {
             if (chat != null) {
                 nameString = chat.title;
             } else if (user != null) {
+<<<<<<< HEAD
                 if (user.id / 1000 != 333 && ContactsController.Instance.contactsDict.get(user.id) == null) {
+=======
+                if (user.id != 333000 && ContactsController.Instance.contactsDict.get(user.id) == null) {
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
                     if (ContactsController.Instance.contactsDict.size() == 0 && (!ContactsController.Instance.contactsLoaded || ContactsController.Instance.loadingContacts)) {
                         nameString = Utilities.formatName(user.first_name, user.last_name);
                     } else {
@@ -578,6 +607,10 @@ public class DialogCell extends BaseCell {
             }
 
             CharSequence nameStringFinal = TextUtils.ellipsize(nameString.replace("\n", " "), currentNamePaint, nameWidth - Utilities.dp(12), TextUtils.TruncateAt.END);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             nameLayout = new StaticLayout(nameStringFinal, currentNamePaint, nameWidth, Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false);
 
             messageWidth = width - Utilities.dp(88);
@@ -626,6 +659,10 @@ public class DialogCell extends BaseCell {
                     mess = mess.substring(0, 150);
                 }
                 messageString = Emoji.replaceEmoji(mess);
+<<<<<<< HEAD
+=======
+                messageString = Emoji.getSmiledText(ApplicationLoader.applicationContext, messageString,getRootView());
+>>>>>>> 5669c0dc333845448cc7ec627e73a6ff38979af2
             }
 
             CharSequence messageStringFinal = TextUtils.ellipsize(messageString, currentMessagePaint, messageWidth - Utilities.dp(12), TextUtils.TruncateAt.END);
