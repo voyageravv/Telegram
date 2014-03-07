@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- From: file:/home/tino/Telegram/TMessagesProj/src/main/res/values-ca/strings.xml -->
+    <eat-comment />
+
+    <string name="AccessError">Error d\'accés</string>
+    <string name="ActionAddUser">un1 ha afegit un2</string>
+    <string name="ActionAddUserYou">un1 te añadió</string>
+    <string name="ActionChangedPhoto">un1 ha canviat la foto del grup</string>
+    <string name="ActionChangedTitle">un1 ha canviat el nom del grup a un2</string>
+    <string name="ActionCreateGroup">un1 ha creat el grup</string>
+    <string name="ActionKickUser">un1 ha expulsat un2</string>
+    <string name="ActionKickUserYou">un1 te expulsó</string>
+    <string name="ActionLeftUser">un1 ha abandonat el grup</string>
+    <string name="ActionRemovedPhoto">un1 ha eliminat la foto del grup</string>
+    <string name="ActionYouAddUser">Añadiste a un2</string>
+    <string name="ActionYouChangedPhoto">Cambiaste la foto de grupo</string>
+    <string name="ActionYouChangedTitle">Cambiaste el nombre de grupo a un2</string>
+    <string name="ActionYouCreateGroup">Creaste el grupo</string>
+    <string name="ActionYouKickUser">Expulsaste a un2</string>
+    <string name="ActionYouLeftUser">Abandonaste el grupo</string>
+    <string name="ActionYouRemovedPhoto">Quitaste la foto de grupo</string>
+    <string name="Add">Afegeix</string>
+    <string name="AddContact">Afegeix shurmano</string>
+    <string name="AddContactQ">Afegeix shurmano?</string>
+    <string name="AddMember">Afegeix shurmano</string>
+    <string name="AddToContacts">AFEGEIX A SHURMANOS</string>
+    <string name="AddToTheGroup">Afegeix %1$s al grup?</string>
+    <string name="Alert">Alerta</string>
+    <string name="AllContacts">TOTS ELS SHURMANOS</string>
+    <string name="AndMoreTyping">i %d més gent</string>
+    <string name="AppName">Shurgram</string>
+    <string name="AreTyping">estan escrivint...</string>
+    <string name="AreYouSure">N\'estàs segur/a?</string>
+    <string name="AskAQuestion">Fes una pregunta</string>
+    <string name="Attach">Adjunta</string>
+    <string name="AttachAudio">Àudio</string>
+    <string name="AttachContact">shurmano</string>
+    <string name="AttachDocument">Document</string>
+    <string name="AttachLocation">Localització</string>
+    <string name="AttachPhoto">Foto</string>
+    <string name="AttachVideo">Vídeo</string>
+    <string name="AutomaticPhotoDownload">DESCARGA AUTOMÁTICA DE FOTOS</string>
+    <string name="AutomaticPhotoDownloadGroups">Grupos</string>
+    <string name="AutomaticPhotoDownloadPrivateChats">Chats</string>
+    <string name="AwaitingEncryption">Esperant que %s es connecti...</string>
+    <string name="Back">Enrere</string>
+    <string name="BlockContact">Bloca shurmano</string>
+    <string name="BlockedUsers">Usuaris blocats</string>
+    <string name="CacheTag">CACHE_TAG</string>
+    <string name="Call">Truca</string>
+    <string name="CallText">Et trucarem</string>
+    <string name="Calling">Trucan-te...</string>
+    <string name="Cancel">Cancel·la</string>
+    <string name="CancelDownload">Descàrrega cancel·lada</string>
+    <string name="CancelRegistration">Cancel·la el registre</string>
+    <string name="ChatBackground">Fons de xat</string>
+    <string name="ChatDocument">Document</string>
+    <string name="ChatGallery">Galeria</string>
+    <string name="ChatLocation">Localització</string>
+    <string name="ChatTakePhoto">Fes una foto</string>
+    <string name="ChatVideo">Vídeo</string>
+    <string name="Chats">Xats</string>
+    <string name="ChooseCountry">Tria un país</string>
+    <string name="ClearHistory">Buidar historial</string>
+    <string name="Code">Codi</string>
+    <string name="CodeExpired">El codi ha expirat, prova d\'entrar de nou</string>
+    <string name="Connecting">Connectant...</string>
+    <string name="ContactInfo">Informació shurmano</string>
+    <string name="ContactJoined">Un shurmano se unió a Shurgram</string>
+    <string name="Contacts">shurmanos</string>
+    <string name="Copy">Copia</string>
+    <string name="CreateEncryptedChatError">Ha ocorregut un error.</string>
+    <string name="CreateEncryptedChatOutdatedError">No es pot crear un xat secret amb %1$s.\n\n%2$s està usant una versió antiga de Shurgram i primer necessita actualitzar-lo.</string>
+    <string name="DOWNLOAD">Descarrega</string>
+    <string name="Default">Per defecte</string>
+    <string name="Delete">Elimina</string>
+    <string name="DeleteAndExit">Elimina i abandona el grup</string>
+    <string name="DeleteChat">Elimina i surt</string>
+    <string name="DeleteChatQuestion">Vols eliminar aquest xat?</string>
+    <string name="DeleteContact">Eliminar</string>
+    <string name="DeletePhoto">Elimina foto</string>
+    <string name="DeleteThisGroup">Elimina quest grup</string>
+    <string name="Done">Fet</string>
+    <string name="Edit">Edita</string>
+    <string name="EditContact">Edita</string>
+    <string name="EnableAnimations">Activa animacions</string>
+    <string name="EncryptedChatAccepted">Xat secret iniciat</string>
+    <string name="EncryptedChatRequested">Xat secret sol·licitat</string>
+    <string name="EncryptedChatStartedIncoming">T\'has apuntat al xat secret.</string>
+    <string name="EncryptedChatStartedOutgoing">%s s\'ha apuntat al teu xat secret.</string>
+    <string name="EncryptedDescription1">Usa xifratge descentralitzat</string>
+    <string name="EncryptedDescription2">No deixis rastre en els nostres servidors</string>
+    <string name="EncryptedDescription3">Tenir temporitzador d\'auto-destrucció</string>
+    <string name="EncryptedDescription4">No permetis re-emetre missatges</string>
+    <string name="EncryptedDescriptionTitle">Xats secrets:</string>
+    <string name="EncryptedPlaceholderTitleIncoming">%s convidats a participar en el xat secret.</string>
+    <string name="EncryptedPlaceholderTitleOutgoing"> %s t\'ha convidat a participar a un xat secret.</string>
+    <string name="EncryptionKey">Clau de xifratge</string>
+    <string name="EncryptionKeyDescription">Aquesta imatge és una visualització de la clau de xifratge per aquest xat amb <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.<![CDATA[<br><br>]]>Si aquesta imatge se li mostra igual al telèfon de <![CDATA[<b>]]>%2$s\'s<![CDATA[</b>]]>, el teu xat és un 200%% segur.<![CDATA[<br><br>]]>Aprent-ne més a telegram.org</string>
+    <string name="EncryptionProcessing">Intercanviant claus de xifrat...</string>
+    <string name="EncryptionRejected">Xat secret cancel·lat</string>
+    <string name="EnterGroupNamePlaceholder">Entra nom del grup</string>
+    <string name="EnterGroupNameTitle">ENTRA NOM DEL GRUP</string>
+    <string name="Events">EVENTOS</string>
+    <string name="ExternalStorage">Emmagatzematge extern</string>
+    <string name="FewNewMessages">%1$d nous missatges</string>
+    <string name="FileUploadLimit">La mida del fitxer no hauria de superar %1$s</string>
+    <string name="FirstName">Nom (requerit)</string>
+    <string name="FloodWait">Masses intents, si us plau prova-ho més tard</string>
+    <string name="Forward">Re-envia</string>
+    <string name="ForwardMessagesTo">Vols re-enviar els missatges a %1$s?</string>
+    <string name="ForwardedMessage">Reenviar missatge</string>
+    <string name="FreeOfTotal">Lliure %1$s de %2$s</string>
+    <string name="From">De</string>
+    <string name="FromCamera">De la càmera</string>
+    <string name="FromGalley">De la galeria</string>
+    <string name="FromYou">Tu</string>
+    <string name="Gallery">Galeria</string>
+    <string name="GotAQuestion">Tens alguna pregunta\nsobre Shurgram?</string>
+    <string name="GroupInfo">Informació del Grup</string>
+    <string name="GroupName">Nom del grup</string>
+    <string name="GroupNotifications">NOTIFICACIONS GRUPS</string>
+    <string name="HiddenName">Nom oculto</string>
+    <string name="HideLastSeen">Ocultar última conexión</string>
+    <string name="Hybrid">Híbrid</string>
+    <string name="InAppNotifications">NOTIFICACIONS DINS DE L\'APLICACIÓ</string>
+    <string name="InAppPreview">Pre-visualitza dins l\'aplicació</string>
+    <string name="InAppSounds">Sons dins l\'aplicació</string>
+    <string name="InAppVibrate">Vibra dins l\'aplicació</string>
+    <string name="InternalStorage">Emmagatzematge intern</string>
+    <string name="InvalidCode">Codi no vàlid</string>
+    <string name="InvalidFirstName">Nom no vàlid</string>
+    <string name="InvalidLastName">Cognom no vàlid</string>
+    <string name="InvalidPhoneNumber">Número de telèfon no vàlid</string>
+    <string name="Invisible">invisible</string>
+    <string name="InviteFriends">Convidar amics</string>
+    <string name="InviteText">Ei, canvia\'t a Shurgram: http://telegram.org/dl2</string>
+    <string name="InviteUser">Aquest shurmano no té encara Shurgram, li envies una invitació?</string>
+    <string name="IsTyping">està escrivint...</string>
+    <string name="KMetersAway">km de distància</string>
+    <string name="KickFromGroup">Expulsa del grup</string>
+    <string name="LastName">Cognom (opcional)</string>
+    <string name="LastSeen">última vegada</string>
+    <string name="LastSeenDate">última vegada</string>
+    <string name="Loading">Carregant...</string>
+    <string name="LogOut">Surt</string>
+    <string name="MEMBER">SHURMANO</string>
+    <string name="MEMBERS">SHURMANOS</string>
+    <string name="Map">Mapa</string>
+    <string name="Members">shurmanos</string>
+    <string name="Message">Missatge</string>
+    <string name="MessageLifetime">Temporitzador d\'auto-destrucció</string>
+    <string name="MessageLifetime1d">1 dies</string>
+    <string name="MessageLifetime1h">1 hores</string>
+    <string name="MessageLifetime1m">1 minuts</string>
+    <string name="MessageLifetime1w">1 setmanes</string>
+    <string name="MessageLifetime2s">2 segons</string>
+    <string name="MessageLifetime5s">5 segons</string>
+    <string name="MessageLifetimeChanged">%1$s ha ajustat el temporitzador d\'auto-destrucció a %2$s</string>
+    <string name="MessageLifetimeChangedOutgoing">Has activat el temporitzador d\'autodestrucció a %1$s</string>
+    <string name="MessageLifetimeRemoved">%1$s ha desactivat el temporitzador d\'autodestrucció</string>
+    <string name="MessageLifetimeYouRemoved">Has desactivat la autodestrucció</string>
+    <string name="MessageNotifications">NOTIFICACIONS DE MISSATGE</string>
+    <string name="MessagePreview">Pre-visualització de missatge</string>
+    <string name="MessagesSettings">MENSAJES</string>
+    <string name="MetersAway">m de distància</string>
+    <string name="MyLocation">La meva localització</string>
+    <string name="NewGroup">Grup nou</string>
+    <string name="NewMessages">Nous missatges</string>
+    <string name="NewSecretChat">Nou xat secret</string>
+    <string name="Next">Següent</string>
+    <string name="NoBlocked">Cap shurmano bloquejat encara</string>
+    <string name="NoChats">No tens cap xat encara...</string>
+    <string name="NoChatsHelp">Inicia una conversa prement el\nbotó de crear un xat a la cantonada superior dreta\no ves a la secció de shurmanos.</string>
+    <string name="NoContacts">Cap shurmano encara</string>
+    <string name="NoFiles">Cap fitxer encara...</string>
+    <string name="NoHandleAppInstalled">No tens cap aplicació que pugui obrir el tipus de fitxer \'%1$s\', si us plau instal·la\'n una per continuar</string>
+    <string name="NoMedia">Cap contingut compartit encara</string>
+    <string name="NoMessages">Cap missatge encara...</string>
+    <string name="NoPlayerInstalled">No tens cap reproductor de vídeo, si us plau instal·la\'n un per continuar</string>
+    <string name="NoRecent">Cap recent</string>
+    <string name="NoResult">No hi ha resultats</string>
+    <string name="NoSound">Cap so</string>
+    <string name="NotMounted">Emmagatzematge no muntat</string>
+    <string name="NotificationContactJoined">%1$s és a Shurgram!</string>
+    <string name="NotificationContactNewPhoto">%1$s ha actualitzat la seva foto de perfil</string>
+    <string name="NotificationEditedGroupName">%1$s ha editat el/s grup/s %2$s name</string>
+    <string name="NotificationEditedGroupPhoto">%1$s ha editat el/s grup/s %2$s photo</string>
+    <string name="NotificationGroupAddMember">%1$s ha convidat %3$s al grup %2$s</string>
+    <string name="NotificationGroupKickMember">%1$s ha expulsat %3$s del grup %2$s</string>
+    <string name="NotificationGroupKickYou">%1$s t\'ha expulsat del grup %2$s</string>
+    <string name="NotificationGroupLeftMember">%1$s ha abandonat el grup %2$s</string>
+    <string name="NotificationInvitedToGroup">%1$s t\'ha convidat al grup %2$s</string>
+    <string name="NotificationMessageAudio">%1$s t\'ha enviat un àudio</string>
+    <string name="NotificationMessageContact">%1$s ha compartit un shurmano amb tu</string>
+    <string name="NotificationMessageDocument">%1$s t\'ha enviat un document</string>
+    <string name="NotificationMessageGroupAudio">%1$s ha enviat un àudio al grup %2$s</string>
+    <string name="NotificationMessageGroupContact">%1$s ha compartit un shurmano en el grup %2$s</string>
+    <string name="NotificationMessageGroupDocument">%1$s ha enviat un document al grup %2$s</string>
+    <string name="NotificationMessageGroupMap">%1$s ha enviat un mapa al grup %2$s</string>
+    <string name="NotificationMessageGroupNoText">%1$s ha enviat un missatge al grup %2$s</string>
+    <string name="NotificationMessageGroupPhoto">%1$s ha enviat una foto al grup %2$s</string>
+    <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
+    <string name="NotificationMessageGroupVideo">%1$s ha enviat un vídeo al grup %2$s</string>
+    <string name="NotificationMessageMap">%1$s t\'ha enviat un mapa</string>
+    <string name="NotificationMessageNoText">%1$s t\'ha enviat un nou missatge</string>
+    <string name="NotificationMessagePhoto">%1$s t\'ha enviat una foto</string>
+    <string name="NotificationMessageText">%1$s: %2$s</string>
+    <string name="NotificationMessageVideo">%1$s t\'ha enviat un video</string>
+    <string name="NotificationUnrecognizedDevice">Nou inici de sessió de dispositiu no reconegut %1$s, localització: %2$s</string>
+    <string name="Notifications">Notificacions</string>
+    <string name="NotificationsAndSounds">Notificacions i Sons</string>
+    <string name="OK">OK</string>
+    <string name="Of">de</string>
+    <string name="Offline">fora de línia</string>
+    <string name="OneNewMessage">%1$d missatge nou</string>
+    <string name="Online">en línia</string>
+    <string name="Open">Obre</string>
+    <string name="OpenPhoto">Obre foto</string>
+    <string name="OtherAt">a</string>
+    <string name="PHONE">TELÈFON</string>
+    <string name="Page1Message">Benvingut/da a l\'era de la missatgeria ràpida i segura</string>
+    <string name="Page1Title">Shurgram</string>
+    <string name="Page2Message"><![CDATA[<b>Shurgram</b>]]> entrega els missatges més ràpid<![CDATA[<br/>]]>que d\'altres aplicacions</string>
+    <string name="Page2Title">Ràpid</string>
+    <string name="Page3Message"><![CDATA[<b>Shurgram</b>]]> serà gratuït per sempre. Sense anuncis.<![CDATA[<br/>]]>Sense quotes de subscripció</string>
+    <string name="Page3Title">Gratuït</string>
+    <string name="Page4Message"><![CDATA[<b>Shurgram</b>]]> manté els teus missatges segurs<![CDATA[<br/>]]>dels atacs informàtics</string>
+    <string name="Page4Title">Segur</string>
+    <string name="Page5Message"><![CDATA[<b>Shurgram</b>]]> no té límits de mida dels<![CDATA[<br/>]]>teus continguts i xats</string>
+    <string name="Page5Title">Poderós</string>
+    <string name="Page6Message"><![CDATA[<b>Shurgram</b>]]> et permet accedir als teus missatges<![CDATA[<br/>]]>des de diversos aparells</string>
+    <string name="Page6Title">Basat en el núvol</string>
+    <string name="Page7Message"><![CDATA[<b>Shurgram</b>]]> xifra a nivell alt els teus missatges<![CDATA[<br/>]]>i poden ser auto-destructibles</string>
+    <string name="Page7Title">Privat</string>
+    <string name="PhoneHome">CASA</string>
+    <string name="PhoneMain">PRINCIPAL</string>
+    <string name="PhoneMobile">MÒBIL</string>
+    <string name="PhoneOther">ALTRE</string>
+    <string name="PhoneWork">FEINA</string>
+    <string name="RegisterText">Escriu el teu nom i primer cognom</string>
+    <string name="Reset">REINICIA</string>
+    <string name="ResetAllNotifications">Reinicia totes les notificacions</string>
+    <string name="ResetNotificationsText">Reinicia totes les opcions de notificació a per defecte</string>
+    <string name="Retry">Respon</string>
+    <string name="SETTINGS">OPCIONS</string>
+    <string name="SHAREDMEDIA">CONTINGUTS COMPARTITS</string>
+    <string name="Satellite">Satèlit</string>
+    <string name="SaveIncomingPhotos">Desa fotos rebudes</string>
+    <string name="SaveToGallery">Desa a la galeria</string>
+    <string name="SdCard">Targeta SD</string>
+    <string name="Search">Cerca</string>
+    <string name="SecretTitle">Xat secret</string>
+    <string name="SelectChat">Selecciona el xat</string>
+    <string name="SelectContact">Selecciona un shurmano</string>
+    <string name="SelectFile">Selecciona fitxer</string>
+    <string name="Selected">Seleccionat:</string>
+    <string name="Send">Envia</string>
+    <string name="SendByEnter">Enviar con enter</string>
+    <string name="SendLocation">Envia localització</string>
+    <string name="SendMessageTo">Envia missatge a...</string>
+    <string name="SentSmsCode">Hem enviat un SMS amb un codi d\'activació al teu telèfon phone</string>
+    <string name="Set">Tria</string>
+    <string name="Settings">Configuració</string>
+    <string name="ShareContact">Comparteix shurmano</string>
+    <string name="ShareLocation">Comparteix localització</string>
+    <string name="ShareMyContactInfo">COMPARTEIX INFORMACIÓ DE SHURMANO</string>
+    <string name="SharedMedia">Continguts compartits</string>
+    <string name="ShortMessageLifetime1d">1d</string>
+    <string name="ShortMessageLifetime1h">1h</string>
+    <string name="ShortMessageLifetime1m">1m</string>
+    <string name="ShortMessageLifetime1w">1st</string>
+    <string name="ShortMessageLifetime2s">2sg</string>
+    <string name="ShortMessageLifetime5s">5sg</string>
+    <string name="ShortMessageLifetimeForever">Apagat</string>
+    <string name="ShowAllMedia">Mostra tots els continguts</string>
+    <string name="SlideToCancel">Desliza para cancelar</string>
+    <string name="Sound">So</string>
+    <string name="StartEncryptedChat">Inicia xat secret</string>
+    <string name="StartMessaging">Comença la conversa</string>
+    <string name="StartText">Si us plau confirma el teu codi de país\ni el teu número de telèfon.</string>
+    <string name="Support">SUPORT</string>
+    <string name="SystemRoot">Arrel del sistema</string>
+    <string name="TerminateAllSessions">Cerrar todas las otras sesiones</string>
+    <string name="TextSize">Mida del text dels missatges</string>
+    <string name="TodayAt">avui a</string>
+    <string name="TypeMessage">Tipus de missatge</string>
+    <string name="Typing">escrivint...</string>
+    <string name="Unblock">Desbloca</string>
+    <string name="UnblockText">Prem una estona l\'shurmano per desbloquejar-lo.</string>
+    <string name="UndoAllCustom">Desfés totes les opcions de notificacions per totes els teus shurmanos i grups</string>
+    <string name="UnknownError">Error desconegut</string>
+    <string name="UnsuppotedMedia">Aquest missatge no té suport en la teva versió de Shurgram.</string>
+    <string name="Updating">Actualitzant...</string>
+    <string name="UsbActive">Transferència USB activa</string>
+    <string name="Vibrate">Vibra</string>
+    <string name="ViewLocation">Veure localització</string>
+    <string name="ViewPhoto">Veure foto</string>
+    <string name="ViewVideo">Reprodueix vídeo</string>
+    <string name="WaitingForNetwork">Esperant connexió de xarxa...</string>
+    <string name="WrongCountry">Codi de país erroni</string>
+    <string name="WrongNumber">Número erroni?</string>
+    <string name="Yesterday">ahir</string>
+    <string name="YesterdayAt">ahir a</string>
+    <string name="YouHaveNewMessage">Tens un nou missatge</string>
+    <string name="YouLeft">Has abandonat aquest grup</string>
+    <string name="YouWereKicked">Has estat expulsat d\'aquest grup</string>
+    <string name="YourCode">El teu codi</string>
+    <string name="YourFirstNameAndLastName">EL TEU NOM I COGNOM</string>
+    <string name="YourName">El teu nom</string>
+    <string name="YourPhone">El teu telèfon</string>
+    <string name="YourPhoneNumber">EL TEU NÚMERO DE TELÈFON</string>
+    <!-- From: file:/home/tino/Telegram/TMessagesProj/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values-ca/values.xml -->
+    <eat-comment />
+
+    <string name="abc_action_bar_home_description" msgid="4600421777120114993">"Navega a la pàgina d\'inici"</string>
+    <string name="abc_action_bar_up_description" msgid="1594238315039666878">"Navega cap a dalt"</string>
+    <string name="abc_action_menu_overflow_description" msgid="3588849162933574182">"Més opcions"</string>
+    <string name="abc_action_mode_done" msgid="4076576682505996667">"Fet"</string>
+    <string name="abc_activity_chooser_view_see_all" msgid="7468859129482906941">"Mostra\'ls tots"</string>
+    <string name="abc_activitychooserview_choose_application" msgid="2031811694353399454">"Selecciona una aplicació"</string>
+    <string name="abc_searchview_description_clear" msgid="3691816814315814921">"Esborra la consulta"</string>
+    <string name="abc_searchview_description_query" msgid="2550479030709304392">"Consulta de cerca"</string>
+    <string name="abc_searchview_description_search" msgid="8264924765203268293">"Cerca"</string>
+    <string name="abc_searchview_description_submit" msgid="8928215447528550784">"Envia la consulta"</string>
+    <string name="abc_searchview_description_voice" msgid="893419373245838918">"Cerca per veu"</string>
+    <string name="abc_shareactionprovider_share_with" msgid="3421042268587513524">"Comparteix amb"</string>
+    <string name="abc_shareactionprovider_share_with_application" msgid="7165123711973476752">"Comparteix amb %s"</string>
+    <!-- From: file:/home/tino/Telegram/TMessagesProj/build/exploded-bundles/ComGoogleAndroidGmsPlayServices4132.aar/res/values-ca/strings.xml -->
+    <eat-comment />
+
+    <string name="auth_client_needs_enabling_title" msgid="3983201110833868073">"Una aplicació requereix que s\'activin els serveis de Google Play."</string>
+    <string name="auth_client_needs_installation_title" msgid="7999585836145154206">"Una aplicació requereix que s\'instal·lin els serveis de Google Play."</string>
+    <string name="auth_client_needs_update_title" msgid="6488605506794595966">"Una aplicació requereix que s\'actualitzin els serveis de Google Play."</string>
+    <string name="auth_client_play_services_err_notification_msg" msgid="3635065018897986478">"Error dels serveis de Google Play"</string>
+    <string name="auth_client_requested_by_msg" msgid="6304135633531965756">"Sol·licitada per <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
+    <string name="auth_client_using_bad_version_title" msgid="2534454398764507874">"Una aplic. ha intentat utilitzar una versió errònia de serveis de Play."</string>
+    <string name="common_google_play_services_enable_button" msgid="4181637455539816337">"Activa els serveis de Google Play"</string>
+    <string name="common_google_play_services_enable_text" msgid="7627896071867667758">"Aquesta aplicació no funcionarà si no actives els serveis de Google Play."</string>
+    <string name="common_google_play_services_enable_title" msgid="529078775174559253">"Activa els serveis de Google Play"</string>
+    <string name="common_google_play_services_install_button" msgid="8515591849428043265">"Baixa els serveis de Google Play"</string>
+    <string name="common_google_play_services_install_text_phone" msgid="8685301130651051380">"Aquesta aplicació no s\'executarà si el telèfon no té instal·lats els serveis de  Google Play."</string>
+    <string name="common_google_play_services_install_text_tablet" msgid="1589957570365247855">"Aquesta aplicació no funcionarà si la tauleta no té instal·lats els serveis de Google Play."</string>
+    <string name="common_google_play_services_install_title" msgid="26645092511305524">"Baixa els serveis de Google Play"</string>
+    <string name="common_google_play_services_invalid_account_text" msgid="4983316348021735578">"El compte especificat no existeix en aquest dispositiu. Tria un compte diferent."</string>
+    <string name="common_google_play_services_invalid_account_title" msgid="1066672360770936753">"Compte no vàlid"</string>
+    <string name="common_google_play_services_network_error_text" msgid="9038847255613537209">"Es requereix una connexió de dades per connectar amb els serveis de Google Play."</string>
+    <string name="common_google_play_services_network_error_title" msgid="3827284619958211114">"Error de xarxa"</string>
+    <string name="common_google_play_services_unknown_issue" msgid="4762332809710093730">"Error desconegut relacionat amb els serveis de Google Play."</string>
+    <string name="common_google_play_services_unsupported_date_text" msgid="4725396522367789365">"Sembla que la data del dispositiu no és correcta. Comprova-la."</string>
+    <string name="common_google_play_services_unsupported_text" msgid="3542578567569488671">"El teu dispositiu no és compatible amb els serveis de Google Play, en què es basen les teves aplicacions. Per obtenir assistència, contacta amb el fabricant."</string>
+    <string name="common_google_play_services_unsupported_title" msgid="6334768798839376943">"Serveis de Google Play"</string>
+    <string name="common_google_play_services_update_button" msgid="8932944190611227642">"Actualitza"</string>
+    <string name="common_google_play_services_update_text" msgid="448354684997260580">"Aquesta aplicació no s\'executarà si no actualitzes els serveis de Google Play."</string>
+    <string name="common_google_play_services_update_title" msgid="6006316683626838685">"Actualitza els serveis de Google Play"</string>
+    <string name="common_signin_button_text" msgid="9071884888741449141">"Inicia sessió"</string>
+    <string name="common_signin_button_text_long" msgid="2429381841831957106">"Inicia sessió amb Google"</string>
+
+</resources>
